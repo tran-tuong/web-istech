@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #fff;
+  --defaulf-layout-width: 1280px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  text-rendering: optimizeSpeed;
+  color: var(--primary);
+  background: url("../../assets/images/background-main-page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 3000px;
+}
