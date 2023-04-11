@@ -1,0 +1,225 @@
+.parrentBanner{
+    
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100vw;
+        height:38vh;
+        margin-top:120px;
+        margin-bottom:100px;
+
+.banner{
+    background: url("../../assets/images/ready-to.png");
+    width: 80%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    overflow: hidden;
+}
+}
+
+@media screen and (max-width:1100px){
+    .parrentBanner{
+        height:170px;
+        margin-top:110px;
+    }
+}
+@media screen and (max-width:950px){
+    .parrentBanner{
+        height:134px;
+        margin-top:100px;
+    }
+}
+@media screen and (max-width:735px){
+    .parrentBanner{
+        height:107px;
+        margin-top:80px;
+    }
+}
+@media screen and (max-width:600px){
+    .parrentBanner{
+        height:80px;
+        margin-top:75px;
+    }
+}
+@media screen and (max-width:440px){
+    .parrentBanner{
+        height:54px;
+        margin-top:55px;
+    }
+}
+
+.About{
+    align-items: start;
+    padding-top: 100px;
+    .AboutLeft{
+        
+        text-align: left;
+        h1{
+            font-size: 70px;
+            font-weight: bold;
+            color: rgba(255,255,255,1);
+            
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 18px;
+            padding-bottom: 10px;
+            color: rgba(255,255,255,1);
+        }
+    }
+
+    .AboutRight{
+        .About_img{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .About{
+        .AboutRight{
+            margin-top: 50px;
+        }
+    }
+}
+
+
+.Playground{
+    width: 100%;
+    background: url("../../assets/images/img1-main-page.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-top: 150px;
+    color: rgba(255,255,255,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Playground_content{
+        text-align: center;
+        align-items: center;
+        .Playground_heading{
+            font-size: 40px;
+            font-weight: bold;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 50px;
+        }
+        .Playground_count{
+            .Playground_item{
+                p{
+                    font-size: 40px;
+                }
+                .playground_number{
+                    font-weight: bold;
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    .Playground{
+        .Playground_content{
+            .Playground_heading{
+                font-size: 30px;
+                font-weight: bold;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 50px;
+            }
+            .Playground_count{
+                .Playground_item{
+                    p{
+                        font-size: 30px;
+                    }
+                    .playground_number{
+                        font-weight: bold;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:700px){
+    .Playground{
+        .Playground_content{
+            .Playground_heading{
+                font-size: 20px;
+                font-weight: bold;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 50px;
+            }
+            .Playground_count{
+                .Playground_item{
+                    p{
+                        font-size: 20px;
+                    }
+                    .playground_number{
+                        font-weight: bold;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.LearnMore{
+    margin-top: 150px;
+    text-align: center;
+    .LearnMore_Button{
+        h1{
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        button{
+            margin: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    .LearnMore{
+        .LearnMore_Button{
+            margin-top: 40px;
+        }
+    }
+}
+
+.JoinUsToDay{
+    margin-top: 100px;
+    background-image: url("../../assets/images/background1-main-page.png");
+    h1{
+        
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 2px;
+        margin-bottom: 40px;
+    }
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    button{
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:450px){
+  .JoinUsToDay{
+    h1{
+        font-size: 38px;
+    }
+  }
+}
+
