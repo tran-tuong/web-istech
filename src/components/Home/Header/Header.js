@@ -1,71 +1,122 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./header.scss";
+import images from "../../../assets/images"
+import Button from "../../Button";
+
 export default function Header() {
+
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
+    <div className="mt-4">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container d-flex justify-content-between">
+          <a className="navbar-brand" href="/">
+            <img src={images.logo} alt="Logo" className="navbar-logo" />
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="home">
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link " aria-current="page" to="about">
-                  About
-                </NavLink>
-              </li>
+          
+          <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
+            <ul className="navbar-nav menu">
               <li className="nav-item dropdown">
-                <NavLink
+                <div
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
-                </NavLink>
+                  About
+                </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
+                    <NavLink className="dropdown-item pt-3 pb-3" to='/about'>
+                      About Us
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
+                    <NavLink className="dropdown-item pt-3 pb-3" to='/board-of-director'>
+                      Board of Directors
+                    </NavLink>
                   </li>
                   <li>
-                    <hr className="dropdown-divider" />
+                    <NavLink className="dropdown-item pt-3 pb-3" to='/departments'>
+                      Departments
+                    </NavLink>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <div
+                  className="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Activities
+                </div>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <NavLink className="dropdown-item pt-3 pb-3" to="/events">
+                      Events
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
+                    <NavLink className="dropdown-item pt-3 pb-3" to="/internal-activites">
+                      Internal Activities
+                    </NavLink>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <div
+                  className="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Resources
+                </div>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <NavLink className="dropdown-item pt-3 pb-3" to="/blog">
+                      Blog
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item pt-3 pb-3" to="/resource-hub">
+                      Resource Hub
+                    </NavLink>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <div
+                  className="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Partners & Contacts
+                </div>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <NavLink className="dropdown-item pt-3 pb-3" to="/partners">
+                      Partners
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item pt-3 pb-3" to="/contact">
+                      Contact Us
+                    </NavLink>
                   </li>
                 </ul>
               </li>
             </ul>
           </div>
+
+          <Button href="https://google.com" target='_blank'>Sign In</Button>
         </div>
       </nav>
     </div>
