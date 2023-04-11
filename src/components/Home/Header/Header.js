@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./header.scss";
 import images from "../../../assets/images"
 import Button from "../../Button";
 
 export default function Header() {
+
   return (
-    <div>
+    <div className="mt-4">
       <nav className="navbar navbar-expand-lg">
         <div className="container d-flex justify-content-between">
           <a className="navbar-brand" href="/">
@@ -16,16 +17,15 @@ export default function Header() {
           <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
             <ul className="navbar-nav menu">
               <li className="nav-item dropdown">
-                <a
+                <div
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   About
-                </a>
+                </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <NavLink className="dropdown-item pt-3 pb-3" to='/about'>
@@ -45,16 +45,15 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <div
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Activities
-                </a>
+                </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <NavLink className="dropdown-item pt-3 pb-3" to="/events">
@@ -69,16 +68,15 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <div
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Resources
-                </a>
+                </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <NavLink className="dropdown-item pt-3 pb-3" to="/blog">
@@ -93,16 +91,15 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <div
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Partners & Contacts
-                </a>
+                </div>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <NavLink className="dropdown-item pt-3 pb-3" to="/partners">

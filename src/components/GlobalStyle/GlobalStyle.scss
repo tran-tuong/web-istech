@@ -7,7 +7,11 @@
 }
 
 :root {
+  // Color
   --primary: #fff;
+  --hover-color: #ACACAC;
+
+  // Layout
   --defaulf-layout-width: 1280px;
 }
 
@@ -51,5 +55,10 @@ a[href] {
     height: 24px;
     top: 6px;
     left: 6px;
+    transition: all .4s ease 0s;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

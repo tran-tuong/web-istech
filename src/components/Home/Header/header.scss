@@ -1,25 +1,37 @@
-.active{
-    background-color: aqua;
-    color: black;
+.active {
+    color: red !important;
+    background-color: transparent !important;
 }
 
 .navbar-logo {
-    width: 160px;
-    height: 50px;
+    width: 250px;
+    height: 87.65px;
 }
 
 .menu {
     gap: 50px;
 }
 
-.nav-link {
-    color: var(--primary) !important;
-    font-size: 1.8rem !important;
-    font-weight: 500 !important;
-    transition: all .4s ease 0s;
+.dropdown {
+    .nav-link {
+        color: var(--primary) !important;
+        font-size: 2.2rem !important;
+        font-weight: 500 !important;
+        transition: all .4s ease 0s;
+    
+        &:hover {
+            color: var(--hover-color) !important;
+        }
+    }
 
-    &:hover {
-        color: aqua !important;
+    .dropdown-toggle::after {
+        content: 'V';
+        display: inline-block;
+        font-weight: 600;
+        margin-left: 6px;
+        scale: 1 .6;
+        border: none;
+        vertical-align: middle;
     }
 }
 
@@ -28,14 +40,18 @@
     border: none !important; 
 
     .dropdown-item {
-        color: var(--primary) !important; 
-        font-size: 1.5rem;
+        color: var(--primary); 
+        font-size: 1.8rem;
         text-decoration: underline !important;
         transition: all .4s ease 0s;
 
         &:hover {
             background-color: transparent !important;
-            color: aqua !important;
+            color: var(--hover-color) !important;
+        }
+
+        &:active {
+            background-color: none !important;
         }
     }
 }
