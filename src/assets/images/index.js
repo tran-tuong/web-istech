@@ -6,6 +6,8 @@ const images = {
     backgroundMainPage1: require('../images/background1-main-page.png'),
     countDownImg: require('../images/img1-main-page.png'),
     sliderImg: require('../images/img2-main-page.png'),
+    flagVN: require('../images/vn.svg').default,
+    flagGB: require('../images/en.svg').default,
 }
 
 export default images;
