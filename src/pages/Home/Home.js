@@ -3,13 +3,17 @@ import "./Home.scss";
 import images from "../../assets/images";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import Button from "../../components/Button";
+
 export default function Home() {
   const [Counter, setCounter] = useState(false);
   return (
     <div>
+      
       <div className="parrentBanner">
         <div className="banner"></div>
       </div>
+      
 
       <div className="About container">
         <div className="row">
@@ -23,7 +27,7 @@ export default function Home() {
               Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
               maecenas accumsan lacus vel facilisis.
             </p>
-            <button className="btn btn-info">MORE ABOUT ISTECH</button>
+            <Button>MORE ABOUT ISTECH</Button>
           </div>
           <div className="col-12 col-md-4 AboutRight">
             <div className="About_img">
@@ -149,12 +153,12 @@ export default function Home() {
                 LEARN MORE
               </h1>
               <div>
-                <button className="btn btn-success">Our Members</button>
-                <button className="btn btn-success">Our Events</button>
+                <Button>Our Members</Button>
+                <Button>Our Events</Button>
               </div>
               <div>
-                <button className="btn btn-success">Our Partners</button>
-                <button className="btn btn-success">Our News</button>
+                <Button>Our Partners</Button>
+                <Button>Our News</Button>
               </div>
             </div>
           </div>
@@ -165,8 +169,9 @@ export default function Home() {
           <h1>JOIN US TODAY</h1>
 
           <div>
-            <button className="btn btn-danger">REGISTER</button> 
-            <button className="btn btn-danger">CONTACT US</button> 
+            <Button>REGISTER</Button>
+            <Button>CONTACT US</Button>
+            
           </div>
       </div>
     </div>
