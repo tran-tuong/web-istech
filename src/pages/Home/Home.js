@@ -9,14 +9,12 @@ export default function Home() {
   const [Counter, setCounter] = useState(false);
   return (
     <div>
-      
       <div className="parrentBanner">
         <div className="banner"></div>
       </div>
-      
 
       <div className="About container">
-        <div className="row">
+        <div className="row AboutFlex">
           <div className="col-12 col-md-7 AboutLeft">
             <h1>ISTECH</h1>
             <p>
@@ -78,7 +76,7 @@ export default function Home() {
 
       <div className="LearnMore">
         <div className="container LearnMore_Content">
-          <div className="row" style={{alignItems:"center"}}>
+          <div className="row" style={{ alignItems: "center" }}>
             <div className="col-12 col-md-6 LearnMore_Slider">
               <div
                 id="carouselExampleIndicators"
@@ -109,13 +107,25 @@ export default function Home() {
                 </div>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <img src={images.sliderImg} className="d-block w-100" alt="..." />
+                    <img
+                      src={images.sliderImg}
+                      className="d-block w-100"
+                      alt="..."
+                    />
                   </div>
                   <div className="carousel-item">
-                    <img src={images.sliderImg} className="d-block w-100" alt="..." />
+                    <img
+                      src={images.sliderImg}
+                      className="d-block w-100"
+                      alt="..."
+                    />
                   </div>
                   <div className="carousel-item">
-                    <img src={images.sliderImg} className="d-block w-100" alt="..." />
+                    <img
+                      src={images.sliderImg}
+                      className="d-block w-100"
+                      alt="..."
+                    />
                   </div>
                 </div>
                 <button
@@ -147,11 +157,8 @@ export default function Home() {
               <p>Lorem</p>
             </div>
 
-
             <div className="col-12 col-md-6 LearnMore_Button">
-              <h1 >
-                LEARN MORE
-              </h1>
+              <h1>LEARN MORE</h1>
               <div>
                 <Button>Our Members</Button>
                 <Button>Our Events</Button>
@@ -166,13 +173,12 @@ export default function Home() {
       </div>
 
       <div className="JoinUsToDay">
-          <h1>JOIN US TODAY</h1>
+        <h1>JOIN US TODAY</h1>
 
-          <div>
-            <Button>REGISTER</Button>
-            <Button>CONTACT US</Button>
-            
-          </div>
+        <div>
+          <Button>REGISTER</Button>
+          <Button>CONTACT US</Button>
+        </div>
       </div>
     </div>
   );
