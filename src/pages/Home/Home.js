@@ -77,7 +77,7 @@ export default function Home() {
       <div className="LearnMore">
         <div className="container LearnMore_Content">
           <div className="row" style={{ alignItems: "center" }}>
-            <div className="col-12 col-md-6 LearnMore_Slider">
+            <div className="col-12 col-md-5 LearnMore_Slider">
               <div
                 id="carouselExampleIndicators"
                 className="carousel slide"
@@ -157,7 +157,7 @@ export default function Home() {
               <p>Lorem</p>
             </div>
 
-            <div className="col-12 col-md-6 LearnMore_Button">
+            <div className="col-12 col-md-7 LearnMore_Button">
               <h1>LEARN MORE</h1>
               <div>
                 <Button>Our Members</Button>
