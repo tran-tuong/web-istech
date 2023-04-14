@@ -13,7 +13,6 @@ export default function Header() {
           <a className="navbar-brand" href="/">
             <img src={images.logo} alt="Logo" className="navbar-logo" />
           </a>
-          
           <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
             <ul className="navbar-nav menu">
               <li className="nav-item dropdown">
