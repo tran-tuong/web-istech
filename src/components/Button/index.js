@@ -1,7 +1,7 @@
 import './Button.scss';
 import { Link } from 'react-router-dom';
 
-function Button({ to, href, children, onClick, ...passProps }) {
+function Button({ to, href, ref, children, className, onClick, ...passProps }) {
     let Comp = 'button';
     const props = {
         onClick,
@@ -16,7 +16,7 @@ function Button({ to, href, children, onClick, ...passProps }) {
         Comp = 'a';
     }
     
-    const classes = 'wrapper';
+    const classes = `wrapper + ${[className]}`;
 
     return (  
         <Comp className={classes} {...props}>
