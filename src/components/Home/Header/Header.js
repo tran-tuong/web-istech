@@ -1,20 +1,27 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
-import "./header.scss";
+import "./Header.scss";
 import images from "../../../assets/images"
 import Button from "../../Button";
 
 export default function Header() {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  }
 
   return (
-    <div className="mt-4">
+    <header className="header">
       <nav className="navbar navbar-expand-lg">
-        <div className="container d-flex justify-content-between">
-          <a className="navbar-brand" href="/">
+        <div className="container d-flex justify-content-between position-relative">
+          <a className="navbar-brand position-relative" href="/">
             <img src={images.logo} alt="Logo" className="navbar-logo" />
           </a>
           <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
-            <ul className="navbar-nav menu">
+            <input type="checkbox" className="toggle-menu" onClick={showNavbar}/>
+
+            <ul className="navbar-nav menu" ref={navRef}>
               <li className="nav-item dropdown">
                 <div
                   className="nav-link dropdown-toggle"
@@ -112,13 +119,19 @@ export default function Header() {
                   </li>
                 </ul>
               </li>
+              <li className="nav-item">
+                <Button className="btn-sign-in-responsive" to="/login" target='_blank'>Sign In</Button>
+              </li>
             </ul>
           </div>
-
-          <Button href="https://google.com" target='_blank'>Sign In</Button>
+          <Button className="btn-sign-in" to="/login" target='_blank'>Sign In</Button>
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
 
+window.addEventListener('scroll', function () {
+  let header = this.document.querySelector('header');
+  header.classList.toggle('sticky', this.window.scrollY > 0);
+})
