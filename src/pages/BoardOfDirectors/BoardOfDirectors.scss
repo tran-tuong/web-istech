@@ -1,0 +1,13 @@
+.mem-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px !important;
+  object-fit: cover;
+}
+
+.div-linear {
+    height: 100%;
+    width: 4px;
+    background: rgb(217, 217, 217);
+    overflow: hidden;
+}

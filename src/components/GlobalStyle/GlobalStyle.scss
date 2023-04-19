@@ -9,7 +9,7 @@
 :root {
   // Color
   --primary: #fff;
-  --hover-color: #ACACAC;
+  --hover-color: #acacac;
 
   // Layout
   --defaulf-layout-width: 1280px;
@@ -54,10 +54,70 @@ a[href] {
     height: 24px;
     top: 6px;
     left: 6px;
-    transition: all .4s ease 0s;
+    transition: all 0.4s ease 0s;
 
     &:hover {
       opacity: 0.5;
+    }
+  }
+}
+
+.heading-div {
+  text-align: center;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .content-heading {
+    width: 70%;
+    h1 {
+      font-size: 70px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .heading-div {
+    .content-heading {
+      width: 70%;
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .heading-div {
+    .content-heading {
+      width: 75%;
+      h1 {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading-div {
+    .content-heading {
+      width: 85%;
+      h1 {
+        font-size: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading-div {
+    .content-heading {
+      width: 90%;
+      h1 {
+        font-size: 35px;
+      }
     }
   }
 }
