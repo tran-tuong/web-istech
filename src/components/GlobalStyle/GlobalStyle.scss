@@ -9,6 +9,7 @@
 :root {
   // Color
   --primary: #fff;
+  --primary-color: #131620;
   --hover-color: #ACACAC;
 
   // Layout
@@ -30,6 +31,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin: 0 auto;
 }
 
 a[href] {
