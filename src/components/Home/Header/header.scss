@@ -212,11 +212,10 @@
     }
 
     .menu {
-        width: 100%;
+        width: 100% !important;
     }
 
-    .btn-sign-in {
-        display: none;
+    .container .btn-sign-in {
         position: fixed !important;
         top: 35%;
         left: 3%;
