@@ -8,7 +8,7 @@ import Button from "../../components/Button";
 export default function Home() {
   const [Counter, setCounter] = useState(false);
   return (
-    <div>
+    <div className="container-fluid">
       <div className="parrentBanner">
         <div className="banner"></div>
       </div>

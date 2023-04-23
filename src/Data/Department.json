@@ -1,0 +1,166 @@
+[
+    {
+        "id":"fullstack",
+        "Department":"Full Stack Dev",
+        "Des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "listSkill":[
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"}
+        ],
+        "Leader":{
+            "name":"Trần Văn Tưởng",
+            "class":"ICE2021",
+            "job":"Leader",
+            "img":"http:kjasdnasdạdjsajdf"
+        },
+        "Members":[
+            {
+                "name":"Trần Văn Tưởng",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            },
+            {
+                "name":"Trần Văn Tưởng",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            }
+        ],
+        "Mentor":[
+            {
+                "name":"Lê Anh Đức",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            },
+            {
+                "name":"Phạm Đức Nghĩa",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            }
+        ]
+    },
+    {
+        "id":"data",
+        "Department":"Data Science",
+        "Des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "listSkill":[
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"}
+        ],
+        "Leader":{
+            "name":"Công Châu Anh",
+            "class":"ICE2021",
+            "job":"Leader",
+            "img":"http:kjasdnasdạdjsajdf"
+        },
+        "Members":[
+            {
+                "name":"Trần Văn Tưởng",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            },
+            {
+                "name":"Trần Văn Tưởng",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            }
+        ],
+        "Mentor":[
+            {
+                "name":"Lê Anh Đức",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            },
+            {
+                "name":"Phạm Đức Nghĩa",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            }
+        ]
+    },
+    {
+        "id":"game",
+        "Department":"Game Dev",
+        "Des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "listSkill":[
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"}
+        ],
+        "Leader":{
+            "name":"Trần Văn Tưởng",
+            "class":"ICE2021",
+            "job":"Leader",
+            "img":"http:kjasdnasdạdjsajdf"
+        },
+        "Members":[
+            {
+                "name":"Trần Văn Tưởng",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            },
+            {
+                "name":"Trần Văn Tưởng",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            }
+        ],
+        "Mentor":[
+            {
+                "name":"Lê Anh Đức",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            },
+            {
+                "name":"Phạm Đức Nghĩa",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            }
+        ]
+    },
+    {
+        "id":"media",
+        "Department":"Media & Event",
+        "Des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "listSkill":[
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"},
+            {"img":"http:kjasdnasd"}
+        ],
+        "Leader":{
+            "name":"Trần Văn Tưởng",
+            "class":"ICE2021",
+            "job":"Leader",
+            "img":"http:kjasdnasdạdjsajdf"
+        },
+        "Members":[
+            {
+                "name":"Trần Văn Tưởng",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            },
+            {
+                "name":"Trần Văn Tưởng",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            }
+        ],
+        "Mentor":[
+            {
+                "name":"Lê Anh Đức",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            },
+            {
+                "name":"Phạm Đức Nghĩa",
+                "class":"ICE2021",
+                "img":"http:kjasdnasdạdjsajdf"
+            }
+        ]
+    }
+]
