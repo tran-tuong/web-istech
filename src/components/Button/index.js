@@ -16,7 +16,7 @@ function Button({ to, href, ref, children, className, onClick, ...passProps }) {
         Comp = 'a';
     }
     
-    const classes = `wrapper + ${[className]}`;
+    const classes = `wrapper ${[className]}`;
 
     return (  
         <Comp className={classes} {...props}>

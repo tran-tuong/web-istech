@@ -1,27 +1,21 @@
 import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
-import "./header.scss"
+import "./Header.scss";
 import images from "../../../assets/images"
 import Button from "../../Button";
 
 export default function Header() {
-  const navRef = useRef();
-
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  }
 
   return (
     <header className="header">
       <nav className="navbar navbar-expand-lg">
         <div className="container d-flex justify-content-between position-relative">
+          <input type="checkbox" className="toggle-menu"/>
           <a className="navbar-brand position-relative" href="/">
             <img src={images.logo} alt="Logo" className="navbar-logo" />
           </a>
-          <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
-            <input type="checkbox" className="toggle-menu" onClick={showNavbar}/>
-
-            <ul className="navbar-nav menu" ref={navRef}>
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav menu">
               <li className="nav-item dropdown">
                 <div
                   className="nav-link dropdown-toggle"
@@ -118,9 +112,6 @@ export default function Header() {
                     </NavLink>
                   </li>
                 </ul>
-              </li>
-              <li className="nav-item">
-                <Button className="btn-sign-in-responsive" to="/login" target='_blank'>Sign In</Button>
               </li>
             </ul>
           </div>

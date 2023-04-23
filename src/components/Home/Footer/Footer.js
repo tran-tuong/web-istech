@@ -9,7 +9,7 @@ import { faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands
 export default function Footer() {
   return (
     <footer className='pt-4 pb-4'>
-      <div className='container d-flex justify-content-between'>
+      <div className='container d-flex justify-content-between footer'>
         <div className='club-info'>
           <p className='club-info-name'>Câu lạc bộ Công nghệ Thông tin</p>
           <p className='club-info-university'>Trường Quốc Tế - Đại Học Quốc Gia Hà Nội</p>
