@@ -20,8 +20,9 @@ function App() {
               <Route path="/board-of-director" element={<BoardOfDirectors/>} />
               <Route path="/departments">
                 <Route path="" element={<Department/>}/>
-                <Route path="fullstack" element={<FullStack/>}/>
+                <Route path=":id" element={<FullStack/>}/>
               </Route>
+              <Route path='*' element={<Navigate to={''} />} ></Route>
           </Route>
 
       </Routes>

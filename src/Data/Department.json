@@ -1,6 +1,7 @@
 [
     {
         "id":"fullstack",
+        "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
         "Department":"Full Stack Dev",
         "Des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
         "listSkill":[
@@ -13,35 +14,66 @@
             "name":"Trần Văn Tưởng",
             "class":"ICE2021",
             "job":"Leader",
-            "img":"http:kjasdnasdạdjsajdf"
+            "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
         },
         "Members":[
             {
                 "name":"Trần Văn Tưởng",
                 "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             },
             {
-                "name":"Trần Văn Tưởng",
+                "name":"Trần Việt Long",
+                "class":"MIS2018",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Nguyễn Nam Khánh",
+                "class":"ICE2019",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Đào Quý Tiến",
+                "class":"ICE2020",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Phạm Gia Khiêm",
+                "class":"ICE2020",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Hoàng Tuấn Anh Đạt",
                 "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Trần Bảo Trung",
+                "class":"MIS2021",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Vũ Minh Đức",
+                "class":"AIT2022",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             }
         ],
         "Mentor":[
             {
                 "name":"Lê Anh Đức",
-                "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "class":"ICE2018A",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             },
             {
                 "name":"Phạm Đức Nghĩa",
-                "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "class":"ICE2018A",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             }
         ]
     },
     {
         "id":"data",
+        "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
         "Department":"Data Science",
         "Des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
         "listSkill":[
@@ -51,38 +83,69 @@
             {"img":"http:kjasdnasd"}
         ],
         "Leader":{
-            "name":"Công Châu Anh",
-            "class":"ICE2021",
+            "name":"Trần Ngọc Thanh Bình",
+            "class":"BDA2020",
             "job":"Leader",
-            "img":"http:kjasdnasdạdjsajdf"
+            "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
         },
         "Members":[
             {
-                "name":"Trần Văn Tưởng",
-                "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+            "name":"Trần Ngọc Thanh Bình",
+            "class":"BDA2020",
+            "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             },
             {
-                "name":"Trần Văn Tưởng",
-                "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "name":"Trần Quốc Đăng",
+                "class":"ICE2020A",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Lê Thị Nhung",
+                "class":"ICE2020B",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Trần Thảo Chi",
+                "class":"BDA2021",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Đinh Lê Đức Nam",
+                "class":"BDA2021",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Vũ Thanh Phương",
+                "class":"MIS2021A",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Đào Đức Trọng",
+                "class":"BDA2021",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Lương Khánh Phương",
+                "class":"BDA2022",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             }
         ],
         "Mentor":[
             {
                 "name":"Lê Anh Đức",
                 "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             },
             {
                 "name":"Phạm Đức Nghĩa",
                 "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             }
         ]
     },
     {
         "id":"game",
+        "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
         "Department":"Game Dev",
         "Des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
         "listSkill":[
@@ -92,38 +155,75 @@
             {"img":"http:kjasdnasd"}
         ],
         "Leader":{
-            "name":"Trần Văn Tưởng",
-            "class":"ICE2021",
+            "name":"Phạm Đức Long",
+            "class":"ICE2020",
             "job":"Leader",
-            "img":"http:kjasdnasdạdjsajdf"
+            "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
         },
         "Members":[
             {
-                "name":"Trần Văn Tưởng",
-                "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "name":"Phạm Đức Long",
+                "class":"ICE2020",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             },
             {
-                "name":"Trần Văn Tưởng",
+                "name":"Nguyễn Bảo Quang",
+                "class":"ICE2019A",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Cao Sỹ Minh",
+                "class":"ICE2019A",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            }, 
+            {
+                "name":"Võ Lê Phương",
+                "class":"MIS2020B",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            }, 
+            {
+                "name":"Đỗ Ngọc Tiến",
                 "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            }, 
+            {
+                "name":"Nguyễn Thế Hùng",
+                "class":"MIS2022",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Dương Ngô Nhật Minh",
+                "class":"AIT2022",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Nguyễn Hải Đăng",
+                "class":"ICE2022",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Đặng Nguyễn Cao Sơn",
+                "class":"ICE2022",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             }
+           
         ],
         "Mentor":[
             {
                 "name":"Lê Anh Đức",
                 "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             },
             {
                 "name":"Phạm Đức Nghĩa",
                 "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             }
         ]
     },
     {
         "id":"media",
+        "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
         "Department":"Media & Event",
         "Des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
         "listSkill":[
@@ -133,33 +233,89 @@
             {"img":"http:kjasdnasd"}
         ],
         "Leader":{
-            "name":"Trần Văn Tưởng",
-            "class":"ICE2021",
+            "name":"Hoàng Thị Ngọc Thư",
+            "class":"AC2019",
             "job":"Leader",
-            "img":"http:kjasdnasdạdjsajdf"
+            "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
         },
         "Members":[
             {
-                "name":"Trần Văn Tưởng",
-                "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "name":"Hoàng Thị Ngọc Thư",
+                "class":"AC2019",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             },
             {
-                "name":"Trần Văn Tưởng",
-                "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "name":"Nguyễn Quốc Bảo",
+                "class":"IB2018",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Lê Thúy Hằng",
+                "class":"ICE2018A",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Đinh Chính Thanh Sang",
+                "class":"IB2019",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Cao Sỹ Minh",
+                "class":"ICE2019",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Nguyễn Thị Giang Thanh",
+                "class":"MIS2020",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Hà Linh Chi",
+                "class":"AC2021B",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Đinh Thu Hương",
+                "class":"IB2021C",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Hoàng Minh Hà",
+                "class":"IB2021",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Vũ Thị Như Quỳnh",
+                "class":"UEL2021",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Nguyễn Thị Thanh Bình",
+                "class":"MIS2021",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Đỗ Thị Trung Anh",
+                "class":"BDA2021C",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+            },
+            {
+                "name":"Nguyễn Đức Huy",
+                "class":"ICE2021A",
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             }
+            
         ],
         "Mentor":[
             {
                 "name":"Lê Anh Đức",
                 "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             },
             {
                 "name":"Phạm Đức Nghĩa",
                 "class":"ICE2021",
-                "img":"http:kjasdnasdạdjsajdf"
+                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
             }
         ]
     }
