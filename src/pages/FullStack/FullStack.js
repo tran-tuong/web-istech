@@ -1,8 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import images from "../../assets/images";
-import "./Department.scss"
-export default function Department() {
+import "./FullStack.scss"
+export default function FullStack() {
     // const param = useParams();
 
     // console.log(param);
