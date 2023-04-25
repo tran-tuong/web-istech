@@ -3,6 +3,16 @@
     border-radius: 10px;
     width: 500px;
     padding: 24px 0;
+    transition: ease-in .3s;
+
+    &:hover {
+        scale: 1.1;
+        box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+    }
+
+    &:hover .circle-content-title {
+        color: var(--hover-color);
+    }
 }
 
 .circle-content {
@@ -25,9 +35,18 @@
     }
 
     .circle-content-title {
+        color: var(--primary);
         font-size: 2.8rem;
-        font-weight: 600;
+        font-weight: 500;
         margin: 12px 0;
+
+        &:hover {
+            color: var(--hover-color);
+        }
+    }
+
+    .circle-content-desc {
+        color: var(--primary);
     }
 }
 

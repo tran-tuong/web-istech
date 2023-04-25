@@ -1,6 +1,6 @@
 import React, { createContext } from 'react'
 import './Department.scss';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { data } from 'jquery';
 import Circle from '../../components/Circle';
 
@@ -13,28 +13,30 @@ export default function Department() {
     // const id = param.id 
     data = [
       {
-        name: "Trung",
-        class_id: "ICE2021A",
+        path: "fullstack",
+        name: "Fullstack Dev",
         image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
       },
       {
-        name: "Trung 1",
+        path: "data-science",
+        name: "Data Science",
         image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
       },
       {
-        name: "Trung 2",
+        path: "game",
+        name: "Game Dev",
         image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
       },
       {
-        name: "Trung 3",
-        class_id: "ICE2021A",
+        path: "media-events",
+        name: "Media & Events",
         image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
       },
     ];
 
     const renderData = () => {
       return data.map((item, index) => (
-        <Circle data={item} border key={index} />
+        <Link to={`/departments/${item.path}`}><Circle data={item} border key={index} /></Link>
       ))
     }
     
