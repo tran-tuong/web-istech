@@ -72,7 +72,7 @@
         ]
     },
     {
-        "id":"data",
+        "id":"data-science",
         "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
         "Department":"Data Science",
         "Des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
@@ -222,7 +222,7 @@
         ]
     },
     {
-        "id":"media",
+        "id":"media-events",
         "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
         "Department":"Media & Event",
         "Des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",

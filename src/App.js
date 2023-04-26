@@ -7,10 +7,12 @@ import BoardOfDirectors from "./pages/BoardOfDirectors/BoardOfDirectors";
 // import Department from "./pages/Department/Department";
 import FullStack from "./pages/FullStack/FullStack";
 import Department from "./pages/Department/Department";
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
 
           <Route path="" element={<HomeTemplate/>}>

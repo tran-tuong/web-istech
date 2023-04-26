@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import images from "../../assets/images";
 import "./FullStack.scss";
 import Circle from '../../components/Circle';
@@ -12,10 +12,10 @@ export default function FullStack() {
     const param = useParams();
     const id = param.id 
 
-    if(id !== "fullstack" && id !== "data" && id !== "media" && id !== "game" ){
+    if(id !== "fullstack" && id !== "data-science" && id !== "media-events" && id !== "game" ){
         return(
             <div>
-                <h1>                Page không tồn tại</h1>
+                <h1>Page không tồn tại</h1>
             </div>
         )
     }else{
