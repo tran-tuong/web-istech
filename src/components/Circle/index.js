@@ -27,7 +27,7 @@ function Circle({ border, data }) {
                         <h3 className='circle-content-title'>
                             {data.name}
                         </h3>
-                        {data.class && <p className='circle-content-desc'>ICE2021A</p>}
+                        <p className='circle-content-desc'>{data.class}</p>
                     </div>
             </>
         )
