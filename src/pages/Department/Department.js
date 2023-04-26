@@ -1,16 +1,12 @@
 import React, { createContext } from 'react'
 import './Department.scss';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { data } from 'jquery';
 import Circle from '../../components/Circle';
 
 export const DataContext = createContext();
 
 export default function Department() {
-    // const param = useParams();
-
-    // console.log(param);
-    // const id = param.id 
     data = [
       {
         path: "fullstack",

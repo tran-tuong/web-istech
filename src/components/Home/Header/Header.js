@@ -1,16 +1,20 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.scss";
 import images from "../../../assets/images"
 import Button from "../../Button";
 
 export default function Header() {
+  const [check, setCheck] = useState(false);
+  const getClass = (event) => {
+      if (event.currentTarget.className) setCheck(false);
+  };
 
   return (
     <header className="header">
       <nav className="navbar navbar-expand-lg">
         <div className="container d-flex justify-content-between position-relative">
-          <input type="checkbox" className="toggle-menu"/>
+          <input type="checkbox" onClick={() => setCheck(!check)} onChange={() => {}} checked={check} className="toggle-menu"/>
           <a className="navbar-brand position-relative" href="/">
             <img src={images.logo} alt="Logo" className="navbar-logo" />
           </a>
@@ -26,7 +30,7 @@ export default function Header() {
                 >
                   About
                 </div>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" onClick={getClass} aria-labelledby="navbarDropdown">
                   <li>
                     <NavLink className="dropdown-item pt-3 pb-3" to='/about'>
                       About Us
@@ -54,7 +58,7 @@ export default function Header() {
                 >
                   Activities
                 </div>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" onClick={getClass} aria-labelledby="navbarDropdown">
                   <li>
                     <NavLink className="dropdown-item pt-3 pb-3" to="/events">
                       Events
@@ -77,7 +81,7 @@ export default function Header() {
                 >
                   Resources
                 </div>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" onClick={getClass} aria-labelledby="navbarDropdown">
                   <li>
                     <NavLink className="dropdown-item pt-3 pb-3" to="/blog">
                       Blog
@@ -100,7 +104,7 @@ export default function Header() {
                 >
                   Partners & Contacts
                 </div>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" onClick={getClass} aria-labelledby="navbarDropdown">
                   <li>
                     <NavLink className="dropdown-item pt-3 pb-3" to="/partners">
                       Partners

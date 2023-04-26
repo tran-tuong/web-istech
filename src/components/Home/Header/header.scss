@@ -17,8 +17,7 @@
 .sticky {
     background: var(--primary-color);
     padding: 0;
-    box-shadow: rgba(255, 255, 255, 0.67) 0px 25px 20px -20px;
-    
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 5px, rgba(255, 255, 255, 0.3) 0px 10px, rgba(255, 255, 255, 0.2) 0px 15px, rgba(255, 255, 255, 0.1) 0px 20px, rgba(255, 255, 255, 0.05) 0px 25px;
 }
 
 .navbar-logo {
@@ -65,8 +64,9 @@
     }
 
     .dropdown-menu {
-        background-color: transparent !important;
+        background-color: var(--primary-color) !important;
         border: none !important; 
+        box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
     
         .dropdown-item {
             color: var(--primary); 
@@ -159,6 +159,13 @@
         padding: 12px 0 0;
     }
 
+    .dropdown {
+        .dropdown-menu {
+            background-color: transparent !important;
+            box-shadow: none;
+        }
+    }
+
     .toggle-menu {
         display: block;
     }
@@ -221,6 +228,10 @@
             width: 35%;
             height: 40%;
         }
+    }
+
+    .sticky {
+        padding: 0 !important;
     }
 
     .toggle-menu {
