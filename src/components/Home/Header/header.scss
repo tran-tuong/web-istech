@@ -10,7 +10,7 @@
     left: 0;
     width: 100%;
     padding: 12px 0;
-    transition: .6s;
+    transition: .3s;
     z-index: 999;
 }
 
@@ -39,6 +39,10 @@
 .nav-item .nav-link {
     position: relative;
     transition: .6s;
+}
+
+.nav-item:last-child {
+    display: none;
 }
 
 .dropdown {
@@ -172,13 +176,13 @@
 
     .btn-sign-in {
         display: none;
-        position: fixed !important;
-        top: 30%;
-        right: 23%;
     }
 
-    .toggle-menu:checked ~ .collapse,
-    .toggle-menu:checked ~ .btn-sign-in {
+    .nav-item:last-child {
+        display: block;
+    }
+
+    .toggle-menu:checked ~ .collapse {
         display: block !important;
     }
 
@@ -201,7 +205,7 @@
 @media (min-width: 993px) and (max-width: 1200px) {
     .navbar-brand {
         .navbar-logo {
-            width: 85%;
+            width: 90%;
         }
     }
 }
@@ -209,7 +213,7 @@
 @media (min-width: 768px) and (max-width: 992px) {
     .navbar-brand {
         .navbar-logo {
-            width: 85%;
+            width: 90%;
         }
     }
 
@@ -241,12 +245,5 @@
 
     .menu {
         width: 100% !important;
-    }
-
-    .container .btn-sign-in {
-        position: fixed !important;
-        top: 35%;
-        left: 3%;
-        right: initial;
     }
 }

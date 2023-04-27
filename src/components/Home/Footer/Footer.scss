@@ -37,48 +37,6 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-    .header {
-        width: 100%;
-        padding: 6px 0;
-    }
-
-    .sticky {
-        padding: 12px 0 0;
-    }
-
-    .toggle-menu {
-        display: block;
-    }
-
-    .btn-sign-in {
-        display: none;
-        position: fixed !important;
-        top: 30%;
-        right: 23%;
-    }
-
-    .toggle-menu:checked ~ .collapse,
-    .toggle-menu:checked ~ .btn-sign-in {
-        display: block !important;
-    }
-
-    .menu {
-        position: fixed;
-        right: 0;
-        width: 40%;
-        height: 100vh;
-        background-color: var(--primary-color);
-        transition: 0.5s;
-        gap: 16px;
-        margin-top: 4px;
-
-        .nav-item {
-            padding: 0 12px;
-        }
-    }
-
-    
-
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {

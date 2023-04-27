@@ -117,6 +117,9 @@ export default function Header() {
                   </li>
                 </ul>
               </li>
+              <li className="nav-item">
+                <Button className="" to="/login" target='_blank'>Sign In</Button>
+              </li>
             </ul>
           </div>
           <Button className="btn-sign-in" to="/login" target='_blank'>Sign In</Button>
