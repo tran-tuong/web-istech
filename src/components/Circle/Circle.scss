@@ -50,9 +50,29 @@
     }
 }
 
+.partner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 4px 40px;
+    margin: 16px 0;
+    border: 1px solid var(--primary);
+    border-radius: 999px;
+
+    .icon-globe {
+        position: absolute;
+        left: 12px;
+        color: var(--primary);
+    }
+
+    .partner-name {
+        color: var(--primary);
+    }
+}
+
 // responsive infomation include img
 @media screen and (max-width: 992px) {
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -60,6 +80,10 @@
 }
 
 @media screen and (max-width: 576px) {
+    .rectangle {
+        width: 300px;
+    }
+
     .circle-content {
     
         .circle-content-image {
