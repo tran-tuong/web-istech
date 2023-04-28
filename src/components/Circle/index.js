@@ -2,7 +2,7 @@ import './Circle.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
-function Circle({ border, data, partner }) {
+function Circle({ border, data, partner, role }) {
 
     return border ? 
         (
@@ -10,7 +10,7 @@ function Circle({ border, data, partner }) {
                 <div className='rectangle'>
                     <div className='circle-content'>
                         <div className='circle-content-image'>
-                            <img src={data.image} alt='Image' />
+                            <img src={data.image} alt='Avatar' />
                         </div>
                         <h3 className='circle-content-title'>
                             {data.name}
@@ -28,7 +28,8 @@ function Circle({ border, data, partner }) {
             <>
                     <div className='circle-content'>
                         <div className='circle-content-image'>
-                            <img src={data.img} alt='Image' />
+                            <img src={data.img} alt='Avatar' />
+                            {role === 'leader' && <span className='circle-content-role'>Leader</span>}
                         </div>
                         <h3 className='circle-content-title'>
                             {data.name}

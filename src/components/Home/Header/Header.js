@@ -6,6 +6,7 @@ import Button from "../../Button";
 
 export default function Header() {
   const [check, setCheck] = useState(false);
+
   const getClass = (event) => {
       if (event.currentTarget.className) setCheck(false);
   };

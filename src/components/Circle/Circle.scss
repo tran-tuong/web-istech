@@ -21,9 +21,10 @@
     align-items: center;
 
     .circle-content-image {
+        position: relative;
         width: 200px;
         height: 200px;
-        overflow: hidden;
+        // overflow: hidden;
 
         img {
             width: 100%;
@@ -31,6 +32,19 @@
             border-radius: 50%;
             object-fit: cover;
             object-position: center;
+        }
+
+        .circle-content-role {
+            position: absolute;
+            color: var(--primary);
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1;
+            padding: 4px 25px;
+            background-color: #0d99ff;
+            bottom: 20px;
+            right: -15px;
+            rotate: -6deg;
         }
     }
 
