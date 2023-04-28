@@ -1,0 +1,77 @@
+.department {
+    margin-bottom: 100px;
+}
+
+.department-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-justify:initial;
+    margin: 150px 0;
+
+    .content-heading {
+        width: 70%;
+    
+        h1 {
+            font-size: 6rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.department-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.rectangle {
+    width: 30% !important;
+}
+// responsive infomation include img
+@media screen and (max-width: 992px) {
+    .department-header {
+        .content-heading {
+            width: 75%;
+            h1 {
+                font-size: 5.5rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .department-header {
+        .content-heading {
+            width: 85%;
+            h1 {
+                font-size: 5.5rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .department-header {
+        .content-heading {
+            width: 90%;
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
