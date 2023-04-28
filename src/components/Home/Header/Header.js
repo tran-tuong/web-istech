@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./Header.scss";
+import "./header.scss";
 import images from "../../../assets/images"
 import Button from "../../Button";
 

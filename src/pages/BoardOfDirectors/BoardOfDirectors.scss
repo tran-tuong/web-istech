@@ -15,15 +15,18 @@
 .sub-p-content {
   font-size: 35px;
   font-weight: 700;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .p-content {
   margin-top: 3.2rem !important;
   margin-bottom: 3.2rem !important;
   .img-content {
-    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
     .sub-content-img {
       margin-top: 30px;
       font-weight: 700;
@@ -45,15 +48,24 @@
     }
   }
 
+.info {
+  margin: 30px 0;
   .p-info {
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 30px;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 25px;
   }
   .p-info-des {
     font-weight: 500;
     font-size: 18px;
+    margin-bottom: 5px;
+    text-align: justify;
   }
+  .p-info-ct {
+    margin-top: 25px;
+  }
+}
+  
 }
 
 // responsive infomation include img
