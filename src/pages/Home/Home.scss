@@ -1,6 +1,6 @@
 
 .parrentBanner{
-        
+        position: absolute;
         display:flex;
         justify-content:center;
         align-items:center;
@@ -8,6 +8,7 @@
         height:38vh;
         margin-top:120px;
         margin-bottom:100px;
+        top: 100px;
 
 .banner{
     background: url("../../assets/images/ready-to.png");
