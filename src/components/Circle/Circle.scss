@@ -86,24 +86,6 @@
         margin-left: 18px;
         font-weight: 500;
         color: var(--primary);
-        &:hover {
-            color: var(--hover-color) !important;
-        }
-        &::before {
-            content: "";
-            position: absolute;
-            display: block;
-            background-color: var(--primary);
-            height: 2px;
-            width: 47%;
-            bottom: 5px;
-            transform: scale(0, 1);
-            transition: .3s;
-        }
-
-        &:hover::before {
-            transform: scale(1, 1);
-        }
 
     }
 }
