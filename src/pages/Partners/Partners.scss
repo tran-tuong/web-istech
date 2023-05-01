@@ -1,8 +1,8 @@
-.department {
+.partners {
     margin-bottom: 100px;
 }
 
-.department-header {
+.partners-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,18 +21,35 @@
     }
 }
 
-.department-list {
+.partners-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
 .rectangle-p {
+    border: 2px solid #ccc;
+    border-radius: 10px;
     width: 30%;
+    padding: 24px 0;
+    transition: ease-in .3s;
+
+    &:hover {
+        scale: 1.1;
+        box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+    }
+
+    &:hover .circle-content-title {
+        color: var(--hover-color);
+    }
 }
+.circle-content-image-p {
+    margin-top: 25px;
+}
+
 // responsive infomation include img
 @media screen and (max-width: 992px) {
-    .department-header {
+    .partners-header {
         .content-heading {
             width: 75%;
             h1 {
@@ -47,7 +64,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .department-header {
+    .partners-header {
         .content-heading {
             width: 85%;
             h1 {
@@ -62,7 +79,7 @@
 }
 
 @media screen and (max-width: 576px) {
-    .department-header {
+    .partners-header {
         .content-heading {
             width: 90%;
             h1 {
