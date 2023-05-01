@@ -8,27 +8,27 @@ export const DataContext = createContext();
 export default function Partners() {
     data = [
       {
-        name: "Partner 1",
+        nameP: "Partner 1",
         image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
       },
       {
-        name: "Partner 2",
+        nameP: "Partner 2",
         image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
       },
       {
-        name: "Partner 3",
+        nameP: "Partner 3",
         image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
       },
       {
-        name: "Partner 4",
+        nameP: "Partner 4",
         image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
       },
       {
-        name: "Partner 5",
+        nameP: "Partner 5",
         image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
       },
       {
-        name: "Partner 6",
+        nameP: "Partner 6",
         image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
       },
     ];
