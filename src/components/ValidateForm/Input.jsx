@@ -3,6 +3,7 @@ import { findInputError, isFormInvalid } from './utils'
 import { useFormContext } from 'react-hook-form'
 import { AnimatePresence, motion } from 'framer-motion'
 import { MdError } from 'react-icons/md'
+import './Input.scss'
 
 export const Input = ({
   name,
@@ -22,13 +23,11 @@ export const Input = ({
   const inputErrors = findInputError(errors, name)
   const isInvalid = isFormInvalid(inputErrors)
 
-  const input_tailwind =
-    'p-5 font-medium rounded-md w-full border border-slate-300 placeholder:opacity-60'
 
   return (
-    <div className={cn('flex flex-col w-full gap-2', className)}>
-      <div className="flex justify-between">
-        <label htmlFor={id} className="font-semibold capitalize">
+    <div className={cn('form-container', className)}>
+      <div className="input-heading">
+        <label htmlFor={id} className="input-heading-content">
           {label}
         </label>
         <AnimatePresence mode="wait" initial={false}>
@@ -44,7 +43,7 @@ export const Input = ({
         <textarea
           id={id}
           type={type}
-          className={cn(input_tailwind, 'min-h-[10rem] max-h-[20rem] resize-y')}
+          className={cn('form-input', 'form-text-area')}
           placeholder={placeholder}
           {...register(name, validation)}
         ></textarea>
@@ -52,7 +51,7 @@ export const Input = ({
         <input
           id={id}
           type={type}
-          className={cn(input_tailwind)}
+          className={cn('form-input')}
           placeholder={placeholder}
           {...register(name, validation)}
         />
@@ -64,7 +63,7 @@ export const Input = ({
 const InputError = ({ message }) => {
   return (
     <motion.p
-      className="flex items-center gap-1 px-2 font-semibold text-red-500 bg-red-100 rounded-md"
+      className="error"
       {...framer_error}
     >
       <MdError />

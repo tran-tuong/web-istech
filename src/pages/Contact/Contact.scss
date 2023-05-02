@@ -1,4 +1,27 @@
+.contact-container {
+    margin-bottom: 100px;
+}
 
+.contact {
+    margin-bottom: 30px;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+
+    .content-heading {
+        width: 70%;
+    
+        h1 {
+            font-size: 6rem;
+            font-weight: bold;
+        }
+    }
+}
 
 
 

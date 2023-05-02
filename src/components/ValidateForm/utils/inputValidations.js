@@ -86,7 +86,7 @@ export const name_validation = {
   
   export const email_validation = {
     name: 'email',
-    label: 'Email address',
+    label: 'Email address:',
     type: 'email',
     id: 'email',
     placeholder: 'Your email address',

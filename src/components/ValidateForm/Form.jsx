@@ -9,6 +9,7 @@ import {
 import { useState } from "react";
 import { BsFillCheckSquareFill } from "react-icons/bs";
 import Button from "../../components/Button";
+import './Form.scss'
 
 export const Form = () => {
   const methods = useForm();
@@ -28,19 +29,19 @@ export const Form = () => {
         autoComplete="off"
         className="container"
       >
-        <div className="grid gap-5 md:grid-cols-2">
+        <div className="form-content">
           <Input {...name_validation} />
           <Input {...email_validation} />
           <Input {...class_validation} />
-          <Input {...desc_validation} className="md:col-span-2" />
+          <Input {...desc_validation}/>
         </div>
-        <div className="mt-5">
+        <div className="form-check">
           {success && (
-            <p className="font-semibold text-green-500 mb-5 flex items-center gap-1">
+            <p className="form-check-content">
               <BsFillCheckSquareFill /> Form has been submitted successfully
             </p>
           )}
-          <Button onClick={onSubmit} >Submit</Button>
+          <Button onClick={onSubmit} className={'btn-form'}>Submit</Button>
         </div>
       </form>
     </FormProvider>
