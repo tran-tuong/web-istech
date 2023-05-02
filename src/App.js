@@ -8,6 +8,7 @@ import BoardOfDirectors from "./pages/BoardOfDirectors/BoardOfDirectors";
 import FullStack from "./pages/FullStack/FullStack";
 import Department from "./pages/Department/Department";
 import ScrollToTop from './ScrollToTop';
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <Route path="" element={<Department/>}/>
                 <Route path=":id" element={<FullStack/>}/>
               </Route>
+              <Route path="/contact" element={<Contact/>} />
               <Route path='*' element={<Navigate to={''} />} ></Route>
           </Route>
 
