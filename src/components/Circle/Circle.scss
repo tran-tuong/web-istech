@@ -70,7 +70,8 @@
     position: relative;
     text-align: center;
     padding: 4px 40px;
-    margin: 16px 0;
+    margin-top: 70px;
+    margin-bottom: 30px;
     border: 1px solid var(--primary);
     border-radius: 999px;
 
@@ -81,7 +82,11 @@
     }
 
     .partner-name {
+        font-size: 18px;
+        margin-left: 18px;
+        font-weight: 500;
         color: var(--primary);
+
     }
 }
 
