@@ -25,8 +25,10 @@ body {
   font-size: 1.6rem;
   text-rendering: optimizeSpeed;
   color: var(--primary);
-  background-color: #131620;
-  background-repeat: no-repeat;
+  // background-color: #131620;
+  // background-repeat: no-repeat;
+  background: rgb(12,30,88);
+  background: linear-gradient(0deg, rgba(12,30,88,1) 0%, rgba(19,22,32,1) 70%);
   background-size: cover;
   background-position: center;
   position: relative;

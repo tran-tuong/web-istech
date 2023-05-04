@@ -117,14 +117,17 @@ export default function Home() {
 
   return (
     <div>
-      <div className="canvas-background">
-        <canvas ref={canvasRef} style={{}}></canvas>
-      </div>
-      <div className="container-fluid">
-        <div className="parrentBanner">
-          <div className="banner"></div>
+      <section className="position-relative">
+        <div className="position-absolute canvas-background">
+          <canvas ref={canvasRef}></canvas>
         </div>
-  
+        <section className="position-relative banner-section">
+          <div className="parrentBanner">
+            <div className="banner"></div>
+          </div>
+        </section>
+      </section>
+      <div className="container-fluid">
         <div className="About container">
           <div className="row AboutFlex">
             <div className="col-12 col-md-7 AboutLeft">
