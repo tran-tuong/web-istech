@@ -15,7 +15,7 @@ export default function Header() {
     <header className="header">
       <nav className="navbar navbar-expand-lg">
         <div className="container d-flex justify-content-between position-relative">
-          <input type="checkbox" onClick={() => setCheck(!check)} onChange={() => {}} checked={check} className="toggle-menu"/>
+          <input type="checkbox" onChange={() => setCheck(!check)} checked={check} className="toggle-menu"/>
           <a className="navbar-brand position-relative" href="/">
             <img src={images.logo} alt="Logo" className="navbar-logo" />
           </a>
