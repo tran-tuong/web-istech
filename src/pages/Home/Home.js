@@ -121,7 +121,7 @@ export default function Home() {
         <div className="position-absolute canvas-background">
           <canvas ref={canvasRef}></canvas>
         </div>
-        <section className="position-relative banner-section">
+        <section className="position-relative banner-section home-content">
           <div className="parrentBanner">
             <div className="banner"></div>
           </div>
@@ -275,12 +275,12 @@ export default function Home() {
               <div className="col-12 col-md-7 LearnMore_Button">
                 <h1>LEARN MORE</h1>
                 <div>
-                  <Button>Our Members</Button>
-                  <Button>Our Events</Button>
+                  <Button className="btn-learn-more">Our Members</Button>
+                  <Button className="btn-learn-more">Our Events</Button>
                 </div>
                 <div>
-                  <Button>Our Partners</Button>
-                  <Button>Our News</Button>
+                  <Button className="btn-learn-more">Our Partners</Button>
+                  <Button className="btn-learn-more">Our News</Button>
                 </div>
               </div>
             </div>
@@ -291,8 +291,8 @@ export default function Home() {
           <h1>JOIN US TODAY</h1>
   
           <div>
-            <Button>REGISTER</Button>
-            <Button>CONTACT US</Button>
+            <Button className="btn-join-us-today">REGISTER</Button>
+            <Button className="btn-join-us-today">CONTACT US</Button>
           </div>
         </div>
       </div>
