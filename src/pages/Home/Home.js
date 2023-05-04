@@ -117,7 +117,9 @@ export default function Home() {
 
   return (
     <div>
-      <div><canvas ref={canvasRef} style={{ width: "100%"}}></canvas></div>
+      <div className="canvas-background">
+        <canvas ref={canvasRef} style={{}}></canvas>
+      </div>
       <div className="container-fluid">
         <div className="parrentBanner">
           <div className="banner"></div>
