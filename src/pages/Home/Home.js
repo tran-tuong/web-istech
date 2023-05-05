@@ -44,7 +44,7 @@ export default function Home() {
             <h1 className="Playground_heading">
               A NEW PLAYGROUND IN THE TECHNOLOGY ERA
             </h1>
-            <div className="Playground_count row">
+            <div className="Playground_count flex-ground">
               <div className="col-4 Playground_item">
                 <p className="playground_number">
                   {" "}
