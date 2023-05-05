@@ -138,6 +138,11 @@
     .Playground_content{
         text-align: center;
         align-items: center;
+        .flex-ground{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            place-items: center;
+        }
         .Playground_heading{
             font-size: 40px;
             font-weight: bold;

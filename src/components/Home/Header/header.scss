@@ -5,6 +5,7 @@
 }
 
 .header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
@@ -123,6 +124,8 @@
     cursor: pointer;
     z-index: 9999;
     transition: .3s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
 
     &::before,
@@ -138,7 +141,7 @@
 
     &::before {
         top: 10px;
-        width: 30px;
+        width: 35px;
     }
 
     &::after {
