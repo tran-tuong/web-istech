@@ -20,6 +20,7 @@ export default function Header() {
             <img src={images.logo} alt="Logo" className="navbar-logo" />
           </a>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <div className="background-blur"></div>
             <ul className="navbar-nav menu">
               <li className="nav-item dropdown">
                 <div
