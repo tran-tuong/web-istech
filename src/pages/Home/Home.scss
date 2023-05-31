@@ -161,6 +161,10 @@
         }
         .Playground_count{
             .Playground_item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 p{
                     font-size: 40px;
                 }
@@ -174,30 +178,21 @@
     
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:992px){
     .Playground{
         .Playground_content{
-            .Playground_heading{
-                font-size: 30px;
-                font-weight: bold;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin-bottom: 50px;
-            }
             .Playground_count{
                 .Playground_item{
-                    p{
-                        font-size: 30px;
-                    }
                     .playground_number{
                         font-weight: bold;
-                        font-size: 40px;
+                        font-size: 38px;
                     }
                 }
             }
         }
     }
 }
+
 @media screen and (max-width:700px){
     .Playground{
         .Playground_content{
@@ -215,7 +210,7 @@
                     }
                     .playground_number{
                         font-weight: bold;
-                        font-size: 30px;
+                        font-size: 24px;
                     }
                 }
             }
