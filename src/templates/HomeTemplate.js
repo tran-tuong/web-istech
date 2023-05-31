@@ -8,7 +8,6 @@ export default function HomeTemplate() {
     <div>
         <Header/>
         <Outlet/>
-
         <Footer/>
     </div>
   )

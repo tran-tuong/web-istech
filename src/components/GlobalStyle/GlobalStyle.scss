@@ -17,6 +17,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,12 +34,21 @@ body {
   margin: 0 auto;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 a[href] {
   text-decoration: none;
 
   &:hover {
     color: var(--primary);
   }
+}
+
+.background-wrapper {
+  background-image: url(../../assets/images/background-BoD.png);
+  background-size: cover;
 }
 
 .wrapper-icon {
@@ -123,4 +133,13 @@ a[href] {
       }
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 12px;
 }
