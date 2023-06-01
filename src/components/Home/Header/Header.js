@@ -8,7 +8,10 @@ export default function Header() {
   const [check, setCheck] = useState(false);
 
   const getClass = (event) => {
-      if (event.currentTarget.className) setCheck(false);
+      if (event.currentTarget.className) {
+        setCheck(false);
+        document.body.classList.remove('no-scroll');
+      };
   };
 
   const handleChecked = () => {

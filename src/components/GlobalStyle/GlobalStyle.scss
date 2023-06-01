@@ -38,17 +38,17 @@ body {
   overflow: hidden;
 }
 
+.default-background {
+  background-image: url('../../assets/images/background-BoD.png');
+  background-size: cover;
+}
+
 a[href] {
   text-decoration: none;
 
   &:hover {
     color: var(--primary);
   }
-}
-
-.background-wrapper {
-  background-image: url(../../assets/images/background-BoD.png);
-  background-size: cover;
 }
 
 .wrapper-icon {
