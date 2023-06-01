@@ -1,0 +1,184 @@
+.maintain-wrapper {
+    background: url('../../assets/images/coming-soon.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+
+    .maintain-bg-blur {
+        display: table;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        background: rgba(48, 53, 70, 0.5);
+        box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.maintain-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(50%);
+    
+
+    .maintain-header {
+        margin-bottom: 5rem;
+
+        .maintain-logo {
+            display: block;
+            width: 220px;
+            height: 85px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .maintain-content {
+        max-width: 60rem;
+        text-align: center;
+        
+        .maintain-content-title {
+            margin-bottom: 2rem;
+            h1 {
+                font-size: 5.5rem;
+                margin-bottom: 1.6rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+
+        .maintain-contact {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+
+            input {
+                width: 100%;
+                height: 4.6rem;
+                padding: 10px 16px;
+                font-size: 1.8rem;
+                color: #555;
+                line-height: 1.3333333;
+                border-radius: 6px;
+                background-color: rgba(255, 255, 255, 0.85);
+                border-color: transparent !important;
+                outline: none;
+            }
+
+            .btn-notify {
+                background: transparent;
+                border: 1px solid #fff !important;
+                color: #fff;
+                outline: none;
+                border-radius: 6px;
+                line-height: 1.3333333;
+                white-space: nowrap;
+                vertical-align: middle;
+                min-width: 15rem;
+                padding: 10px 16px;
+
+                &:hover {
+                    color: #fff !important;
+                    background: rgba(255,255,255,0.2);
+                }
+            }
+        }
+
+        .maintain-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.8rem;
+            gap: 16px;
+
+            .maintain-icon-media {
+                width: 4rem;
+                height: 4rem;
+                color: #fff;
+                transition: .3s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .maintain-inner {
+        padding: 8px;
+        position: relative;
+        height: 100%;
+        transform: translateY(0);
+
+        .maintain-header {
+            .maintain-logo {
+                width: 170px;
+                height: 60px;
+            }
+        }
+
+        .maintain-content {
+
+            .maintain-content-title {
+                h1 {
+                    font-size: 4.5rem;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .maintain-contact {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+
+                input,
+                .btn-notify {
+                    width: 80%;
+                }
+            }
+
+            .maintain-media {
+                position: absolute;
+                bottom: 10px;
+                transform: translateX(70%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .maintain-inner {
+
+        .maintain-content {
+
+            .maintain-content-title {
+                h1 {
+                    font-size: 3.5rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .maintain-media {
+                transform: translateX(40%);
+            }
+        }
+    }
+}
