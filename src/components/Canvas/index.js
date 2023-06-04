@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { memo, useEffect, useRef } from "react";
 
 function Canvas() {
     const canvasRef = useRef(null);
@@ -30,7 +30,7 @@ function Canvas() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
     
-            init()
+            init();
         })
     
         class Particle {
@@ -98,10 +98,11 @@ function Canvas() {
             radians += 0.003;
     
             if(mouseDown && alpha >= 0.03) {
-                alpha -= 0.02;
+                alpha -= 0.03;
             } else if (!mouseDown && alpha < 1) {
-                alpha += 0.02;
+                alpha += 0.03;
             }
+            // requestAnimationFrame(animate);
         }
     
         init();
@@ -111,4 +112,4 @@ function Canvas() {
     return (<canvas ref={canvasRef}></canvas>);
 }
 
-export default Canvas;
+export default memo(Canvas);

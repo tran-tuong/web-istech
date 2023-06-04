@@ -21,15 +21,17 @@ function App() {
           <Route path="" element={<HomeTemplate/>}>
               <Route index path="/" element={<Home/>}/>
               <Route index path="/home" element={<Home/>}/>
-              <Route path="/about" element={<About/>} />
+              {/* <Route path="/about" element={<Maintainance/>} /> */}
               <Route path="/partners" element={<Partners/>} />
               <Route path="/board-of-director" element={<BoardOfDirectors/>} />
               <Route path="/departments">
                 <Route path="" element={<Department/>}/>
                 <Route path=":id" element={<FullStack/>}/>
               </Route>
+              <Route path="/contact" element={<Contact/>} />
               {/* <Route path='*' element={<Navigate to={''} />} ></Route> */}
           </Route>
+          <Route path="/about" element={<Maintainance/>} />
           <Route path="/events" element={<Maintainance/>} />
           <Route path="/internal-activities" element={<Maintainance/>} />
           <Route path="/blog" element={<Maintainance/>} />

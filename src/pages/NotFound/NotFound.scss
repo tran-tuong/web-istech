@@ -15,7 +15,7 @@
 
         .notfound-content {
             position: relative;
-            width: 40%;
+            width: 30%;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -83,7 +83,7 @@
 
 @media only screen and (max-width: 992px) {
     .notfound-content {
-        width: 80%;
+        width: 60% !important;
     }
 }
 
@@ -91,7 +91,7 @@
     .notfound-wrapper {
         .notfound-bg {
             .notfound-content {
-                width: 100%;
+                width: 100% !important;
 
                 .notfound-404 {
                     h1 {
