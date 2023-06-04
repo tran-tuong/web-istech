@@ -9,6 +9,8 @@ import FullStack from "./pages/FullStack/FullStack";
 import Department from "./pages/Department/Department";
 import ScrollToTop from './ScrollToTop';
 import Contact from "./pages/Contact/Contact";
+import Maintainance from "./pages/Maintainance";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
           <Route path="" element={<HomeTemplate/>}>
               <Route index path="/" element={<Home/>}/>
               <Route index path="/home" element={<Home/>}/>
-              <Route path="/about" element={<About/>} />
+              {/* <Route path="/about" element={<Maintainance/>} /> */}
               <Route path="/partners" element={<Partners/>} />
               <Route path="/board-of-director" element={<BoardOfDirectors/>} />
               <Route path="/departments">
@@ -27,8 +29,14 @@ function App() {
                 <Route path=":id" element={<FullStack/>}/>
               </Route>
               <Route path="/contact" element={<Contact/>} />
-              <Route path='*' element={<Navigate to={''} />} ></Route>
+              {/* <Route path='*' element={<Navigate to={''} />} ></Route> */}
           </Route>
+          <Route path="/about" element={<Maintainance/>} />
+          <Route path="/events" element={<Maintainance/>} />
+          <Route path="/internal-activities" element={<Maintainance/>} />
+          <Route path="/blog" element={<Maintainance/>} />
+          <Route path="/resource-hub" element={<Maintainance/>} />
+          <Route path='*' element={<NotFound />}></Route>
 
       </Routes>
     

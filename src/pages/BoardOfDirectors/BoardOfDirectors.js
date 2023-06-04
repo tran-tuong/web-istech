@@ -10,7 +10,7 @@ export default function BoardOfDirectors() {
     } ) 
   }
   return (
-    <div>
+    <div style={{ marginBottom: "10rem" }}>
       <div className="heading-div container">
         <div className="content-heading">
           <h1>Board of Directors</h1>
