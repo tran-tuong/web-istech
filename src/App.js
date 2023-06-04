@@ -1,45 +1,41 @@
 
-import {  BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import HomeTemplate from "./templates/HomeTemplate";
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Partners from "./pages/Partners/Partners";
-import BoardOfDirectors from "./pages/BoardOfDirectors/BoardOfDirectors";
-import FullStack from "./pages/FullStack/FullStack";
-import Department from "./pages/Department/Department";
+import {  BrowserRouter, Route, Routes } from "react-router-dom";
+import { HomeTemplate } from "./templates";
 import ScrollToTop from './ScrollToTop';
-import Contact from "./pages/Contact/Contact";
 import Maintainance from "./pages/Maintainance";
-import NotFound from "./pages/NotFound";
+import { publicRoutes } from "./routes";
+import { Fragment } from "react";
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
+          {publicRoutes.map((route, index) => {
+              const Page = route.component;
 
-          <Route path="" element={<HomeTemplate/>}>
-              <Route index path="/" element={<Home/>}/>
-              <Route index path="/home" element={<Home/>}/>
-              {/* <Route path="/about" element={<Maintainance/>} /> */}
-              <Route path="/partners" element={<Partners/>} />
-              <Route path="/board-of-director" element={<BoardOfDirectors/>} />
-              <Route path="/departments">
-                <Route path="" element={<Department/>}/>
-                <Route path=":id" element={<FullStack/>}/>
-              </Route>
-              <Route path="/contact" element={<Contact/>} />
-              {/* <Route path='*' element={<Navigate to={''} />} ></Route> */}
-          </Route>
-          <Route path="/about" element={<Maintainance/>} />
-          <Route path="/events" element={<Maintainance/>} />
-          <Route path="/internal-activities" element={<Maintainance/>} />
-          <Route path="/blog" element={<Maintainance/>} />
-          <Route path="/resource-hub" element={<Maintainance/>} />
-          <Route path='*' element={<NotFound />}></Route>
+              let Layout = HomeTemplate;
 
+              if(route.status === 503) {
+                Layout = Fragment;
+                route.component = Maintainance;
+              } else if (route.status === 404) {
+                Layout = Fragment;
+              }
+
+              return (
+                <Route 
+                  key={index}
+                  path={route.path}
+                  element={
+                      <Layout>
+                        <Page />
+                      </Layout>
+                  }
+                />
+              )
+            })}
       </Routes>
-    
     </BrowserRouter>
   );
 }

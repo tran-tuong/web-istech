@@ -2,6 +2,7 @@
     padding-top: 40px;
     
     .breadcrumb {
+        display: block;
         margin-bottom: 70px;
         
         .list-unstyled {
@@ -151,6 +152,13 @@
 @media screen and (max-width: 576px) {
     .Department_Head {
         padding-top: 50px;
+
+        .breadcrumb {
+            .list-unstyled {
+                justify-content: center;
+            }
+        }
+
         .Department_Head_Content {
             text-align: center;
             .img_Head_Department {

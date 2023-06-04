@@ -25,7 +25,8 @@
 }
 
 .home-content {
-    background: linear-gradient(0deg, rgba(12,30,88,1) 10%, rgba(19,22,32,1) 95%);
+    background-image: url('../../assets/images/home-background.png');
+    background-size: cover;
 }
 
 .parrentBanner{
@@ -217,7 +218,7 @@
                     }
                     .playground_number{
                         font-weight: bold;
-                        font-size: 24px;
+                        font-size: 22px;
                     }
                 }
             }
@@ -255,6 +256,9 @@
 .JoinUsToDay{
     margin-top: 100px;
     background-image: url("../../assets/images/background1-main-page.png");
+    background-size: cover;
+    background-position: center;
+
     h1{
         
         font-size: 50px;
@@ -266,20 +270,35 @@
     padding-top: 150px;
     padding-bottom: 150px;
 
-    button{
-        margin: 5px;
+    .btn-join-us-today {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        .btn-register,
+        .btn-contact {
+            min-width: 180px;
+        }
     }
 
-    .btn-join-us-today {
-        min-width: 180px;
-    }
+    
 }
 
 @media screen and (max-width:450px){
-  .JoinUsToDay{
-    h1{
-        font-size: 38px;
+    .JoinUsToDay{
+        h1{
+            font-size: 38px;
+        }
+
+        .btn-join-us-today {
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+
+            .btn-contact {
+                margin-left: 0;
+            }
+        }
     }
-  }
 }
 

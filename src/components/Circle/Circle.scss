@@ -45,6 +45,7 @@
             bottom: 20px;
             right: -15px;
             rotate: -6deg;
+            transform: skew(-25deg);
         }
     }
 
@@ -95,7 +96,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+    .circle-content {    
+        .circle-content-title {
+            font-size: 2.2rem;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -108,6 +113,14 @@
         .circle-content-image {
             width: 130px;
             height: 130px;
+
+            .circle-content-role {
+                font-size: 1.4rem;
+                padding-left: 22px;
+                padding-right: 22px;
+                right: -24px;
+                bottom: 16px;
+            }
         }
     
         .circle-content-title {

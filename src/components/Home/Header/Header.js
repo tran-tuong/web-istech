@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./header.scss";
+import "./Header.scss";
 import images from "../../../assets/images";
 import Button from "../../Button";
 
@@ -101,7 +101,7 @@ export default function Header() {
                     <li>
                       <NavLink
                         className="dropdown-item pt-3 pb-3"
-                        to="/internal-activites"
+                        to="/internal-activities"
                       >
                         Internal Activities
                       </NavLink>

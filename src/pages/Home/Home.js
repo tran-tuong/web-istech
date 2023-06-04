@@ -184,9 +184,9 @@ export default function Home() {
         <div className="JoinUsToDay">
           <h1>JOIN US TODAY</h1>
   
-          <div>
-            <Button className="btn-join-us-today">REGISTER</Button>
-            <Button className="btn-join-us-today">CONTACT US</Button>
+          <div className="btn-join-us-today">
+            <Button className="btn-register">REGISTER</Button>
+            <Button className="btn-contact">CONTACT US</Button>
           </div>
         </div>
       </div>
