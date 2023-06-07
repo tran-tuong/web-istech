@@ -6,7 +6,11 @@ import Circle from "../../components/Circle";
 import data from "../../Data/Department.json";
 import { Navigate, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import Slider from "../../components/Slider";
+import { skills } from "../../assets/images/svg";
+import SliderCompo from "../../components/Slider";
+
 export default function FullStack() {
     const navigate = useNavigate();
 
@@ -30,8 +34,17 @@ export default function FullStack() {
         FullStack = FullStack[0];
         // console.log("hahah", FullStack);
         // console.log(FullStack.length);
+        
         let { Department, Des, img, listSkill, Leader, Members, Mentor } =
             FullStack;
+        let skills_image;
+        try {
+            skills_image = skills.filter((skill) => (id === skill.id))[0][`${id}`];
+        } catch (error) {
+            skills_image = [];
+        }
+        
+        console.log(skills_image);
         return (
             <div className="container">
                 <section className="Department_Head">
@@ -77,7 +90,7 @@ export default function FullStack() {
                 <section className="Skill_Knowledge container">
                     <h1>Skills & Knowledge</h1>
                     <div className="row">
-                        <div className="col-6 col-sm-3 skill_content">
+                        {/* <div className="col-6 col-sm-3 skill_content">
                             <img
                                 src={images.sliderImg}
                                 alt="haha"
@@ -104,7 +117,8 @@ export default function FullStack() {
                                 alt="haha"
                                 className="img-fluid"
                             />
-                        </div>
+                        </div> */}
+                        <SliderCompo skills={skills_image} />
                     </div>
                 </section>
 

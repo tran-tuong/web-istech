@@ -1,0 +1,55 @@
+.skill-item {
+    display: flex !important;
+    justify-content: center;
+    
+    height: 10rem;
+
+    img {
+        width: 10rem;
+        height: 100%;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 8px;
+    }
+}
+
+.slick-dots {
+
+    li {
+        button {
+            &::before {
+                color: #fff;
+            }
+        }
+    }
+
+    .slick-active {
+        button {
+            &::before {
+                color: #fff !important;
+                font-weight: 700;
+            }
+        }
+    }
+    
+}
+
+.btn-control {
+    position: absolute;
+    z-index: 999;
+
+    .icon-control {
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+    }
+}
+
+.btn-prev {
+    top: 3.6rem;
+}
+
+.btn-next {
+    top: 3.6rem;
+    right: 0;
+}
