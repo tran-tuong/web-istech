@@ -3,6 +3,7 @@ import Button from "../../components/Button";
 import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import './Maintainance.scss';
 import images from "../../assets/images";
+import { media_links } from '../../assets/media-links';
 
 function Maintainance() {
     return (  
@@ -24,13 +25,13 @@ function Maintainance() {
                             <Button className="btn-notify">Notify Me</Button> 
                         </section>
                         <section className="maintain-media">
-                            <a href="">
+                            <a href={media_links.facebook}>
                                 <FontAwesomeIcon className="maintain-icon-media" icon={faFacebook} />
                             </a>
-                            <a href="">
+                            <a href={media_links.instagram}>
                                 <FontAwesomeIcon className="maintain-icon-media" icon={faInstagram} />
                             </a>
-                            <a href="">
+                            <a href={media_links.linkedin}>
                                 <FontAwesomeIcon className="maintain-icon-media" icon={faLinkedin} />
                             </a>
                         </section>

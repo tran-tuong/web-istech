@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { fullstack } from "../../assets/images/svg";
 import "./Slider.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -63,24 +62,6 @@ function SliderCompo({ skills }) {
     return (
         <div className="skills">
             <Slider {...settings}>
-                {/* <div className="skill-item">
-                    <img src={fullstack[0].path} alt={fullstack[0].title} />
-                </div>
-                <div className="skill-item">
-                    <img src={fullstack[1].path} alt={fullstack[0].title} />
-                </div>
-                <div className="skill-item">
-                    <img src={fullstack[2].path} alt={fullstack[0].title} />
-                </div>
-                <div className="skill-item">
-                    <img src={fullstack[3].path} alt={fullstack[0].title} />
-                </div>
-                <div className="skill-item">
-                    <img src={fullstack[4].path} alt={fullstack[0].title} />
-                </div>
-                <div className="skill-item">
-                    <img src={fullstack[5].path} alt={fullstack[0].title} />
-                </div> */}
                 {skills.map((skill, index) => (
                     <div className="skill-item" key={index}>
                         <img src={skill.path} alt={skill.title} />

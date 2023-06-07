@@ -1,13 +1,11 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import images from "../../assets/images";
 import "./FullStack.scss";
 import Circle from "../../components/Circle";
 import data from "../../Data/Department.json";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import Slider from "../../components/Slider";
 import { skills } from "../../assets/images/svg";
 import SliderCompo from "../../components/Slider";
 
@@ -32,8 +30,6 @@ export default function FullStack() {
     } else {
         let FullStack = data.filter((item) => item.id === id);
         FullStack = FullStack[0];
-        // console.log("hahah", FullStack);
-        // console.log(FullStack.length);
         
         let { Department, Des, img, listSkill, Leader, Members, Mentor } =
             FullStack;
@@ -43,8 +39,6 @@ export default function FullStack() {
         } catch (error) {
             skills_image = [];
         }
-        
-        console.log(skills_image);
         return (
             <div className="container">
                 <section className="Department_Head">
@@ -90,34 +84,6 @@ export default function FullStack() {
                 <section className="Skill_Knowledge container">
                     <h1>Skills & Knowledge</h1>
                     <div className="row">
-                        {/* <div className="col-6 col-sm-3 skill_content">
-                            <img
-                                src={images.sliderImg}
-                                alt="haha"
-                                className="img-fluid"
-                            />
-                        </div>
-                        <div className="col-6 col-sm-3 skill_content">
-                            <img
-                                src={images.sliderImg}
-                                alt="haha"
-                                className="img-fluid"
-                            />
-                        </div>
-                        <div className="col-6 col-sm-3 skill_content">
-                            <img
-                                src={images.sliderImg}
-                                alt="haha"
-                                className="img-fluid"
-                            />
-                        </div>
-                        <div className="col-6 col-sm-3 skill_content">
-                            <img
-                                src={images.sliderImg}
-                                alt="haha"
-                                className="img-fluid"
-                            />
-                        </div> */}
                         <SliderCompo skills={skills_image} />
                     </div>
                 </section>
@@ -141,7 +107,8 @@ export default function FullStack() {
                     </div>
                 </section>
 
-                <section className="Department_Mentors">
+                {id === 'fullstack' && (
+                    <section className="Department_Mentors">
                     <h1 className="h1Department">Mentor</h1>
                     <div className="Department_Mentor_Content text-center">
                         <div className="row">
@@ -158,6 +125,7 @@ export default function FullStack() {
                         </div>
                     </div>
                 </section>
+                )}
             </div>
         );
     }
