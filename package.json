@@ -29,7 +29,6 @@
     "sass": "^1.61.0",
     "semantic-ui-react": "^2.1.4",
     "slick-carousel": "^1.8.1",
-    "swiper": "^9.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
