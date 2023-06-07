@@ -3,7 +3,7 @@
     color: var(--primary);
     font-size: 1.6rem;
     font-weight: 700;
-    min-width: 100px;
+    min-width: 10rem;
     padding: 4px 33px;
     border-radius: 999px;
     outline: 2.5px solid var(--primary);
@@ -21,5 +21,12 @@
         outline-offset: 4.5px;
         background-color: var(--hover-color);
         color: #0E1741 !important;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .wrapper {
+        padding: 4px 20px;
+        margin-left: 10px;
     }
 }
