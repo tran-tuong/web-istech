@@ -25,7 +25,7 @@
 }
 
 .home-content {
-    background-image: url('../../assets/images/home-background.png');
+    background-image: url('../../assets/images/background/home-background.png');
     background-size: cover;
 }
 
@@ -39,7 +39,7 @@
     transform: translateY(50%);
 
     .banner{
-        background: url("../../assets/images/ready-to.png");
+        background: url("../../assets/images/background/ready-to.png");
         width: 80%;
         height: 100%;
         background-repeat: no-repeat;
@@ -141,7 +141,7 @@
 
 .Playground{
     width: 100%;
-    background: url("../../assets/images/img1-main-page.png");
+    background: url("../../assets/images/background/img1-main-page.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -255,7 +255,7 @@
 
 .JoinUsToDay{
     margin-top: 100px;
-    background-image: url("../../assets/images/background1-main-page.png");
+    background-image: url("../../assets/images/background/background1-main-page.png");
     background-size: cover;
     background-position: center;
 

@@ -6,12 +6,12 @@
     min-width: 10rem;
     padding: 4px 33px;
     border-radius: 999px;
-    outline: 2.5px solid var(--primary);
-    outline-offset: 3px;
+    outline: 2px solid var(--primary);
     z-index: 0;
-    transition: .4s;
+    transition: all .5s ease;
     background: transparent;
     border: 0;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
 
     + .wrapper {
         margin-left: 16px;
@@ -19,8 +19,8 @@
 
     &:hover {
         outline-offset: 4.5px;
-        background-color: var(--hover-color);
-        color: #0E1741 !important;
+        background-color: var(--primary);
+        color: #000 !important;
     }
 }
 
