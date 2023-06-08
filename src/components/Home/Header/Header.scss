@@ -1,0 +1,295 @@
+.active {
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+    background-color: transparent !important;
+}
+
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    transition: .3s;
+    z-index: 999;
+    height: 80px;
+    background-color: transparent;
+}
+
+.sticky {
+    background-color: var(--primary-color);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 8px -2px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
+}
+
+.navbar {
+    height: 100%;
+}
+
+.navbar-logo {
+    width: 170px;
+    height: 55px;
+}
+
+.collapse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-item .nav-link {
+    position: relative;
+    transition: .6s;
+}
+
+.nav-item:last-child {
+    display: none;
+}
+
+.dropdown {
+    .nav-link {
+        color: var(--primary) !important;
+        font-size: 1.8rem !important;
+        font-weight: 500 !important;
+        transition: all .4s ease 0s;
+    
+        &:hover {
+            color: var(--hover-color) !important;
+        }
+    }
+
+    .dropdown-toggle {
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            background-color: var(--primary);
+            height: 3px;
+            width: 100%;
+            left: 0;
+            bottom: 5px;
+            transform: scale(0, 1);
+            transition: .3s;
+        }
+
+        &:hover::before {
+            transform: scale(1, 1);
+        }
+
+
+        &::after {
+            content: 'V';
+            display: inline-block;
+            font-weight: 500;
+            margin-left: 6px;
+            scale: 1 .8;
+            border: none;
+            vertical-align: middle;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: var(--primary-color) !important;
+        border: none !important; 
+        box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+    
+        .dropdown-item {
+            position: relative;
+            color: var(--primary); 
+            font-size: 1.8rem;
+            transition: all .4s ease 0s;
+
+            &:hover {
+                background-color: transparent !important;
+                color: var(--hover-color) !important;
+                text-decoration: underline;
+            }
+    
+            &:active {
+                background-color: none !important;
+            }
+        }
+    }
+}
+
+.toggle-menu {
+    display: none;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: .3s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        right: 0;
+        background: #fff;
+        border-radius: 10px;
+        transition: .3s;
+    }
+
+    &::before {
+        top: 10px;
+        width: 35px;
+    }
+
+    &::after {
+        top: 25px;
+        width: 35px;
+    }
+
+    &:checked::before {
+        top: 14px;
+        transform: rotate(-45deg);
+        width: 30px;
+    }
+
+    &:checked::after {
+        top: 14px;
+        transform: rotate(45deg);
+        width: 30px;
+    }
+}
+
+.collapse input:checked ~ .hamburger {
+    background: transparent;
+}
+
+.collapse input:checked ~ .hamburger::before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.collapse input:checked ~ .hamburger::after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    .dropdown {
+        .dropdown-menu {
+            background-color: transparent !important;
+            box-shadow: none;
+        }
+
+        .dropdown-toggle {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .btn-sign-in {
+        display: none;
+    }
+
+    .nav-item:last-child {
+        display: block;
+    }
+
+    .toggle-menu:checked ~ .collapse {
+        display: block !important;
+    }
+
+    .background-blur {
+        backdrop-filter: blur(10px);
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+        background-color: rgba(0,0,0,.2);
+    }
+
+    .menu {
+        position: fixed;
+        max-width: 30rem;
+        width: 100%;
+        height: 45rem;
+        padding: 20px !important;
+        right: 5.5rem;
+        background-color: var(--primary-color);
+        border-radius: 12px;
+        box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+        transition: 0.5s;
+        gap: 16px;
+
+        .nav-item {
+            padding: 0 12px;
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .navbar-brand {
+        .navbar-logo {
+            width: 90%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar-brand {
+        .navbar-logo {
+            width: 90%;
+        }
+    }
+
+    .toggle-menu {
+        right: 7px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        .navbar-logo {
+            width: 35%;
+            height: 40%;
+        }
+    }
+
+    .sticky {
+        padding: 0 !important;
+    }
+
+    .toggle-menu {
+        right: 18px;
+        top: 8px;
+    }
+
+    .menu {
+        top: 6.5rem;
+        right: 2rem;
+        height: 45rem;
+    }
+}

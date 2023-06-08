@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Header.scss';
 import { NavLink } from "react-router-dom";
 import images from "../../../assets/images";
 import Button from "../../Button";
