@@ -239,6 +239,10 @@
             margin: 10px;
         }
 
+        .btn-group {
+            margin: 12px 0;
+        }
+
         .btn-learn-more {
             min-width: 185px;
         }
@@ -285,6 +289,22 @@
 }
 
 @media screen and (max-width:450px){
+    .LearnMore_Button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+
+        .wrapper + .wrapper {
+            margin-left: 0;
+        }
+    }
+
     .JoinUsToDay{
         h1{
             font-size: 38px;
@@ -300,5 +320,30 @@
             }
         }
     }
+}
+
+@media screen and (max-width:300px) {
+    .Playground {
+        .Playground_content {
+            .Playground_count {
+                .Playground_item {
+                    .playground_number {
+                        font-size: 1.6rem;
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .JoinUsToDay {
+        h1 {
+            font-size: 2.6rem;
+        }
+    }
+    
 }
 

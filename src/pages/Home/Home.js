@@ -168,13 +168,13 @@ export default function Home() {
   
               <div className="col-12 col-md-7 LearnMore_Button">
                 <h1>LEARN MORE</h1>
-                <div>
-                  <Button className="btn-learn-more">Our Members</Button>
-                  <Button className="btn-learn-more">Our Events</Button>
+                <div className="btn-group">
+                  <Button to='/departments' className="btn-learn-more">Our Members</Button>
+                  <Button to='/events' className="btn-learn-more">Our Events</Button>
                 </div>
-                <div>
-                  <Button className="btn-learn-more">Our Partners</Button>
-                  <Button className="btn-learn-more">Our News</Button>
+                <div className="btn-group">
+                  <Button to='/partners' className="btn-learn-more">Our Partners</Button>
+                  <Button to='/news' className="btn-learn-more">Our News</Button>
                 </div>
               </div>
             </div>
@@ -185,8 +185,8 @@ export default function Home() {
           <h1>JOIN US TODAY</h1>
   
           <div className="btn-join-us-today">
-            <Button className="btn-register">REGISTER</Button>
-            <Button className="btn-contact">CONTACT US</Button>
+            <Button to='/register' className="btn-register">REGISTER</Button>
+            <Button to='/contact' className="btn-contact">CONTACT US</Button>
           </div>
         </div>
       </div>
