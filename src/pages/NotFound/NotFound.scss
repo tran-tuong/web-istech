@@ -81,9 +81,23 @@
     }
 }
 
+
+
+@media only screen and (max-width: 1200px) {
+    .notfound-content {
+        width: 50% !important;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .notfound-content {
         width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .notfound-content {
+        width: 80% !important;
     }
 }
 
