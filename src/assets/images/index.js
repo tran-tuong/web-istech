@@ -8,6 +8,7 @@ const images = {
     sliderImg: require('../images/background/img2-main-page.png'),
     flagVN: require('../images/languages/vn.svg').default,
     flagGB: require('../images/languages/en.svg').default,
+    globe: require('../images/languages/globe.svg').default,
 }
 
 export default images;

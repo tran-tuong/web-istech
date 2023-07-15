@@ -19,7 +19,7 @@
 
 .sticky {
     background-color: var(--primary-color);
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 8px -2px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
+    // box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 8px -2px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
 }
 
 .navbar {
@@ -28,7 +28,7 @@
 
 .navbar-logo {
     width: 170px;
-    height: 55px;
+    height: 60px;
 }
 
 .collapse {
@@ -69,7 +69,7 @@
             position: absolute;
             display: block;
             background-color: var(--primary);
-            height: 3px;
+            height: 2px;
             width: 100%;
             left: 0;
             bottom: 5px;
@@ -85,28 +85,29 @@
         &::after {
             content: 'V';
             display: inline-block;
-            font-weight: 500;
+            font-weight: 400;
             margin-left: 6px;
-            scale: 1 .8;
+            scale: 1 .6;
             border: none;
             vertical-align: middle;
         }
     }
 
     .dropdown-menu {
-        background-color: var(--primary-color) !important;
+        background-color: #fff !important;
         border: none !important; 
-        box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
     
         .dropdown-item {
             position: relative;
-            color: var(--primary); 
+            color: var(--primary-color); 
             font-size: 1.8rem;
-            transition: all .4s ease 0s;
+            transition: .3s;
+            padding-left: 15px;
+            padding-right: 15px;
 
             &:hover {
                 background-color: transparent !important;
-                color: var(--hover-color) !important;
+                font-weight: 500;
                 text-decoration: underline;
             }
     
@@ -250,6 +251,7 @@
     .navbar-brand {
         .navbar-logo {
             width: 90%;
+            height: 90%;
         }
     }
 }
@@ -258,6 +260,7 @@
     .navbar-brand {
         .navbar-logo {
             width: 90%;
+            height: 90%;
         }
     }
 
@@ -274,7 +277,7 @@
     .navbar-brand {
         .navbar-logo {
             width: 35%;
-            height: 40%;
+            height: 35%;
         }
     }
 

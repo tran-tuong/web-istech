@@ -31,7 +31,7 @@ export default function FullStack() {
         let FullStack = data.filter((item) => item.id === id);
         FullStack = FullStack[0];
         
-        let { Department, Des, img, listSkill, Leader, Members, Mentor } =
+        let { Department, Des, img, Leader, Members, Mentor } =
             FullStack;
         let skills_image;
         try {
@@ -70,10 +70,11 @@ export default function FullStack() {
                                 <img
                                     className="img-fluid img_Head_Department"
                                     src={img}
+                                    alt={Department}
                                 ></img>
                             </div>
 
-                            <div className="col-12 col-sm-8 Department_Head_Content_left">
+                            <div className="col-12 col-sm-6 Department_Head_Content_left">
                                 <h1 className="">{Department}</h1>
                                 <p>{Des}</p>
                             </div>
