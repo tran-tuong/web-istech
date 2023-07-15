@@ -32,7 +32,7 @@ export default function Department() {
 
     const renderData = () => {
       return data.map((item, index) => (
-        <Link to={`/departments/${item.path}`} className='department-link'><Circle data={item} border key={index} /></Link>
+        <Link to={`/departments/${item.path}`} className='department-link' key={index}><Circle data={item} border /></Link>
       ))
     }
     

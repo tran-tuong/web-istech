@@ -1,5 +1,8 @@
+$logo-width: 170px;
+$logo-height: 60px;
+
 .active {
-    color: var(--primary) !important;
+    color: var(--primary-color) !important;
     font-weight: 600 !important;
     background-color: transparent !important;
 }
@@ -27,8 +30,8 @@
 }
 
 .navbar-logo {
-    width: 170px;
-    height: 60px;
+    width: $logo-width;
+    height: $logo-height;
 }
 
 .collapse {
@@ -184,6 +187,10 @@
 }
 
 @media screen and (max-width: 992px) {
+    .active {
+        color: var(--primary) !important;
+    }
+    
     .header {
         width: 100%;
         padding: 6px 0;
@@ -193,6 +200,10 @@
         .dropdown-menu {
             background-color: transparent !important;
             box-shadow: none;
+
+            .dropdown-item {
+                color: var(--primary);
+            }
         }
 
         .dropdown-toggle {
@@ -248,10 +259,13 @@
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
+    .menu {
+        gap: 20px;
+    }
     .navbar-brand {
         .navbar-logo {
-            width: 90%;
-            height: 90%;
+            width: calc($logo-width * 0.95);
+            height: calc($logo-height * 0.95);
         }
     }
 }
@@ -259,8 +273,8 @@
 @media (min-width: 768px) and (max-width: 992px) {
     .navbar-brand {
         .navbar-logo {
-            width: 90%;
-            height: 90%;
+            width: calc($logo-width * 0.95);
+            height: calc($logo-height * 0.95);
         }
     }
 
@@ -276,8 +290,8 @@
 @media screen and (max-width: 576px) {
     .navbar-brand {
         .navbar-logo {
-            width: 35%;
-            height: 35%;
+            width: calc($logo-width * 0.8);
+            height: calc($logo-height * 0.8);
         }
     }
 
@@ -294,5 +308,14 @@
         top: 6.5rem;
         right: 2rem;
         height: 45rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar-brand {
+        .navbar-logo {
+            width: calc($logo-width * 0.7);
+            height: calc($logo-height * 0.7);
+        }
     }
 }
