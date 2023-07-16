@@ -3,7 +3,7 @@
         "Year": "2022 - 2023 Academic Year",
         "listPresidence": [
             {
-                "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
+                "img": "./departments/member_avatar/DataScience/DinhLeDucNam.png",
                 "job": "Presidence",
                 "name": "Công Châu Anh",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",

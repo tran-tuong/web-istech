@@ -38,12 +38,16 @@ export default function Home() {
             </div>
             <div className="col-12 col-md-4 AboutRight">
               <div className="About_img">
-                <img className="img-fluid" src={images.sliderImg} alt="ảnh"></img>
+                <img
+                  className="img-fluid"
+                  src={images.sliderImg}
+                  alt="ảnh"
+                ></img>
               </div>
             </div>
           </div>
         </div>
-  
+
         <div className="Playground">
           <ScrollTrigger
             onEnter={() => setCounter(true)}
@@ -73,7 +77,9 @@ export default function Home() {
                 <div className="col-4 Playground_item">
                   <p className="playground_number">
                     {" "}
-                    {Counter && <CountUp end={15} start={0} duration={2} />}{" "}
+                    {Counter && (
+                      <CountUp end={15} start={0} duration={2} />
+                    )}{" "}
                     <span>+</span>{" "}
                   </p>
                   <p>EVENTS</p>
@@ -82,7 +88,7 @@ export default function Home() {
             </div>
           </ScrollTrigger>
         </div>
-  
+
         <div className="LearnMore">
           <div className="container LearnMore_Content">
             <div className="row" style={{ alignItems: "center" }}>
@@ -162,31 +168,45 @@ export default function Home() {
                     <span className="visually-hidden">Next</span>
                   </button>
                 </div>
-  
+
                 <p>Lorem</p>
               </div>
-  
+
               <div className="col-12 col-md-7 LearnMore_Button">
                 <h1>LEARN MORE</h1>
                 <div className="btn-group">
-                  <Button to='/departments' className="btn-learn-more">Our Members</Button>
-                  <Button to='/events' className="btn-learn-more">Our Events</Button>
+                  <Button to="/departments" className="btn-learn-more">
+                    Our Members
+                  </Button>
+                  <Button to="/events" className="btn-learn-more">
+                    Our Events
+                  </Button>
                 </div>
                 <div className="btn-group">
-                  <Button to='/partners' className="btn-learn-more">Our Partners</Button>
-                  <Button to='/news' className="btn-learn-more">Our News</Button>
+                  <Button to="/partners" className="btn-learn-more">
+                    Our Partners
+                  </Button>
+                  <Button to="/news" className="btn-learn-more">
+                    Our News
+                  </Button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-  
+
         <div className="JoinUsToDay">
-          <h1>JOIN US TODAY</h1>
-  
-          <div className="btn-join-us-today">
-            <Button to='/register' className="btn-register">REGISTER</Button>
-            <Button to='/contact' className="btn-contact">CONTACT US</Button>
+          <div>
+            <h1>JOIN US TODAY</h1>
+
+            <div className="btn-join-us-today">
+              <Button to="/register" className="btn-register">
+                REGISTER
+              </Button>
+              <Button to="/contact" className="btn-contact">
+                CONTACT US
+              </Button>
+            </div>
           </div>
         </div>
       </div>

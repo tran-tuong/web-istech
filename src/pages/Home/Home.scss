@@ -25,8 +25,9 @@
 }
 
 .home-content {
-    background-image: url('../../assets/images/background/home-background.png');
-    background-size: cover;
+    // background-image: url('../../assets/images/background/home-background.png');
+    // background-size: cover;
+    background-color: #131620;
 }
 
 .parrentBanner{
@@ -101,9 +102,12 @@
 }
 
 .About{
-    align-items: start;
-    padding-top: 100px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 170px;
+    padding-bottom: 170px;
+    
     .AboutFlex{
         justify-content: space-between;
     }
@@ -126,12 +130,16 @@
 
     .AboutRight{
         .About_img{
+            width: 100%;
+            height: 100%;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
     }
 }
 @media screen and (max-width:767px){
     .About{
+        padding-top: 100px;
+        padding-bottom: 100px;
         .AboutRight{
             margin-top: 50px;
         }
@@ -145,9 +153,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 250px;
-    padding-bottom: 250px;
-    margin-top: 150px;
+    padding-top: 210px;
+    padding-bottom: 210px;
+
     color: rgba(255,255,255,1);
     display: flex;
     justify-content: center;
@@ -228,6 +236,7 @@
 
 .LearnMore{
     margin-top: 150px;
+    padding-bottom: 150px;
     text-align: center;
     .LearnMore_Button{
         h1{
@@ -258,10 +267,14 @@
 }
 
 .JoinUsToDay{
-    margin-top: 100px;
+
     background-image: url("../../assets/images/background/background1-main-page.png");
     background-size: cover;
     background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h1{
         
@@ -271,6 +284,7 @@
         margin-bottom: 40px;
     }
     text-align: center;
+    align-items: center;
     padding-top: 150px;
     padding-bottom: 150px;
 
