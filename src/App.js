@@ -16,9 +16,8 @@ function App() {
 
               let Layout = HomeTemplate;
 
-              if(route.status === 503) {
+              if(route.component === Maintainance) {
                 Layout = Fragment;
-                route.component = Maintainance;
               } else if (route.status === 404) {
                 Layout = Fragment;
               }
