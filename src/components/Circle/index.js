@@ -1,6 +1,5 @@
 import "./Circle.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import images from "../../assets/images";
 
 function Circle({ border, data, partner }) {
   if (border) {
@@ -27,7 +26,7 @@ function Circle({ border, data, partner }) {
             </div>
             {partner && (
               <div className="partner">
-                <FontAwesomeIcon icon={faGlobe} className="icon-globe" />
+                <img src={images.globe} alt="Globe icon" className="icon-globe" />
                 <span className="partner-name ">{data.nameP}</span>
               </div>
             )}

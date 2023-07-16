@@ -11,28 +11,28 @@ export default function Department() {
       {
         path: "fullstack",
         name: "Fullstack Dev",
-        image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
+        image: "https://cdn.dribbble.com/users/763363/screenshots/3557947/attachments/791767/fullstack-logo-light.png?compress=1&resize=400x300&vertical=center"
       },
       {
         path: "data-science",
         name: "Data Science",
-        image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
+        image: "https://previews.123rf.com/images/essaphear/essaphear1709/essaphear170900001/86808937-data-science-logo-icon-design-vector.jpg"
       },
       {
         path: "game",
         name: "Game Dev",
-        image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
+        image: "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
       },
       {
         path: "media-events",
         name: "Media & Events",
-        image: "https://we25.vn/media2018/Img_News/2022/05/10/tommy-shelby-cuoi-cung-co-nen-chet-trong-peaky-blinders_20220510084617.jpeg"
+        image: "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
       },
     ];
 
     const renderData = () => {
       return data.map((item, index) => (
-        <Link to={`/departments/${item.path}`} className='department-link'><Circle data={item} border key={index} /></Link>
+        <Link to={`/departments/${item.path}`} className='department-link' key={index}><Circle data={item} border /></Link>
       ))
     }
     

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
+
 
 * {
   padding: 0;
@@ -21,18 +22,24 @@ html {
 }
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 1.6rem;
   text-rendering: optimizeSpeed;
   color: var(--primary);
   background-color: #131620;
-  // background-image: url('../../assets/images/background/background-BoD.png');
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background-image: url('../../assets/images/background/background-BoD.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   // background-position: center;
   position: relative;
   margin: 0 auto;
+}
+
+.background-main {
+  background-image: url('../../assets/images/background/background-main-page.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .no-scroll {

@@ -4,24 +4,18 @@ import images from "../../assets/images";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import Button from "../../components/Button";
-import Canvas from "../../components/Canvas";
 
 export default function Home() {
   const [Counter, setCounter] = useState(false);
 
   return (
-    <div>
-      <section className="position-relative">
-        <div className="position-absolute canvas-background">
-          <Canvas />
-        </div>
+    <div className="bg-main">
+      <div className="container-fluid home-content">
         <section className="position-relative banner-section ">
           <div className="parrentBanner">
             <div className="banner"></div>
           </div>
         </section>
-      </section>
-      <div className="container-fluid home-content">
         <div className="About container">
           <div className="row AboutFlex">
             <div className="col-12 col-md-7 AboutLeft">
