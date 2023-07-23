@@ -11,14 +11,15 @@ export default function Home() {
   return (
     <div className="bg-main">
       <div className="container-fluid home-content">
-        <section className="position-relative banner-section ">
+        <section className="position-relative banner-section">
           <div className="parrentBanner">
             <div className="banner"></div>
           </div>
         </section>
+
         <div className="About container">
           <div className="row AboutFlex">
-            <div className="col-12 col-md-7 AboutLeft">
+            <div className="col-12 col-md-7 AboutLeft" data-aos="fade-up">
               <h1>ISTECH</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -47,7 +48,7 @@ export default function Home() {
             onEnter={() => setCounter(true)}
             onExit={() => setCounter(false)}
           >
-            <div className="Playground_content">
+            <div className="Playground_content" data-aos="fade-up">
               <h1 className="Playground_heading">
                 A NEW PLAYGROUND IN THE TECHNOLOGY ERA
               </h1>
@@ -166,7 +167,7 @@ export default function Home() {
                 <p>Lorem</p>
               </div>
 
-              <div className="col-12 col-md-7 LearnMore_Button">
+              <div className="col-12 col-md-7 LearnMore_Button" data-aos="fade-up">
                 <h1>LEARN MORE</h1>
                 <div className="btn-group">
                   <Button to="/departments" className="btn-learn-more">
@@ -190,7 +191,7 @@ export default function Home() {
         </div>
 
         <div className="JoinUsToDay">
-          <div>
+          <div data-aos="fade-up">
             <h1>JOIN US TODAY</h1>
 
             <div className="btn-join-us-today">

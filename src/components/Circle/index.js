@@ -5,7 +5,7 @@ function Circle({ border, data, partner }) {
   if (border) {
     return (
       <>
-        <div className="rectangle">
+        <div className="rectangle" data-aos="fade-up">
           <div className="circle-content">
             <div className="circle-content-image">
               <img src={data.image} alt="Avatar" />

@@ -65,7 +65,7 @@ export default function FullStack() {
                     </nav>
 
                     <div className="d-flex justify-content-center align-items-center">
-                        <div className="row Department_Head_Content">
+                        <div className="row Department_Head_Content" data-aos="fade-up">
                             <div className="col-12 col-sm-4 Department_Head_Content_Right">
                                 <img
                                     className="img-fluid img_Head_Department"
@@ -82,7 +82,7 @@ export default function FullStack() {
                     </div>
                 </section>
 
-                <section className="Skill_Knowledge container">
+                <section className="Skill_Knowledge container" data-aos="fade-up">
                     <h1>Skills & Knowledge</h1>
                     <div className="row">
                         <SliderCompo skills={skills_image} />
@@ -91,14 +91,14 @@ export default function FullStack() {
 
                 <section className="Department_Members">
                     <h1 className="h1Department">Members</h1>
-                    <div className="Department_Members_Content text-center">
+                    <div className="Department_Members_Content text-center" >
                         <Circle data={Leader} />
                         <div className="row" style={{ paddingTop: "40px" }}>
                             {Members.map((item, key) => {
                                 return (
                                     <div
                                         className="col-6 col-md-4 col-lg-3"
-                                        key={key}
+                                        key={key} data-aos="fade-up"
                                     >
                                         <Circle data={item}></Circle>
                                     </div>
@@ -117,7 +117,7 @@ export default function FullStack() {
                                 return (
                                     <div
                                         className="col-6 col-md-4 col-lg-3"
-                                        key={key}
+                                        key={key} data-aos="fade-up"
                                     >
                                         <Circle data={item}></Circle>
                                     </div>
