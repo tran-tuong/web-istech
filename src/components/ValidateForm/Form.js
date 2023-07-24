@@ -2,7 +2,7 @@ import { Input } from "./Input";
 import { FormProvider, useForm } from "react-hook-form";
 import {
   name_validation,
-  desc_validation,
+  message_validation,
   email_validation,
   class_validation
 } from "./utils/inputValidations";
@@ -33,7 +33,7 @@ export const Form = () => {
           <Input {...name_validation} />
           <Input {...email_validation} />
           <Input {...class_validation} />
-          <Input {...desc_validation}/>
+          <Input {...message_validation}/>
         </div>
         <div className="form-check">
           {success && (
