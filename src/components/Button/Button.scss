@@ -7,6 +7,9 @@
     padding: 4px 33px;
     border-radius: 999px;
     -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -o-border-radius: 999px;
+    -ms-border-radius: 999px;
     outline: 2px solid var(--primary);
     -webkit-outline: 2px solid var(--primary);
     z-index: 0;
