@@ -50,6 +50,7 @@ export default function Header() {
                   >
                     About
                   </div>
+                  
                   <ul
                     className="dropdown-menu"
                     onClick={getClass}
@@ -76,6 +77,8 @@ export default function Header() {
                         Departments
                       </NavLink>
                     </li>
+          
+                    
                   </ul>
                 </li>
                 <li className="nav-item dropdown">

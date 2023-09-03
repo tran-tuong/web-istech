@@ -11,6 +11,8 @@ import Contact from "../pages/Contact/Contact";
 import NotFound from "../pages/NotFound";
 import FullStack from "../pages/FullStack/FullStack";
 import Maintainance from "../pages/Maintainance";
+import NoteBook from "../pages/NoteBook/NoteBook";
+
 
 const publicRoutes = [
     { path: '/', component: Home },
@@ -23,8 +25,10 @@ const publicRoutes = [
     { path: '/events', component: Maintainance },
     { path: '/internal-activities', component: Maintainance },
     { path: '/blog', component: Maintainance },
+    { path: '/notebook', component:NoteBook },
     { path: '/resource-hub', component: Maintainance },
     { path: '*', component: NotFound, status: 404 },
+    
 ];
 
 const privateRoutes = [];
