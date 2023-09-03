@@ -30,9 +30,6 @@
     "sass": "^1.61.0",
     "semantic-ui-react": "^2.1.4",
     "slick-carousel": "^1.8.1",
-    "tsparticles": "^2.10.1",
-    "tsparticles-engine": "^2.10.1",
-    "tsparticles-preset-links": "^2.10.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

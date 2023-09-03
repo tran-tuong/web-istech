@@ -1,6 +1,6 @@
 export const name_validation = {
     name: 'name',
-    label: 'Name:',
+    label: 'Name*:',
     type: 'text',
     id: 'name',
     placeholder: 'Write your name ...',
@@ -34,12 +34,12 @@ export const name_validation = {
     },
   }
   
-  export const desc_validation = {
-    name: 'description',
-    label: 'Description:',
+  export const message_validation = {
+    name: 'message',
+    label: 'Message*:',
     multiline: true,
-    id: 'description',
-    placeholder: 'Write description ...',
+    id: 'message',
+    placeholder: 'Write message ...',
     validation: {
       required: {
         value: true,
@@ -86,7 +86,7 @@ export const name_validation = {
   
   export const email_validation = {
     name: 'email',
-    label: 'Email address:',
+    label: 'Email address*:',
     type: 'email',
     id: 'email',
     placeholder: 'Your email address',

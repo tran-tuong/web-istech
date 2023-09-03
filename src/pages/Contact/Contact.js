@@ -13,7 +13,13 @@ export default function Contact() {
             </div>
           </div>
      </div>     
-    <Form />
+    <div className="container">
+      <div className="row d-flex justify-content-center">
+        <div className="col-10">
+          <Form />
+        </div>
+      </div>
+    </div>
    </div>
   );
 }

@@ -158,13 +158,13 @@
             "name":"Phạm Đức Long",
             "class":"ICE2020",
             "job":"Leader",
-            "img":"./member_avatar/man.png"
+            "img":"./member_avatar/Game/PhamDucLong.png"
         },
         "Members":[
             {
                 "name":"Phạm Đức Long",
                 "class":"ICE2020",
-                "img":"./member_avatar/man.png"
+                "img":"./member_avatar/Game/PhamDucLong.png"
             },
             {
                 "name":"Nguyễn Bảo Quang",
@@ -194,19 +194,18 @@
             {
                 "name":"Dương Ngô Nhật Minh",
                 "class":"AIT2022",
-                "img":"./member_avatar/man.png"
+                "img":"./member_avatar/Game/DuongNgoNhatMinh.png"
             },
             {
                 "name":"Nguyễn Hải Đăng",
                 "class":"ICE2022",
-                "img":"./member_avatar/man.png"
+                "img":"./member_avatar/Game/DangNguyen.png"
             },
             {
                 "name":"Đặng Nguyễn Cao Sơn",
                 "class":"ICE2022",
                 "img":"./member_avatar/Game/DangNguyenCaoSon.png"
             }
-           
         ],
         "Mentor":[
             {
@@ -236,7 +235,7 @@
             "name":"Hoàng Thị Ngọc Thư",
             "class":"AC2019",
             "job":"Leader",
-            "img":"./member_avatar/DataScience/DinhLeDucNam.png"
+            "img":"./member_avatar/women.png"
         },
         "Members":[
             {
