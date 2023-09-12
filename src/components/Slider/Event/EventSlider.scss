@@ -14,6 +14,9 @@
         padding: 14px !important;
         transition: .5s;
         .card-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             .card-title {
                 font-size: 1.8rem;
                 font-weight: 700;
@@ -48,6 +51,19 @@
         background-color: white;
     }
     
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+    .card { 
+        .card-body { 
+            .card-info {
+                flex-direction: column;
+                justify-content: start;
+                align-items: normal;
+            }
+        }
+    
+    }
 }
 
 

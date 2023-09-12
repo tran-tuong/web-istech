@@ -31,7 +31,7 @@ function EventSlider({  }) {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 3,
         autoplay: false,
         // centerMode: true,
         // centerPadding: "60px",
@@ -41,7 +41,7 @@ function EventSlider({  }) {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     infinite: true,
                     dots: true,
                 },
@@ -71,7 +71,7 @@ function EventSlider({  }) {
                         <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
                     </section>
                     <div class="card-body">
-                        <section className="card-info d-flex justify-content-between align-items-center">
+                        <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
                             <Button className="btn-read-more" to="">Read more</Button>
                         </section>
@@ -85,7 +85,7 @@ function EventSlider({  }) {
                         <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
                     </section>
                     <div class="card-body">
-                        <section className="card-info d-flex justify-content-between align-items-center">
+                        <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
                             <Button className="btn-read-more" to="">Read more</Button>
                         </section>
@@ -99,7 +99,7 @@ function EventSlider({  }) {
                         <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
                     </section>
                     <div class="card-body">
-                        <section className="card-info d-flex justify-content-between align-items-center">
+                        <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
                             <Button className="btn-read-more" to="">Read more</Button>
                         </section>
@@ -113,7 +113,7 @@ function EventSlider({  }) {
                         <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
                     </section>
                     <div class="card-body">
-                        <section className="card-info d-flex justify-content-between align-items-center">
+                        <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
                             <Button className="btn-read-more" to="">Read more</Button>
                         </section>
@@ -127,7 +127,7 @@ function EventSlider({  }) {
                         <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
                     </section>
                     <div class="card-body">
-                        <section className="card-info d-flex justify-content-between align-items-center">
+                        <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
                             <Button className="btn-read-more" to="">Read more</Button>
                         </section>
