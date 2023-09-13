@@ -4,15 +4,17 @@ export default function About() {
   console.log(window.innerWidth);
   return (
     <div className="about">
-      <div className="heading-div container">
-        <div class="content-heading">
-          <h1>About us</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
-          </p>
+      <div className="container">
+        <div class="row heading-div d-flex justify-content-center">
+          <div className="col-12 content-heading">
+            <h1>About us</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+              accumsan lacus vel facilisis.
+            </p>
+          </div>
         </div>
       </div>
       <div>

@@ -21,7 +21,7 @@ const publicRoutes = [
     { path: '/departments', component: Department },
     { path: '/departments/:id', component: FullStack },
     { path: '/contact', component: Contact },
-    { path: '/about', component: Maintainance },
+    { path: '/about', component: About },
     { path: '/events', component: Maintainance },
     { path: '/internal-activities', component: Maintainance },
     { path: '/blog', component: Maintainance },
