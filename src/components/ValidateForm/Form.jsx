@@ -4,7 +4,7 @@ import {
   name_validation,
   message_validation,
   email_validation,
-  class_validation
+  subject_validation
 } from "./utils/inputValidations";
 import { useState } from "react";
 import { BsFillCheckSquareFill } from "react-icons/bs";
@@ -32,7 +32,7 @@ export const Form = () => {
         <div className="form-content">
           <Input {...name_validation} />
           <Input {...email_validation} />
-          <Input {...class_validation} />
+          <Input {...subject_validation} />
           <Input {...message_validation}/>
         </div>
         <div className="form-check">
@@ -41,7 +41,7 @@ export const Form = () => {
               <BsFillCheckSquareFill /> Form has been submitted successfully
             </p>
           )}
-          <Button onClick={onSubmit} className={'btn-form'}>Submit</Button>
+          <Button onClick={onSubmit} className={'btn-form'}>Send Message</Button>
         </div>
       </form>
     </FormProvider>

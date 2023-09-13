@@ -12,7 +12,7 @@
                 "linkedin": "linkedin.com"
             },
             {
-                "img": "./departments/member_avatar/women.png",
+                "img": "./departments/member_avatar/BoardOfDirectors/HoangThiNgocThu.png",
                 "job": "Vice-Presidence",
                 "name": "Hoàng Thị Ngọc Thư",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
@@ -26,7 +26,7 @@
         "Year": "2021 - 2022 Academic Year",
         "listPresidence": [
             {
-                "img": "./departments/member_avatar/man.png",
+                "img": "./departments/member_avatar/BoardOfDirectors/LeAnhDuc.png",
                 "job": "Presidence",
                 "name": "Lê Anh Đức",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
@@ -67,7 +67,7 @@
                 "linkedin": "linkedin.com"
             },
             {
-                "img": "./departments/member_avatar/man.png",
+                "img": "./departments/member_avatar/BoardOfDirectors/LeAnhDuc.png",
                 "job": "Vice-Presidence",
                 "name": "Lê Anh Đức",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",

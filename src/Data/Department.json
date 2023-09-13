@@ -18,14 +18,9 @@
         },
         "Members":[
             {
-                "name":"Trần Văn Tưởng",
-                "class":"ICE2021",
-                "img":"./member_avatar/Fullstack/TranTuong.png"
-            },
-            {
                 "name":"Trần Việt Long",
                 "class":"MIS2018",
-                "img":"./member_avatar/man.png"
+                "img":"./member_avatar/Fullstack/TranVietLong.png"
             },
             {
                 "name":"Nguyễn Nam Khánh",
@@ -62,7 +57,7 @@
             {
                 "name":"Lê Anh Đức",
                 "class":"ICE2018A",
-                "img":"./member_avatar/man.png"
+                "img":"./member_avatar/BoardOfDirectors/LeAnhDuc.png"
             },
             {
                 "name":"Phạm Đức Nghĩa",
@@ -86,18 +81,13 @@
             "name":"Trần Ngọc Thanh Bình",
             "class":"BDA2020",
             "job":"Leader",
-            "img":"./member_avatar/man.png"
+            "img":"./member_avatar/DataScience/TranNgocThanhBinh.png"
         },
         "Members":[
             {
-            "name":"Trần Ngọc Thanh Bình",
-            "class":"BDA2020",
-            "img":"./member_avatar/man.png"
-            },
-            {
                 "name":"Trần Quốc Đăng",
                 "class":"ICE2020A",
-                "img":"./member_avatar/man.png"
+                "img":"./member_avatar/DataScience/TranQuocDang.png"
             },
             {
                 "name":"Lê Thị Nhung",
@@ -127,7 +117,7 @@
             {
                 "name":"Lương Khánh Phương",
                 "class":"BDA2022",
-                "img":"./member_avatar/women.png"
+                "img":"./member_avatar/DataScience/LuongKhanhPhuong.png"
             }
         ],
         "Mentor":[
@@ -162,14 +152,9 @@
         },
         "Members":[
             {
-                "name":"Phạm Đức Long",
-                "class":"ICE2020",
-                "img":"./member_avatar/Game/PhamDucLong.png"
-            },
-            {
                 "name":"Nguyễn Bảo Quang",
                 "class":"ICE2019A",
-                "img":"./member_avatar/man.png"
+                "img":"./member_avatar/Game/NguyenBaoQuang.png"
             },
             {
                 "name":"Cao Sỹ Minh",
@@ -235,14 +220,9 @@
             "name":"Hoàng Thị Ngọc Thư",
             "class":"AC2019",
             "job":"Leader",
-            "img":"./member_avatar/women.png"
+            "img":"./member_avatar/BoardOfDirectors/HoangThiNgocThu.png"
         },
         "Members":[
-            {
-                "name":"Hoàng Thị Ngọc Thư",
-                "class":"AC2019",
-                "img":"./member_avatar/women.png"
-            },
             {
                 "name":"Nguyễn Quốc Bảo",
                 "class":"IB2018",
