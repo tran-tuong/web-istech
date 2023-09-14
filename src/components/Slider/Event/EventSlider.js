@@ -11,7 +11,7 @@ import Button from '../../Button';
 
 function PrevArrow({ onClick }) {
     return (
-        <div onClick={onClick} className="btn-control event-btn-prev">
+        <div onClick={onClick} className="btn-control position-relative event-btn-prev">
             <FontAwesomeIcon className="icon-control" icon={faChevronLeft} />
         </div>
     );
@@ -19,7 +19,7 @@ function PrevArrow({ onClick }) {
 
 function NextArrow({ onClick }) {
     return (
-        <div onClick={onClick} className="btn-control event-btn-next">
+        <div onClick={onClick} className="btn-control position-relative event-btn-next">
             <FontAwesomeIcon className="icon-control" icon={faChevronRight} />
         </div>
     );

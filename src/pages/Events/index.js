@@ -11,15 +11,15 @@ function Events() {
                 <div className='col-12 event-type'>
                     <a href="/events/webinars"><h2>Webinars</h2></a>
                     <div className='row d-flex justify-content-center'>
-                        <section className='col-10 event-list'>
+                        <section className='col-12 event-list'>
                             <EventSlider />
                         </section>
                     </div>
                 </div>
                 <div className='col-12 event-type'>
-                    <a href="/events/webinars"><h2>Industry connections</h2></a>
+                    <a href="/events/webinars"><h2>Industry connection</h2></a>
                     <div className='row d-flex justify-content-center'>
-                        <section className='col-10 event-list'>
+                        <section className='col-12 event-list'>
                             <EventSlider />
                         </section>
                     </div>
@@ -27,7 +27,7 @@ function Events() {
                 <div className='col-12 event-type'>
                     <a href="/events/webinars"><h2>Competitions</h2></a>
                     <div className='row d-flex justify-content-center'>
-                        <section className='col-10 event-list'>
+                        <section className='col-12 event-list'>
                             <EventSlider />
                         </section>
                     </div>
@@ -35,7 +35,7 @@ function Events() {
                 <div className='col-12 event-type'>
                     <a href="/events/webinars"><h2>Others</h2></a>
                     <div className='row d-flex justify-content-center'>
-                        <section className='col-10 event-list'>
+                        <section className='col-12 event-list'>
                             <EventSlider />
                         </section>
                     </div>
