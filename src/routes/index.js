@@ -1,16 +1,3 @@
-// import Home from "../pages/Home/Home";
-// import Partners from "../pages/Partners/Partners";
-// import BoardOfDirectors from "../pages/BoardOfDirectors/BoardOfDirectors";
-// import Department from "../pages/Department/Department";
-// import Contact from "../pages/Contact/Contact";
-// import About from "../pages/About/About";
-// import Events from "../pages/Events";
-// import InternalActivities from "../pages/InternalActivities";
-// import Blog from "../pages/Blog";
-// import ResourceHub from "../pages/ResourceHub";
-import NotFound from "../pages/NotFound";
-// import FullStack from "../pages/FullStack/FullStack";
-import Maintainance from "../pages/Maintainance";
 import NoteBook from "../pages/NoteBook/NoteBook";
 import React from "react";
 
@@ -24,6 +11,8 @@ const Events = React.lazy(() => import("../pages/Events"));
 const EventType = React.lazy(() => import("../pages/Events/EventType"));
 const EventDetail = React.lazy(() => import("../pages/Events/EventDetail"));
 const FullStack = React.lazy(() => import("../pages/FullStack/FullStack"));
+const NotFound = React.lazy(() => import("../pages/NotFound"));
+const Maintainance = React.lazy(() => import("../pages/Maintainance"));
 
 
 const publicRoutes = [
