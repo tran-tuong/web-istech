@@ -16,20 +16,20 @@ export const name_validation = {
     },
   }
 
-  export const class_validation = {
-    name: 'class',
-    label: 'Class:',
+  export const subject_validation = {
+    name: 'subject',
+    label: 'Subject:',
     type: 'text',
-    id: 'class',
-    placeholder: 'Write your class ...',
+    id: 'subject',
+    placeholder: 'Write your subject ...',
     validation: {
       required: {
         value: true,
         message: 'required',
       },
       maxLength: {
-        value: 12,
-        message: '12 characters max',
+        value: 100,
+        message: '100 characters max',
       },
     },
   }

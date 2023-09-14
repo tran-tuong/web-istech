@@ -35,7 +35,7 @@ export default function Home() {
               <div className="About_img">
                 <img
                   className="img-fluid"
-                  src={images.sliderImg}
+                  src={images.homeAbout}
                   alt="ảnh"
                 ></img>
               </div>
@@ -118,21 +118,21 @@ export default function Home() {
                   <div className="carousel-inner">
                     <div className="carousel-item active">
                       <img
-                        src={images.sliderImg}
+                        src={images.homeSlider1}
                         className="d-block w-100"
                         alt="..."
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src={images.sliderImg}
+                        src={images.homeSlider2}
                         className="d-block w-100"
                         alt="..."
                       />
                     </div>
                     <div className="carousel-item">
                       <img
-                        src={images.sliderImg}
+                        src={images.homeSlider3}
                         className="d-block w-100"
                         alt="..."
                       />
