@@ -44,6 +44,39 @@ $card-width: 260px;
     }
 }
 
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+    .event {
+        .event-heading {
+            margin-top: 40px !important;
+            h1 {
+                font-size: 6rem;
+            }
+        }
+
+        .event-type {
+            h2 {
+                font-size: 3rem;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 300px) {
+
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+}
+
 @media screen and (max-width:600px) {
     .event-list {
     

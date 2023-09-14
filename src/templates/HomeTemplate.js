@@ -5,7 +5,7 @@ export default function HomeTemplate({ children }) {
   const currentPath = window.location.pathname;
   
   return (
-    <div className={currentPath === '/'? 'background-main' : ''}>
+    <div className={currentPath === '/'? 'background-main' : 'background'}>
         <Header/>
         {children}
         <Footer/>
