@@ -199,7 +199,7 @@ export default function Home() {
             <h1>JOIN US TODAY</h1>
 
             <div className="btn-join-us-today">
-              <Button to="/register" className="btn-register">
+              <Button to="/contact" className="btn-register">
                 REGISTER
               </Button>
               <Button to="/contact" className="btn-contact">
