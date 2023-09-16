@@ -16,11 +16,11 @@ export default function EventType() {
                     <Button to="/events">See all events </Button>
                 </section>
             </div>
-            <div className="row">
-                <div className="col-7">
+            <div className="row event-type-wrapper">
+                <div className="col-12 col-md-7">
                     <a href="/events/webinars/abc" className="event-main">
                         <img
-                            src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/306086371_512407257558996_1196853709116080547_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=49d041&_nc_ohc=TRVbrOJ8M6sAX-dfsox&_nc_ht=scontent.fhan5-11.fna&oh=00_AfD7FDCyOSudZgxK-G9zW8OCs6pvboEw1DQ1X0u9SzkXOQ&oe=65027B60"
+                            src="https://images.unsplash.com/photo-1593349480506-8433634cdcbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                             className="img-fluid"
                             alt="Event Image"
                         />
@@ -44,7 +44,7 @@ export default function EventType() {
                         </p>
                     </a>
                 </div>
-                <div className="col-5">
+                <div className="col-12 col-md-5">
                     <div className="event-type-list">
                         <a href="/events/webinars/abc" className="event-type-item">
                             <div className="event-banner-wrapper">

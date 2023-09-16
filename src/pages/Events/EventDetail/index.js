@@ -11,18 +11,18 @@ export default function EventDetail() {
 
 
     return (
-        <main className="" style={{ margin: '150px 0'}}>
+        <main className="" style={{ marginBottom: '150px'}}>
             <div className="event-banner">
                 <img
-                    src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/368385633_782578657208520_4212804473864769217_n.png?_nc_cat=101&ccb=1-7&_nc_sid=52f669&_nc_ohc=j3gSq5vNXHMAX_9YAM-&_nc_ht=scontent.fhan15-1.fna&oh=00_AfBQOZJfF9QUBNxkfsNthAkjLVOGaav_3AQ81MIihZol1A&oe=65014ADD"
+                    src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/368385633_782578657208520_4212804473864769217_n.png?_nc_cat=101&ccb=1-7&_nc_sid=52f669&_nc_ohc=Ond22MMKJz0AX9dkzeJ&_nc_ht=scontent.fhan15-1.fna&oh=00_AfDZDge3y8rKpqkTtk2qaliQIn1dFahYH6CBOa4HTx0Waw&oe=6507399D"
                     className="img-fluid"
                     alt="Banner"
                 />
             </div>
             <div className="event-info">
-                <div className="container-fluid d-flex">
+                <div className="container-fluid d-flex event-info-wrapper">
                     <div className="event-about d-flex justify-content-center align-items-center">
-                        <section className="col-8" style={{ paddingLeft: '7.5px'}}>
+                        <section className="col-10">
                             <h2>About</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -35,7 +35,7 @@ export default function EventDetail() {
                     </div>
                     <div className="event-image">
                             <img 
-                                src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/311213937_538613711605017_6614133368395128061_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=49d041&_nc_ohc=-Xb8PaV2z9MAX_zIc4c&_nc_ht=scontent.fhan15-2.fna&oh=00_AfBZ8BGHZo58xDvacC19wjjFLSZ2RW9WGYePc36bOUf7vg&oe=65014A9C"
+                                src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/311593005_538613991604989_3142021122758759088_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=49d041&_nc_ohc=VyP3PX4rGJYAX-Xn6N3&_nc_ht=scontent.fhan5-9.fna&oh=00_AfB9wBHlobHAEsqDUa2IcT8oBI8QQHhYfs-hvmbITGseiA&oe=650880B0"
                                 alt="Image"
                             />
                     </div>
@@ -43,25 +43,27 @@ export default function EventDetail() {
             </div>
             <div className="event-gallery">
                 <section className="container">
-                        <h2 className="">Gallery</h2>
+                    <h2 className="">Gallery</h2>
                 </section>
                 <div className="container-fluid">
                     <EventGallery />
                 </div>
             </div>
             <div className="event-record">
-                <div className="container d-flex justify-content-between align-items-center gap-5">
-                    <section className="record">
-                        <img 
-                            src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.6435-9/207535015_322325812777788_5497701254932609870_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=Yr_OhuNevUMAX9wZO2r&_nc_ht=scontent.fhan15-1.fna&oh=00_AfB8Sa0tt6oiaY188VL7YIHuN4jpcloX7Y-mLH8icM6kYQ&oe=652447E0"
-                            className="img-fluid"
-                            alt="record-lock"
-                        />
-                    </section>
-                    <section className="sign-in d-flex flex-column justify-content-center align-items-center">
-                        <Link className="btn-sign-in" to="#">Sign In</Link>
-                        <span>to watch the record</span>
-                    </section>
+                <div className="container">
+                    <div className="row d-flex record-wrapper">
+                        <section className="col-md-7 col-12 record">
+                            <img 
+                                src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+                                className="img-fluid"
+                                alt="record-lock"
+                            />
+                        </section>
+                        <section className="col-md-5 col-12 sign-in d-flex flex-column justify-content-center align-items-center">
+                            <span className="btn-sign-in-wrapper"><Link className="btn-sign-in" to="#">Sign In</Link></span>
+                            <span>to watch the record</span>
+                        </section>
+                    </div>
                 </div>
             </div>
         </main>

@@ -318,4 +318,37 @@ $logo-height: 60px;
             height: calc($logo-height * 0.7);
         }
     }
+
+    .menu {
+        max-width: 20rem;
+        width: 100%;
+        height: 40rem;
+        padding: 10px !important;
+        right: 2rem;
+        background-color: var(--primary-color);
+        border-radius: 12px;
+        box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+        transition: 0.5s;
+        gap: 16px;
+
+        .nav-item {
+            padding: 0;
+
+            .nav-link {
+                font-size: 1.4rem !important;
+            }
+
+            &:last-child {
+                a {
+                    font-size: 1.2rem !important;
+                }
+            }
+
+            .dropdown-menu {
+                li > .dropdown-item {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
 }
