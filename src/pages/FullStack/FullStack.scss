@@ -1,35 +1,5 @@
 .Department_Head {
     padding-top: 40px;
-    
-    .breadcrumb {
-        display: block;
-        margin-bottom: 70px;
-        
-        .list-unstyled {
-            display: flex;
-            gap: 16px;
-
-            li {
-                transition: .3s;
-
-                .item-link {
-                    color: var(--primary);
-                }
-
-                .department-active {
-                    font-weight: 600;
-                }
-
-                &:first-child:hover {
-                    scale: 1.2;
-                }
-
-                &:hover {
-                    opacity: .8;
-                }
-            }
-        }
-    }
 
     .Department_Head_Content {
         width: 90%;

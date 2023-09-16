@@ -29,10 +29,10 @@ export default function Footer() {
           </div>
           <div className='languages'>
             <span>Language:</span>
-            <a href='#' className='vn-language'>
+            <a href='/' className='vn-language'>
               <img src={images.flagVN} alt='Vietnamese' />
             </a>
-            <a href='#' className='en-language'>
+            <a href='/' className='en-language'>
               <img src={images.flagGB} alt='English' />
             </a>
           </div>

@@ -1,5 +1,8 @@
+import Maintainance from "../pages/Maintainance";
+import NotFound from "../pages/NotFound";
 import NoteBook from "../pages/NoteBook/NoteBook";
 import React from "react";
+
 
 const Home = React.lazy(() => import("../pages/Home/Home"));
 const BoardOfDirectors = React.lazy(() => import("../pages/BoardOfDirectors/BoardOfDirectors"));
@@ -11,8 +14,6 @@ const Events = React.lazy(() => import("../pages/Events"));
 const MainEvent = React.lazy(() => import("../pages/Events/MainEvent"));
 const EventDetail = React.lazy(() => import("../pages/Events/EventDetail"));
 const FullStack = React.lazy(() => import("../pages/FullStack/FullStack"));
-const NotFound = React.lazy(() => import("../pages/NotFound"));
-const Maintainance = React.lazy(() => import("../pages/Maintainance"));
 
 
 const publicRoutes = [

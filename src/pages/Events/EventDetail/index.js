@@ -1,22 +1,44 @@
-import React, { useState } from "react";
+import React from "react";
 import "./EventDetail.scss";
 import { Link, useParams } from "react-router-dom";
 import EventGallery from "../../../components/Slider/Gallery/Gallery";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
 export default function EventDetail() {
     const param = useParams();
     const slug = param.eventName;
 
-    // console.log(currentImage);
-
-
     return (
         <main className="" style={{ marginBottom: '150px'}}>
+            <div className="container">
+                <nav className="col-6 breadcrumb">
+                    <ul className="list-unstyled">
+                        <li>
+                            <Link className="item-link" to="/">
+                                <FontAwesomeIcon icon={faHouse} />
+                            </Link>
+                        </li>
+                        <li>/</li>
+                        <li>
+                            <Link className="item-link" to="/events">
+                                Events
+                            </Link>
+                        </li>
+                        <li>/</li>
+                        <li>
+                            <Link className="item-link event-active" to="/events">
+                                Events
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div className="event-banner">
                 <img
                     src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/368385633_782578657208520_4212804473864769217_n.png?_nc_cat=101&ccb=1-7&_nc_sid=52f669&_nc_ohc=Ond22MMKJz0AX9dkzeJ&_nc_ht=scontent.fhan15-1.fna&oh=00_AfDZDge3y8rKpqkTtk2qaliQIn1dFahYH6CBOa4HTx0Waw&oe=6507399D"
                     className="img-fluid"
-                    alt="Banner"
+                    alt="Event Banner"
                 />
             </div>
             <div className="event-info">
@@ -36,7 +58,7 @@ export default function EventDetail() {
                     <div className="event-image">
                             <img 
                                 src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/311593005_538613991604989_3142021122758759088_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=49d041&_nc_ohc=VyP3PX4rGJYAX-Xn6N3&_nc_ht=scontent.fhan5-9.fna&oh=00_AfB9wBHlobHAEsqDUa2IcT8oBI8QQHhYfs-hvmbITGseiA&oe=650880B0"
-                                alt="Image"
+                                alt="Feature"
                             />
                     </div>
                 </div>

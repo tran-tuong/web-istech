@@ -25,7 +25,7 @@ function NextArrow({ onClick }) {
     );
 }
 
-function EventSlider({  }) {
+function EventSlider() {
     var settings = {
         className: "d-flex justify-content-center align-items-center",
         dots: false,
@@ -68,7 +68,7 @@ function EventSlider({  }) {
             <Slider {...settings}>
                 <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
-                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
+                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
                     <div class="card-body">
                         <section className="card-info ">
@@ -82,7 +82,7 @@ function EventSlider({  }) {
                 </a>
                 <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
-                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
+                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
                     <div class="card-body">
                         <section className="card-info ">
@@ -96,7 +96,7 @@ function EventSlider({  }) {
                 </a>
                 <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
-                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
+                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
                     <div class="card-body">
                         <section className="card-info ">
@@ -110,7 +110,7 @@ function EventSlider({  }) {
                 </a>
                 <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
-                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
+                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
                     <div class="card-body">
                         <section className="card-info ">
@@ -124,7 +124,7 @@ function EventSlider({  }) {
                 </a>
                 <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
-                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
+                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
                     <div class="card-body">
                         <section className="card-info ">

@@ -29,7 +29,7 @@ export default function Contact() {
                             <section className="contact-image">
                                 <img
                                     src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/306155551_514550010678054_5787662117059003930_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=49d041&_nc_ohc=rs2cbqeSrrMAX8RmaOF&_nc_ht=scontent.fhan15-1.fna&oh=00_AfCOroZpW2nRO7Q4R_ev6_H09XqGrN5QJsE7Ax6hU-F7Tg&oe=650621B9"
-                                    alt="Contact Image"
+                                    alt="Contact"
                                 />
                             </section>
                             <div className="contact-info">
@@ -38,7 +38,7 @@ export default function Contact() {
                                         icon={faPhoneVolume}
                                         style={{ color: "#ffffff", width: '22px', height: '22px' }}
                                     />
-                                    <a href="">0904 993 243</a>
+                                    <a href="tel:+8404993243">0904 993 243</a>
                                 </div>
                                 <div className="contact-info-wrapper">
                                     <FontAwesomeIcon

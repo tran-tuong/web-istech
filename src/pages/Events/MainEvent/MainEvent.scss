@@ -1,12 +1,29 @@
-.btn-see-all-event {
-    display: flex;
-    justify-content: flex-end;
-    margin: 50px 0 40px !important;
+.main-event-header {
 
-    a {
-        margin-left: 0;
+    .breadcrumb {
+        margin: 50px 0 40px !important;
+
+        .list-unstyled {
+            margin: 0;
+
+            li > .event-active {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .btn-see-all-event {
+        display: flex;
+        justify-content: flex-end;
+        margin: 50px 0 40px !important;
+    
+        a {
+            margin-left: 0;
+        }
     }
 }
+
+
 
 .event-main {
     font-family: "Montserrat", sans-serif;

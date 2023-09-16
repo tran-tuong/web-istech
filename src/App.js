@@ -4,7 +4,7 @@ import { HomeTemplate } from "./templates";
 import ScrollToTop from './ScrollToTop';
 import Maintainance from "./pages/Maintainance";
 import { publicRoutes } from "./routes";
-import { Fragment, Suspense } from "react";
+import { Fragment } from "react";
 
 function App() {
   return (
