@@ -8,7 +8,7 @@ const Department = React.lazy(() => import("../pages/Department/Department"));
 const Contact = React.lazy(() => import("../pages/Contact/Contact"));
 const About = React.lazy(() => import("../pages/About/About"));
 const Events = React.lazy(() => import("../pages/Events"));
-const EventType = React.lazy(() => import("../pages/Events/EventType"));
+const MainEvent = React.lazy(() => import("../pages/Events/MainEvent"));
 const EventDetail = React.lazy(() => import("../pages/Events/EventDetail"));
 const FullStack = React.lazy(() => import("../pages/FullStack/FullStack"));
 const NotFound = React.lazy(() => import("../pages/NotFound"));
@@ -23,8 +23,8 @@ const publicRoutes = [
     { path: '/departments/:id', component: FullStack },
     { path: '/contact', component: Contact },
     { path: '/about', component: About },
-    { path: '/events', component: Events },
-    { path: '/events/:type', component: EventType },
+    { path: '/events', component: MainEvent },
+    { path: '/all-events', component: Events },
     { path: '/events/:type/:eventName', component: EventDetail },
     { path: '/internal-activities', component: Maintainance },
     { path: '/blog', component: Maintainance },

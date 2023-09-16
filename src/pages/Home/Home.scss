@@ -1,5 +1,5 @@
 .bg-main {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .banner-section {
@@ -11,16 +11,16 @@
     padding-left: 0 !important;
 }
 
-.parrentBanner{
+.parrentBanner {
     position: absolute;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:100%;
-    height:38vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 38vh;
     transform: translateY(50%);
 
-    .banner{
+    .banner {
         background: url("../../assets/images/background/ready-to.png");
         width: 80%;
         height: 100%;
@@ -32,87 +32,110 @@
     }
 }
 
-@media screen and (max-width:1100px){
-    .parrentBanner{
-        height:170px;
+@media screen and (max-width: 1100px) {
+    .parrentBanner {
+        height: 170px;
         // margin-top:200px;
     }
 }
-@media screen and (max-width:950px){
-    .parrentBanner{
-        height:134px;
+@media screen and (max-width: 950px) {
+    .parrentBanner {
+        height: 134px;
         transform: translateY(250%);
         // margin-top:190px;
         // transform: translateY(100%);
     }
 }
-@media screen and (max-width:735px){
-    .parrentBanner{
-        height:107px;
+@media screen and (max-width: 735px) {
+    .parrentBanner {
+        height: 107px;
         // margin-top:170px;
     }
 }
-@media screen and (max-width:600px){
-    .parrentBanner{
-        height:80px;
+@media screen and (max-width: 600px) {
+    .parrentBanner {
+        height: 80px;
         // margin-top:165px;
     }
 }
-@media screen and (max-width:440px){
-    .parrentBanner{
-        height:54px;
+@media screen and (max-width: 440px) {
+    .parrentBanner {
+        height: 54px;
         // margin-top:145px;
         top: 10rem;
     }
 }
 
-.About{
+.About {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 170px;
-    padding-bottom: 170px;
-    
-    .AboutFlex{
+    padding-bottom: 180px;
+    height: 80vh;
+
+    .AboutFlex {
         justify-content: space-between;
     }
-    .AboutLeft{
-        
+    .AboutLeft {
         text-align: left;
-        h1{
+        h1 {
             font-size: 70px;
             font-weight: bold;
-            color: rgba(255,255,255,1);
-            
+            color: rgba(255, 255, 255, 1);
+
             margin-bottom: 30px;
         }
-        p{
+        p {
             font-size: 18px;
             padding-bottom: 10px;
-            color: rgba(255,255,255,1);
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .btn-more-about {
+            padding: 12px 26px;
         }
     }
 
-    .AboutRight{
-        .About_img{
+    .AboutRight {
+        .About_img {
             width: 100%;
             height: 100%;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
-@media screen and (max-width:767px){
-    .About{
+@media screen and (max-width: 767px) {
+    .About {
         padding-top: 100px;
         padding-bottom: 100px;
-        .AboutRight{
+        height: 100%;
+
+        .AboutLeft {
+            text-align: center;
+            h1 {
+                font-size: 6rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+    
+            .btn-more-about {
+                margin-top: 20px;
+            }
+        }
+
+        .AboutRight {
             margin-top: 50px;
         }
     }
 }
 
-
-.Playground{
+.Playground {
     width: 100%;
     background: url("../../assets/images/background/img1-main-page.png");
     background-position: center;
@@ -121,51 +144,59 @@
     padding-top: 210px;
     padding-bottom: 210px;
 
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: center;
     align-items: center;
-    .Playground_content{
+    .Playground_content {
         text-align: center;
         align-items: center;
-        .flex-ground{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            place-items: center;
-        }
-        .Playground_heading{
-            font-size: 40px;
+
+        div > section > .Playground_heading {
+            text-align: center;
+            font-size: 5.5rem;
             font-weight: bold;
             padding-left: 20px;
             padding-right: 20px;
             margin-bottom: 50px;
         }
-        .Playground_count{
-            .Playground_item{
+
+        .flex-ground {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            place-items: center;
+        }
+
+        .Playground_count {
+            .Playground_item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                p{
+                p {
                     font-size: 40px;
                 }
-                .playground_number{
+                .playground_number {
                     white-space: nowrap;
                     font-weight: bold;
-                    font-size: 44px;
+                    font-size: 10rem;
                 }
             }
         }
     }
-    
 }
 
-@media screen and (max-width:992px){
-    .Playground{
-        .Playground_content{
-            .Playground_count{
-                .Playground_item{
-                    .playground_number{
+@media screen and (max-width: 992px) {
+    .Playground {
+        .Playground_content {
+
+            div > section > .Playground_heading {
+                font-size: 3.5rem;
+            }
+
+            .Playground_count {
+                .Playground_item {
+                    .playground_number {
                         font-weight: bold;
                         font-size: 38px;
                     }
@@ -175,23 +206,19 @@
     }
 }
 
-@media screen and (max-width:700px){
-    .Playground{
-        .Playground_content{
-            .Playground_heading{
-                font-size: 20px;
-                font-weight: bold;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin-bottom: 50px;
+@media screen and (max-width: 700px) {
+    .Playground {
+        .Playground_content {
+            div > section > .Playground_heading {
+                font-size: 2.2rem;
             }
-            .Playground_count{
-                .Playground_item{
-                    p{
+
+            .Playground_count {
+                .Playground_item {
+                    p {
                         font-size: 20px;
                     }
-                    .playground_number{
-                        
+                    .playground_number {
                         font-weight: bold;
                         font-size: 30px;
                     }
@@ -201,30 +228,42 @@
     }
 }
 
-.LearnMore{
+.LearnMore {
     margin-top: 150px;
     padding-bottom: 150px;
     text-align: center;
 
-    .LearnMore_Slider .carousel .carousel-inner {
-        .carousel-item {
-            height: 400px;
-            overflow: hidden;
-
-            img {
-                height: 100%;
-                object-fit: cover;
+    .LearnMore_Slider {
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    height: 400px;
+                    overflow: hidden;
+        
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
             }
+        } 
+        .figure {
+            margin-top: 20px;
+            font-size: 2.2rem;
+            font-style: italic;
+            font-weight: 400;
         }
+        
     }
+    
 
-    .LearnMore_Button{
-        h1{
-            font-size: 40px;
+    .LearnMore_Button {
+        h1 {
+            font-size: 50px;
             font-weight: 600;
             margin-bottom: 30px;
         }
-        button{
+        button {
             margin: 10px;
         }
 
@@ -234,21 +273,39 @@
 
         .btn-learn-more {
             min-width: 185px;
+            padding: 12px 12px;
+
+            & + .btn-learn-more {
+                margin-left: 32px;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 992px) {
-    .LearnMore{
-        .LearnMore_Slider .carousel .carousel-inner {
-            .carousel-item {
-                height: 300px;
+    .LearnMore {
+        .LearnMore_Slider {
+            .carousel .carousel-inner {
+                .carousel-item {
+                    height: 300px;
+                }
             }
-        }
+            .figure {
+                margin-top: 10px;
+                font-size: 1.6rem;
+            }
+        } 
 
-        .LearnMore_Button{
+        
+
+        .LearnMore_Button {
             display: flex;
             flex-direction: column;
+
+            h1 {
+                font-size: 3.5rem;
+            }
+    
 
             .btn-group {
                 display: flex;
@@ -256,6 +313,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 16px;
+                margin: 0 0 16px;
 
                 .btn-learn-more {
                     width: 55%;
@@ -269,19 +327,18 @@
     }
 }
 
-@media screen and (max-width:767px){
-    .LearnMore{
+@media screen and (max-width: 767px) {
+    .LearnMore {
         .LearnMore_Slider .carousel .carousel-inner {
             .carousel-item {
                 height: 300px;
             }
         }
 
-        .LearnMore_Button{
+        .LearnMore_Button {
             margin-top: 40px;
 
             .btn-group {
-
                 .btn-learn-more {
                     width: 40%;
                 }
@@ -290,20 +347,19 @@
     }
 }
 
-.JoinUsToDay{
+.JoinUsToDay {
     background-image: url("../../assets/images/background/background1-main-page.png");
     background-size: cover;
     background-position: center;
-    height: 75vh;
+    height: 82vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    h1{
-        
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 2px;
+    h1 {
+        display: block;
+        font-size: 5rem;
+        font-weight: 700;
         margin-bottom: 40px;
     }
     text-align: center;
@@ -315,17 +371,17 @@
         display: flex;
         justify-content: center;
         gap: 50px;
+        margin-top: 40px;
 
         .btn-register,
         .btn-contact {
             min-width: 180px;
+            padding: 8px 12px;
         }
     }
-
-    
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width: 450px) {
     .LearnMore_Button {
         display: flex;
         flex-direction: column;
@@ -342,8 +398,8 @@
         }
     }
 
-    .JoinUsToDay{
-        h1{
+    .JoinUsToDay {
+        h1 {
             font-size: 38px;
         }
 
@@ -359,7 +415,7 @@
     }
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width: 300px) {
     .Playground {
         .Playground_content {
             .Playground_count {
@@ -381,6 +437,4 @@
             font-size: 2.6rem;
         }
     }
-    
 }
-

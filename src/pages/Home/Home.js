@@ -29,12 +29,12 @@ export default function Home() {
                 Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
                 maecenas accumsan lacus vel facilisis.
               </p>
-              <Button>MORE ABOUT ISTECH</Button>
+              <Button className="btn-more-about">MORE ABOUT ISTECH</Button>
             </div>
-            <div className="col-12 col-md-4 AboutRight">
+            <div className="col-12 col-md-5 AboutRight">
               <div className="About_img">
                 <img
-                  className="img-fluid"
+                  className=""
                   src={images.homeAbout}
                   alt="ảnh"
                 ></img>
@@ -49,9 +49,13 @@ export default function Home() {
             onExit={() => setCounter(false)}
           >
             <div className="Playground_content" data-aos="fade-up">
-              <h1 className="Playground_heading">
-                A NEW PLAYGROUND IN THE TECHNOLOGY ERA
-              </h1>
+              <div className="row g-0 d-flex justify-content-center">
+                <section className="col-12 col-sm-8">
+                  <h1 className="Playground_heading">
+                    A NEW PLAYGROUND IN THE TECHNOLOGY ERA
+                  </h1>
+                </section>
+              </div>
               <div className="Playground_count flex-ground">
                 <div className="col-4 Playground_item">
                   <p className="playground_number">
@@ -164,7 +168,7 @@ export default function Home() {
                   </button>
                 </div>
 
-                <p>Lorem</p>
+                <p className="figure">Lorem</p>
               </div>
 
               <div className="col-12 col-lg-6 col-sm-5 LearnMore_Button" data-aos="fade-up">
@@ -182,7 +186,7 @@ export default function Home() {
                     Our Partners
                   </Button>
                   <Button to="/news" className="btn-learn-more">
-                    Our News
+                    News
                   </Button>
                 </div>
               </div>

@@ -4,7 +4,7 @@
         "listPresidence": [
             {
                 "img": "./departments/member_avatar/BoardOfDirectors/CongChauAnh.png",
-                "job": "Presidence",
+                "job": "President",
                 "name": "Công Châu Anh",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
                 "phone": "0328880092",
@@ -13,7 +13,7 @@
             },
             {
                 "img": "./departments/member_avatar/BoardOfDirectors/HoangThiNgocThu.png",
-                "job": "Vice-Presidence",
+                "job": "Vice President",
                 "name": "Hoàng Thị Ngọc Thư",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
                 "phone": "0328880092",
@@ -27,7 +27,7 @@
         "listPresidence": [
             {
                 "img": "./departments/member_avatar/BoardOfDirectors/LeAnhDuc.png",
-                "job": "Presidence",
+                "job": "President",
                 "name": "Lê Anh Đức",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
                 "phone": "0328880092",
@@ -36,8 +36,8 @@
             },
             {
                 "img": "./departments/member_avatar/women.png",
-                "job": "Vice-Presidence",
-                "name": "Trần Hải Vân",
+                "job": "Vice President",
+                "name": "Nguyễn Hải Vân",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
                 "phone": "0328880092",
                 "email": "tranvantuong2k3@gmail.com",
@@ -45,7 +45,7 @@
             },
             {
                 "img": "./departments/member_avatar/women.png",
-                "job": "Vice-Presidence",
+                "job": "Vice President",
                 "name": "Nguyễn Thị Phương Anh",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
                 "phone": "0328880092",
@@ -59,7 +59,7 @@
         "listPresidence": [
             {
                 "img": "./departments/member_avatar/man.png",
-                "job": "Presidence",
+                "job": "President",
                 "name": "Đỗ Văn Quý",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
                 "phone": "0328880092",
@@ -68,7 +68,7 @@
             },
             {
                 "img": "./departments/member_avatar/BoardOfDirectors/LeAnhDuc.png",
-                "job": "Vice-Presidence",
+                "job": "Vice President",
                 "name": "Lê Anh Đức",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
                 "phone": "0328880092",
@@ -77,7 +77,7 @@
             },
             {
                 "img": "./departments/member_avatar/man.png",
-                "job": "Vice-Presidence",
+                "job": "Vice President",
                 "name": "Lê Mai Anh Thắng",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
                 "phone": "0328880092",

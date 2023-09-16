@@ -46,9 +46,13 @@
 
 .btn-prev {
     top: 3.6rem;
+    left: -12px;
+    z-index: 2;
 }
 
 .btn-next {
     top: 3.6rem;
-    right: 0;
+    right: -12px;
+    z-index: 2;
 }
+

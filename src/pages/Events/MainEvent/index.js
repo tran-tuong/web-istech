@@ -1,5 +1,5 @@
 import React from "react";
-import "./EventType.scss";
+import "./MainEvent.scss";
 import { useParams } from "react-router-dom";
 import Button from "../../../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +13,7 @@ export default function EventType() {
         <div className="container" style={{ marginBottom: '150px'}}>
             <div className="row d-flex justify-content-end">
                 <section className="col-6 btn-see-all-event">
-                    <Button to="/events">See all events </Button>
+                    <Button to="/all-events">See all events </Button>
                 </section>
             </div>
             <div className="row event-type-wrapper">

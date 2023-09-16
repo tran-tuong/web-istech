@@ -3,30 +3,31 @@
     .card-image-wrap {
         position: relative;
         transition: 0.5s;
-        transform: translateY(55px);
+        transform: translateY(80px);
         z-index: 1;
     }
 
     .card-body {
         position: relative;
-        transform: translateY(-55px);
+        transform: translateY(-80px);
         padding: 14px !important;
         transition: 0.5s;
         .card-info {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             .card-title {
                 font-size: 1.8rem;
                 font-weight: 700;
+                margin: 0;
             }
-
-            .btn-read-more {
-                color: black;
-                font-size: 1.2rem;
-                border: 1px solid black;
-                padding: 6px 10px;
-            }
+        }
+        .btn-read-more {
+            color: black;
+            font-size: 1.2rem;
+            border: 1px solid black;
+            padding: 6px 10px;
+            margin: 0;
         }
 
         .card-text {
@@ -68,6 +69,31 @@
 }
 
 @media only screen and (max-width: 1200px) {
+    .card {
+        .card-image-wrap {
+            transform: translateY(80px);
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-80px);
+            .card-info {
+                .card-title {
+                    text-align: center;
+                }
+
+                .btn-read-more {
+                    padding: 4px 8px;
+                }
+            }
+
+            .card-text {
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -108,11 +134,11 @@
 
     .card {
         .card-image-wrap {
-            transform: translateY(56px);
+            transform: translateY(80px);
         }
 
         .card-body {
-            transform: translateY(-56px);
+            transform: translateY(-80px);
             .card-info {
                 .card-title {
                 }

@@ -31,7 +31,7 @@ function EventSlider({  }) {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         autoplay: false,
         // centerMode: true,
         // centerPadding: "60px",
@@ -73,11 +73,11 @@ function EventSlider({  }) {
                     <div class="card-body">
                         <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
-                            <Button className="btn-read-more" to="">Read more</Button>
                         </section>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
+                        <Button className="btn-read-more" to="">Read more</Button>
                     </div>
                 </a>
                 <a href="/events/webinars/abc" class="card">
@@ -87,11 +87,11 @@ function EventSlider({  }) {
                     <div class="card-body">
                         <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
-                            <Button className="btn-read-more" to="">Read more</Button>
                         </section>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
+                        <Button className="btn-read-more" to="">Read more</Button>
                     </div>
                 </a>
                 <a href="/events/webinars/abc" class="card">
@@ -101,11 +101,11 @@ function EventSlider({  }) {
                     <div class="card-body">
                         <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
-                            <Button className="btn-read-more" to="">Read more</Button>
                         </section>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
+                        <Button className="btn-read-more" to="">Read more</Button>
                     </div>
                 </a>
                 <a href="/events/webinars/abc" class="card">
@@ -115,11 +115,11 @@ function EventSlider({  }) {
                     <div class="card-body">
                         <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
-                            <Button className="btn-read-more" to="">Read more</Button>
                         </section>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
+                        <Button className="btn-read-more" to="">Read more</Button>
                     </div>
                 </a>
                 <a href="/events/webinars/abc" class="card">
@@ -129,11 +129,11 @@ function EventSlider({  }) {
                     <div class="card-body">
                         <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
-                            <Button className="btn-read-more" to="">Read more</Button>
                         </section>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
+                        <Button className="btn-read-more" to="">Read more</Button>
                     </div>
                 </a>
             </Slider>

@@ -47,7 +47,7 @@ export default function EventGallery() {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        autoplay: true,
+        // autoplay: true,
         vertical: true,
         verticalSwiping: true,
         prevArrow: <PrevArrow />,
@@ -136,7 +136,7 @@ export default function EventGallery() {
             </div>
             <div className="col-md-8 gallery-main-image">
                 <Slider
-                    autoplay={true}
+                    // autoplay={true}
                     speed={500}
                     arrows={false}
                     dots={false}

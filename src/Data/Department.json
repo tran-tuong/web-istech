@@ -244,11 +244,6 @@
                 "img":"./member_avatar/man.png"
             },
             {
-                "name":"Nguyễn Thị Giang Thanh",
-                "class":"MIS2020",
-                "img":"./member_avatar/women.png"
-            },
-            {
                 "name":"Hà Linh Chi",
                 "class":"AC2021B",
                 "img":"./member_avatar/Media/HaLinhChi.png"
@@ -277,13 +272,7 @@
                 "name":"Đỗ Thị Trung Anh",
                 "class":"BDA2021C",
                 "img":"./member_avatar/Media/DoThiTrungAnh.png"
-            },
-            {
-                "name":"Nguyễn Đức Huy",
-                "class":"ICE2021A",
-                "img":"./member_avatar/man.png"
             }
-            
         ],
         "Mentor":[
             {

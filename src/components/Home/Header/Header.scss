@@ -13,15 +13,24 @@ $logo-height: 60px;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 12px 0;
+    padding: 24px 0;
     transition: .3s;
     z-index: 999;
-    height: 80px;
     background-color: transparent;
+    font-size: 24px !important;
+
+    .navbar {
+        div {
+            .btn-sign-in {
+                padding: 12px 33px;
+            }
+        }
+    }
 }
 
 .sticky {
     background-color: var(--primary-color);
+    padding: 0 !important;
     // box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 8px -2px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
 }
 
@@ -71,7 +80,7 @@ $logo-height: 60px;
             content: "";
             position: absolute;
             display: block;
-            background-color: var(--primary);
+            background-color: var(--hover-color);
             height: 2px;
             width: 100%;
             left: 0;
@@ -259,6 +268,16 @@ $logo-height: 60px;
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
+    .header {
+        .navbar {
+            div {
+                .btn-sign-in {
+                    padding: 12px 30px;
+                }
+            }
+        }
+    }
+
     .menu {
         gap: 20px;
     }
@@ -300,7 +319,7 @@ $logo-height: 60px;
     }
 
     .toggle-menu {
-        right: 18px;
+        right: 8px;
         top: 8px;
     }
 
