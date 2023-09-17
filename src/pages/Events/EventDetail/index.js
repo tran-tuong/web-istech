@@ -12,7 +12,7 @@ export default function EventDetail() {
     return (
         <main className="" style={{ marginBottom: '150px'}}>
             <div className="container">
-                <nav className="col-6 breadcrumb">
+                <nav className="col-6 breadcrumb mt-5">
                     <ul className="list-unstyled">
                         <li>
                             <Link className="item-link" to="/">
@@ -82,7 +82,7 @@ export default function EventDetail() {
                             />
                         </section>
                         <section className="col-md-5 col-12 sign-in d-flex flex-column justify-content-center align-items-center">
-                            <span className="btn-sign-in-wrapper"><Link className="btn-sign-in" to="#">Sign In</Link></span>
+                            <span className="btn-sign-in-wrapper"><Link className="sign-in-link" to="/login">Sign In</Link></span>
                             <span>to watch the record</span>
                         </section>
                     </div>

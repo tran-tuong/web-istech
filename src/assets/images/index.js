@@ -13,6 +13,9 @@ const images = {
     flagVN: require('../images/languages/vn.svg').default,
     flagGB: require('../images/languages/en.svg').default,
     globe: require('../images/languages/globe.svg').default,
+    star: require('../images/svg//others/star.svg').default,
+    star2: require('../images/svg//others/star2.svg').default,
+    circle: require('../images/svg//others/circle.svg').default,
 }
 
 export default images;

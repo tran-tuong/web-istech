@@ -64,7 +64,7 @@ export default function EventType() {
                         <a href="/events/webinars/abc" className="event-type-item">
                             <div className="event-banner-wrapper">
                                 <img 
-                                    src="https://scontent-xsp1-3.xx.fbcdn.net/v/t39.30808-6/305995478_512409504225438_7778181653633472663_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_ohc=_r49qOvIaKkAX9PIBVx&_nc_oc=AQlaJgKd7RQRYlE-Ltii8GI6p-zF774q_lyKIs0RTpkSElEPr70BEQBowDzgo9Nsw8BoxmA2_M56ujWR_ECgE6Pq&_nc_ht=scontent-xsp1-3.xx&oh=00_AfAm0xzHuikU3HRx3pcWLcC_9Qkx6Jz6O-qsD8udUoNmvg&oe=6502D886"
+                                    src="https://images.unsplash.com/photo-1555617778-02518510b9fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                                     
                                     alt="Event"
                                 />
@@ -88,7 +88,7 @@ export default function EventType() {
                         <a href="/events/webinars/abc" className="event-type-item">
                             <div className="event-banner-wrapper">
                                 <img 
-                                    src="https://scontent.fhan5-1.fna.fbcdn.net/v/t39.30808-6/240206191_373792967631072_4066500059924291816_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5614bc&_nc_ohc=k0yeUkPExM0AX_ivnqI&_nc_ht=scontent.fhan5-1.fna&oh=00_AfCWS4zGfNkIfBUfy5QwsJyKVpIwFTVD5frdYzjBEzJkIg&oe=65035699"
+                                    src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                                     
                                     alt="Event"
                                 />
@@ -112,7 +112,7 @@ export default function EventType() {
                         <a href="/events/webinars/abc" className="event-type-item">
                             <div className="event-banner-wrapper">
                                 <img 
-                                    src="https://scontent.fhan5-10.fna.fbcdn.net/v/t1.6435-9/201757786_319900456353657_7271286392903478611_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=Cj0EVCSzAQkAX8ju3-_&_nc_ht=scontent.fhan5-10.fna&oh=00_AfDY-TAyAnnrA_F9mQbgrQCfFSraTy7RSuMcYORqIxLHRA&oe=65253C8F"
+                                    src="https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1953&q=80"
                                     
                                     alt="Event"
                                 />
@@ -136,7 +136,7 @@ export default function EventType() {
                         <a href="/events/webinars/abc" className="event-type-item">
                             <div className="event-banner-wrapper">
                                 <img 
-                                    src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t1.6435-9/122291432_181014896908881_5205360498073420828_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=sRzxeSwtGvkAX9sbHQr&_nc_ht=scontent.fsgn5-10.fna&oh=00_AfCqM9YFy4TTZRwPtdzlbJCGfK_NHr5FqdEuAOwZR9mLWw&oe=65256D03"
+                                    src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80"
                                     alt="Event"
                                 />
                             </div>

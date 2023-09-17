@@ -175,13 +175,13 @@ export default function Header() {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Button className="" to="/login" target="_blank">
+                  <Button className="" to="/login">
                     Sign In
                   </Button>
                 </li>
               </ul>
             </div>
-            <Button className="btn-sign-in" to="/login" target="_blank">
+            <Button className="btn-sign-in" to="/login">
               Sign In
             </Button>
           </div>

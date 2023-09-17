@@ -1,53 +1,66 @@
-.ab_value_heading {
-  font-size: 55px;
-  font-weight: 700;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  .ab_value {
-    text-decoration: none;
+.about {
+  margin-bottom: 150px;
+}
+
+.content-heading {
+  width: 100% !important;
+  h1 {
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
   }
 }
+
+.ab_value_heading {
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
 .ab_item_content {
+  height: 100%;
   padding: 30px;
-  background-color: #fff;
-  color: #000;
+  color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  border-radius: 5%;
   margin: 30px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: .3s;
+
+  &:hover {
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba($color: #fff, $alpha: 0.2);
+    transform: scale(1.05);
+  }
+
   img {
     display: inline-block;
-    width: 10rem;
+    width: 8rem;
+    height: 8rem;
     text-align: center;
   }
   h3 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
-    margin: 20px 0;
+    margin: 40px 0 20px;
   }
-  p {
-    text-align: justify;
+  .minisub-ab-content {
+    text-align: center;
   }
 }
 
 .ab-mission {
-  margin-top: 10px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-top: 150px;
   .ab-mission-content {
-    width: 90%;
     .ab-mission-subcontent {
-      margin-left: 15px;
-      h3 {
-        font-size: 25px;
-        font-weight: 700;
-      }
       p {
-        text-align: justify;
+        font-size: 2.2rem;
+        text-align: center;
       }
     }
   }

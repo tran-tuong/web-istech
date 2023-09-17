@@ -71,17 +71,11 @@
 
     div > .sign-in {
         font-family: "Montserrat", sans-serif;
-        .btn-sign-in {
-            font-size: 4.5rem;
-            font-weight: 700;
-            color: white;
-            text-decoration: underline;
-        }
 
         .btn-sign-in-wrapper {
             text-align: left;
             position: relative;
-            .btn-sign-in {
+            .sign-in-link {
                 &:before {
                     transform-origin: right;
                     width: calc(100% + 25px);
@@ -99,7 +93,7 @@
             }
         }
 
-        .btn-sign-in {
+        .sign-in-link {
             display: inline-block;
             margin: 20px 0;
             position: relative;
@@ -142,6 +136,7 @@
         }
 
         span {
+            text-align: center;
             font-size: 3.5rem;
         }
     }
@@ -171,6 +166,7 @@
             }
         }
     }
+
 
     .event-gallery {
         section > h2 {

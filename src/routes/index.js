@@ -31,6 +31,8 @@ const publicRoutes = [
     { path: '/blog', component: Maintainance },
     { path: '/notebook', component:NoteBook },
     { path: '/resource-hub', component: Maintainance },
+    { path: '/register', component: Maintainance },
+    { path: '/login', component: Maintainance },
     { path: '*', component: NotFound, status: 404 },
     
 ];
