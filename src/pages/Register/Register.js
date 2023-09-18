@@ -8,11 +8,14 @@ export default function Register() {
       fullname: "",
       lastName: "",
       email: "",
+      birthdayDate:Yup.date,
+      optionNganh:2
     },
     validationSchema: Yup.object({
       fullname: Yup.string()
         .max(15, "Must be 15 characters or less")
         .required("Required"),
+      optionNganh:Yup.string().required("Require")
     }),
     onSubmit: (values) => {
       console.log(values);
@@ -75,7 +78,15 @@ export default function Register() {
                             type="date"
                             className="form-control form-control-lg"
                             id="birthdayDate"
+                            name="birthdayDate"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.birthdayDate}
                           />
+                                          {formik.touched.birthdayDate &&
+                          formik.errors.birthdayDate ? (
+                            <div>{formik.errors.birthdayDate}</div>
+                          ) : null}
                           <label htmlFor="birthdayDate" className="form-label">
                             Birthday
                           </label>
@@ -159,7 +170,12 @@ export default function Register() {
                     </div>
                     <div className="row">
                       <div className="col-12">
-                        <select className="select form-control-lg">
+                        <select className="select form-control-lg" 
+                              name="birthdayDate"
+                              onChange={formik.handleChange}
+                              onBlur={formik.handleBlur}
+                              
+                        >
                           <option value={1} disabled>
                             Choose option
                           </option>
