@@ -2,6 +2,7 @@ import Maintainance from "../pages/Maintainance";
 import NotFound from "../pages/NotFound";
 import NoteBook from "../pages/NoteBook/NoteBook";
 import React from "react";
+import Register from "../pages/Register/Register";
 
 
 const Home = React.lazy(() => import("../pages/Home/Home"));
@@ -32,7 +33,7 @@ const publicRoutes = [
     { path: '/notebook', component:NoteBook },
     { path: '/resource-hub', component: Maintainance },
     { path: '*', component: NotFound, status: 404 },
-    
+    { path: '/register', component: Register},
 ];
 
 const privateRoutes = [];
