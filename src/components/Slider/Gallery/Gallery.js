@@ -81,8 +81,8 @@ export default function EventGallery() {
                     slidesToScroll: 1,
                     vertical: false,
                     verticalSwiping: false,
-                    prevArrow: <PrevArrowLeft />,
-                    nextArrow: <NextArrowRight />,
+                    prevArrow: false,
+                    nextArrow: false,
                 },
             },
         ],
@@ -128,7 +128,7 @@ export default function EventGallery() {
                     </div>
                     <div className="event-image-item">
                         <img
-                            src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/307486181_514537487345973_4285472953388788248_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=49d041&_nc_ohc=9nDdpslf_BwAX_gvZqF&_nc_oc=AQn0N4fX9qg2ugmyJ59-cZIuED_lo2obJzwjkv_o0HE4rgqBSqBSKY6UpnnERT_EnILu_N-JgBW0sfveWCchW750&_nc_ht=scontent.fhan15-2.fna&oh=00_AfD-WePXiTiOdWhLrbzG0ja_Y2-ecS5fhbkAkstibMfu_A&oe=6502E966"
+                            src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
                             alt="Item"
                         />
                     </div>
