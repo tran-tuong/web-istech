@@ -4,10 +4,41 @@ import { Link, useParams } from "react-router-dom";
 import Button from "../../../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faHouse } from "@fortawesome/free-solid-svg-icons";
+import Data from '../../../Data/Events.json';
 
 export default function EventType() {
     const param = useParams();
     const type = param.type;
+
+    const [newEvent, ...events] = Data;
+
+    const renderData = () => {
+        return events.map((item, index) => (
+            <a href={`/events/${item.type}/${item.slug}`} className="event-type-item" key={index}>
+                <div className="event-banner-wrapper">
+                    <img 
+                        src={item.banner1}
+                        alt={item.event_name}
+                    />
+                </div>
+                <div className="event-type-info">
+                    <div className="info">
+                        <span className="type">{item.type}</span>
+                        <span className="separate"></span>
+                        <span className="time">
+                            <FontAwesomeIcon className="icon-clock" icon={faClock} />
+                            {item.time}
+                        </span>
+                    </div>
+                    <h4 className="title">{item.event_name}</h4>
+                    <p className="desc">
+                        {item.summary}
+                    </p>
+                </div>
+            </a>
+        ))
+    }
+
 
     return (
         <div className="container" style={{ marginBottom: '150px'}}>
@@ -33,129 +64,31 @@ export default function EventType() {
             </div>
             <div className="row event-type-wrapper">
                 <div className="col-12 col-md-7">
-                    <a href="/events/webinars/abc" className="event-main">
+                    <a href={`/events/${newEvent.type}/${newEvent.slug}`} className="event-main">
                         <img
-                            src="https://images.unsplash.com/photo-1593349480506-8433634cdcbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                            src={newEvent.banner1}
                             className="img-fluid"
-                            alt="Event"
+                            alt={newEvent.event_name}
                         />
                         <section className="event-info">
-                            <span className="event-type">Webinar</span>
+                            <span className="event-type">{newEvent.type}</span>
                             <span className="separate"></span>
                             <span className="event-time">
                                 <FontAwesomeIcon className="icon-clock" icon={faClock} />
-                                25/04/2023
+                                {newEvent.time}
                             </span>
                         </section>
                         <h3 className="event-title">
-                            Title dài dài dài dài dài
+                            {newEvent.event_name}
                         </h3>
                         <p className="event-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Quis ipsum suspendisse ultrices
-                            gravida. Risus commodo viverra maecenas accumsan
-                            lacus vel facilisis.
+                            {newEvent.summary}
                         </p>
                     </a>
                 </div>
                 <div className="col-12 col-md-5">
                     <div className="event-type-list">
-                        <a href="/events/webinars/abc" className="event-type-item">
-                            <div className="event-banner-wrapper">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1555617778-02518510b9fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                                    
-                                    alt="Event"
-                                />
-                            </div>
-                            <div className="event-type-info">
-                                <div className="info">
-                                    <span className="type">Webinar</span>
-                                    <span className="separate"></span>
-                                    <span className="time">
-                                        <FontAwesomeIcon className="icon-clock" icon={faClock} />
-                                        10/02/2023
-                                    </span>
-                                </div>
-                                <h4 className="title">Title dài dài dài dài dài</h4>
-                                <p className="desc">
-                                    Lorem ipsum dolor sit amet, con
-                                    sectetur adipiscing elit, sed do
-                                </p>
-                            </div>
-                        </a>
-                        <a href="/events/webinars/abc" className="event-type-item">
-                            <div className="event-banner-wrapper">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                                    
-                                    alt="Event"
-                                />
-                            </div>
-                            <div className="event-type-info">
-                                <div className="info">
-                                    <span className="type">Webinar</span>
-                                    <span className="separate"></span>
-                                    <span className="time">
-                                        <FontAwesomeIcon className="icon-clock" icon={faClock} />
-                                        10/02/2023
-                                    </span>
-                                </div>
-                                <h4 className="title">Title dài dài dài dài dài</h4>
-                                <p className="desc">
-                                    Lorem ipsum dolor sit amet, con
-                                    sectetur adipiscing elit, sed do
-                                </p>
-                            </div>
-                        </a>
-                        <a href="/events/webinars/abc" className="event-type-item">
-                            <div className="event-banner-wrapper">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1953&q=80"
-                                    
-                                    alt="Event"
-                                />
-                            </div>
-                            <div className="event-type-info">
-                                <div className="info">
-                                    <span className="type">Webinar</span>
-                                    <span className="separate"></span>
-                                    <span className="time">
-                                        <FontAwesomeIcon className="icon-clock" icon={faClock} />
-                                        10/02/2023
-                                    </span>
-                                </div>
-                                <h4 className="title">Title dài dài dài dài dài</h4>
-                                <p className="desc">
-                                    Lorem ipsum dolor sit amet, con
-                                    sectetur adipiscing elit, sed do
-                                </p>
-                            </div>
-                        </a>
-                        <a href="/events/webinars/abc" className="event-type-item">
-                            <div className="event-banner-wrapper">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80"
-                                    alt="Event"
-                                />
-                            </div>
-                            <div className="event-type-info">
-                                <div className="info">
-                                    <span className="type">Webinar</span>
-                                    <span className="separate"></span>
-                                    <span className="time">
-                                        <FontAwesomeIcon className="icon-clock" icon={faClock} />
-                                        10/02/2023
-                                    </span>
-                                </div>
-                                <h4 className="title">Title dài dài dài dài dài</h4>
-                                <p className="desc">
-                                    Lorem ipsum dolor sit amet, con
-                                    sectetur adipiscing elit, sed do
-                                </p>
-                            </div>
-                        </a>
+                        {renderData()}
                     </div>
                 </div>
             </div>
