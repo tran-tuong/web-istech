@@ -1,3 +1,4 @@
+import AdminRegister from "../pages/Admin/AdminRegister/AdminRegister";
 import Maintainance from "../pages/Maintainance";
 import NotFound from "../pages/NotFound";
 import NoteBook from "../pages/NoteBook/NoteBook";
@@ -34,7 +35,7 @@ const publicRoutes = [
     { path: '/register', component: Maintainance },
     { path: '/login', component: Maintainance },
     { path: '*', component: NotFound, status: 404 },
-    
+    { path: '/admin', component: AdminRegister },
 ];
 
 const privateRoutes = [];
