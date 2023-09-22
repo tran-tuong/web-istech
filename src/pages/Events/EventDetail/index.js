@@ -4,10 +4,13 @@ import { Link, useParams } from "react-router-dom";
 import EventGallery from "../../../components/Slider/Gallery/Gallery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import Data from '../../../Data/Events.json';
 
 export default function EventDetail() {
     const param = useParams();
     const slug = param.eventName;
+
+    const eventDetail = Data.find(item => item.slug === slug);
 
     return (
         <main className="" style={{ marginBottom: '150px'}}>
@@ -36,9 +39,9 @@ export default function EventDetail() {
             </div>
             <div className="event-banner">
                 <img
-                    src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/368385633_782578657208520_4212804473864769217_n.png?_nc_cat=101&ccb=1-7&_nc_sid=52f669&_nc_ohc=Ond22MMKJz0AX9dkzeJ&_nc_ht=scontent.fhan15-1.fna&oh=00_AfDZDge3y8rKpqkTtk2qaliQIn1dFahYH6CBOa4HTx0Waw&oe=6507399D"
+                    src={eventDetail.banner2}
                     className="img-fluid"
-                    alt="Event Banner"
+                    alt={eventDetail.event_name}
                 />
             </div>
             <div className="event-info">
@@ -47,17 +50,13 @@ export default function EventDetail() {
                         <section className="col-10">
                             <h2>About</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. Quis ipsum sus-pendisse
-                                ultrices gravida. Risus commodo viverra maecenas
-                                accumsan lacus vel
+                                {eventDetail.content}
                             </p>
                         </section>
                     </div>
                     <div className="event-image">
                             <img 
-                                src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/311593005_538613991604989_3142021122758759088_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=49d041&_nc_ohc=VyP3PX4rGJYAX-Xn6N3&_nc_ht=scontent.fhan5-9.fna&oh=00_AfB9wBHlobHAEsqDUa2IcT8oBI8QQHhYfs-hvmbITGseiA&oe=650880B0"
+                                src={eventDetail.feature}
                                 alt="Feature"
                             />
                     </div>
@@ -68,7 +67,7 @@ export default function EventDetail() {
                     <h2 className="">Gallery</h2>
                 </section>
                 <div className="container-fluid">
-                    <EventGallery />
+                    <EventGallery event_image={eventDetail.images} />
                 </div>
             </div>
             <div className="event-record">
