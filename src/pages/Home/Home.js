@@ -21,23 +21,18 @@ export default function Home() {
           <div className="row AboutFlex">
             <div className="col-12 col-md-7 AboutLeft" data-aos="fade-up">
               <h1>ISTECH</h1>
+              <p className="is-hiiiii">Hi guys, </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                🌟We are Information Technology Club of International School -
+                ISTECH🌟
               </p>
-              <p>
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.
-              </p>
-              <Button className="btn-more-about">MORE ABOUT ISTECH</Button>
+              <Button to="/about" className="btn-more-about">
+                MORE ABOUT ISTECH
+              </Button>
             </div>
             <div className="col-12 col-md-5 AboutRight">
               <div className="About_img">
-                <img
-                  className=""
-                  src={images.homeAbout}
-                  alt="ảnh"
-                ></img>
+                <img className="" src={images.homeAbout} alt="ảnh"></img>
               </div>
             </div>
           </div>
@@ -171,7 +166,10 @@ export default function Home() {
                 <p className="figure">Lorem</p>
               </div>
 
-              <div className="col-12 col-lg-6 col-sm-5 LearnMore_Button" data-aos="fade-up">
+              <div
+                className="col-12 col-lg-6 col-sm-5 LearnMore_Button"
+                data-aos="fade-up"
+              >
                 <h1>LEARN MORE</h1>
                 <div className="btn-group">
                   <Button to="/departments" className="btn-learn-more">
