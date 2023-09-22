@@ -3,6 +3,7 @@ import NotFound from "../pages/NotFound";
 import NoteBook from "../pages/NoteBook/NoteBook";
 import React from "react";
 import Register from "../pages/Register/Register";
+import Login from "../pages/Login/Login";
 
 
 const Home = React.lazy(() => import("../pages/Home/Home"));
@@ -32,8 +33,7 @@ const publicRoutes = [
     { path: '/blog', component: Maintainance },
     { path: '/notebook', component:NoteBook },
     { path: '/resource-hub', component: Maintainance },
-    { path: '/register', component: Maintainance },
-    { path: '/login', component: Maintainance },
+    { path: '/login', component: Login },
     { path: '*', component: NotFound, status: 404 },
     { path: '/register', component: Register},
 ];

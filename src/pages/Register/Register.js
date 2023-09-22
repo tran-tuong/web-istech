@@ -6,16 +6,20 @@ export default function Register() {
   const formik = useFormik({
     initialValues: {
       fullname: "",
-      lastName: "",
+      sdt:"",
       email: "",
       birthdayDate:Yup.date,
-      optionNganh:2
+      optionNganh:2,
+      gender:"option2"
     },
     validationSchema: Yup.object({
       fullname: Yup.string()
         .max(15, "Must be 15 characters or less")
-        .required("Required"),
-      optionNganh:Yup.string().required("Require")
+        .required("Không được bỏ trống"),
+      optionNganh:Yup.string().required("Require"),
+      sdt:Yup.string().required("Không được bỏ trống").min(10,"nhập lại").max(10,"nhập lại"),
+      email: Yup.string().email('Invalid email').required('Required'),
+      gender:Yup.string().required()
     }),
     onSubmit: (values) => {
       console.log(values);
@@ -54,19 +58,28 @@ export default function Register() {
                             <div>{formik.errors.fullname}</div>
                           ) : null}
                           <label className="form-label" htmlFor="fullname">
-                            FullName
+                            Họ Và Tên
                           </label>
                         </div>
                       </div>
+
                       <div className="col-md-6 mb-4">
                         <div className="form-outline">
                           <input
                             type="text"
-                            id="lastName"
+                            id="sdt"
+                            name="sdt"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.sdt}
                             className="form-control form-control-lg"
                           />
-                          <label className="form-label" htmlFor="lastName">
-                            SDT
+                            {formik.touched.sdt &&
+                          formik.errors.sdt ? (
+                            <div>{formik.errors.sdt}</div>
+                          ) : null}
+                          <label className="form-label" htmlFor="sdt">
+                            Số Điện Thoại
                           </label>
                         </div>
                       </div>
@@ -92,14 +105,19 @@ export default function Register() {
                           </label>
                         </div>
                       </div>
-                      <div className="col-md-6 mb-4">
+                      <div className="col-md-6 mb-4"
+      
+                      >
                         <h6 className="mb-2 pb-1">Gender: </h6>
-                        <div className="form-check form-check-inline">
+                        <div className="form-check form-check-inline" >
                           <input
                             className="form-check-input"
                             type="radio"
-                            name="inlineRadioOptions"
-                            id="femaleGender"
+                            id="gender"
+                            name="gender"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.gender}
                             defaultValue="option1"
                             defaultChecked
                           />
@@ -114,8 +132,11 @@ export default function Register() {
                           <input
                             className="form-check-input"
                             type="radio"
-                            name="inlineRadioOptions"
-                            id="maleGender"
+                            id="gender"
+                            name="gender"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.gender}
                             defaultValue="option2"
                           />
                           <label
@@ -129,8 +150,11 @@ export default function Register() {
                           <input
                             className="form-check-input"
                             type="radio"
-                            name="inlineRadioOptions"
-                            id="otherGender"
+                            id="gender"
+                            name="gender"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.gender}
                             defaultValue="option3"
                           />
                           <label
@@ -147,10 +171,18 @@ export default function Register() {
                         <div className="form-outline">
                           <input
                             type="email"
-                            id="emailAddress"
+                            id="email"
+                            name="email"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.email}
                             className="form-control form-control-lg"
                           />
-                          <label className="form-label" htmlFor="emailAddress">
+                                  {formik.touched.email &&
+                          formik.errors.email ? (
+                            <div>{formik.errors.email}</div>
+                          ) : null}
+                          <label className="form-label" htmlFor="email">
                             Email
                           </label>
                         </div>
