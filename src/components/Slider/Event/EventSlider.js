@@ -11,7 +11,7 @@ import Button from '../../Button';
 
 function PrevArrow({ onClick }) {
     return (
-        <div onClick={onClick} className="btn-control event-btn-prev">
+        <div onClick={onClick} className="btn-control position-relative event-btn-prev">
             <FontAwesomeIcon className="icon-control" icon={faChevronLeft} />
         </div>
     );
@@ -19,19 +19,19 @@ function PrevArrow({ onClick }) {
 
 function NextArrow({ onClick }) {
     return (
-        <div onClick={onClick} className="btn-control event-btn-next">
+        <div onClick={onClick} className="btn-control position-relative event-btn-next">
             <FontAwesomeIcon className="icon-control" icon={faChevronRight} />
         </div>
     );
 }
 
-function EventSlider({  }) {
+function EventSlider() {
     var settings = {
         className: "d-flex justify-content-center align-items-center",
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         autoplay: false,
         // centerMode: true,
         // centerPadding: "60px",
@@ -68,72 +68,72 @@ function EventSlider({  }) {
             <Slider {...settings}>
                 <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
-                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
+                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
                     <div class="card-body">
                         <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
-                            <Button className="btn-read-more" to="">Read more</Button>
                         </section>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
+                        <Button className="btn-read-more" to="">Read more</Button>
                     </div>
                 </a>
                 <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
-                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
+                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
                     <div class="card-body">
                         <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
-                            <Button className="btn-read-more" to="">Read more</Button>
                         </section>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
+                        <Button className="btn-read-more" to="">Read more</Button>
                     </div>
                 </a>
                 <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
-                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
+                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
                     <div class="card-body">
                         <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
-                            <Button className="btn-read-more" to="">Read more</Button>
                         </section>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
+                        <Button className="btn-read-more" to="">Read more</Button>
                     </div>
                 </a>
                 <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
-                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
+                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
                     <div class="card-body">
                         <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
-                            <Button className="btn-read-more" to="">Read more</Button>
                         </section>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
+                        <Button className="btn-read-more" to="">Read more</Button>
                     </div>
                 </a>
                 <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
-                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event Image" />
+                        <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
                     <div class="card-body">
                         <section className="card-info ">
                             <h3 class="card-title">Web building made simple</h3>
-                            <Button className="btn-read-more" to="">Read more</Button>
                         </section>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                         </p>
+                        <Button className="btn-read-more" to="">Read more</Button>
                     </div>
                 </a>
             </Slider>

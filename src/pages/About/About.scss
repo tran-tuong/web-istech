@@ -1,0 +1,151 @@
+.about {
+  margin-bottom: 150px;
+}
+
+.content-heading {
+  width: 100% !important;
+  h1 {
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+  }
+}
+
+.ab_value_heading {
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.ab_item_content {
+  height: 100%;
+  padding: 30px;
+  color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin: 30px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  transition: .3s;
+
+  &:hover {
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba($color: #fff, $alpha: 0.2);
+    transform: scale(1.05);
+  }
+
+  img {
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+  .minisub-ab-content {
+    text-align: center;
+  }
+}
+
+.ab-mission {
+  margin-top: 150px;
+  .ab-mission-content {
+    .ab-mission-subcontent {
+      p {
+        font-size: 2.2rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+//responsive
+@media screen and (max-width: 992px) {
+  .ab_value_heading {
+    font-size: 40px;
+    margin: 0 150px;
+  }
+  .row {
+    justify-content: center;
+    .ab-value-content {
+      width: 80% !important;
+      .ab_item_content {
+        border-radius: 7%;
+      }
+    }
+  }
+
+  .ab-mission {
+    .ab_value_heading {
+      margin: 30px 0;
+    }
+    .ab-mission-content {
+      .ab-mission-subcontent {
+        margin-left: 15px;
+        h3 {
+          font-size: 20px;
+          font-weight: 900;
+        }
+        p {
+          font-size: 15px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ab_value_heading {
+    font-size: 35px;
+    margin: 0 90px;
+  }
+  .ab-value-content {
+    .ab_item_content {
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ab_value_heading {
+    font-size: 30px;
+    margin: 0 80px;
+  }
+
+  .ab-value-content {
+    .ab_item_content {
+      h3 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .ab-mission {
+    .ab-mission-content {
+      .ab-mission-subcontent {
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

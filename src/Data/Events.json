@@ -1,0 +1,70 @@
+[
+    {
+        "event_name": "Tham quan FPT TOUR",
+        "slug": "tham-quan-fpt-tour",
+        "type": "webinar",
+        "time": "10/10/2020",
+        "banner1": "https://i.postimg.cc/MKMYCmkB/120262556-174128007597570-5670250056992119384-n.png",
+        "banner2": "https://i.postimg.cc/9M1rgKFh/banner-fpt-2.png",
+        "feature": "https://i.postimg.cc/VLXWsd51/IMG-3572.jpg",
+        "summary": "Đây là hoạt động mở đầu cho chuỗi hoạt động kết nối giao lưu chia sẻ các bạn sinh viên và doanh nghiệp của câu lạc bộ. FSOFT TOUR là chuyến tham quan trải nghiệm khám phá môi trường  làm việc của công ty FPT SOFTWARE Hòa Lạc.",
+        "content": "Đây là hoạt động mở đầu cho chuỗi hoạt động kết nối giao lưu chia sẻ các bạn sinh viên và doanh nghiệp của câu lạc bộ. FSOFT TOUR là chuyến tham quan trải nghiệm khám phá môi trường  làm việc của công ty FPT SOFTWARE Hòa Lạc. Là cơ hội để các bạn sinh viên được lắng nghe và trao đổi với các chuyên gia tại FPT SOFTWARE về định hướng nghề nghiệp và lộ trình trở thành lập trình viên chuyên nghiệp. Bên cạnh đó chuyến đi này còn giúp các bạn sinh viên tìm hiểu thêm về các cơ hội thực tập, làm việc và các chương trình đào tạo đặc biệt dành cho sinh viên tại FPT SOFTWARE. Hoạt động đã thu hút được sự tham gia của 150 bạn sinh viên.",
+        "images": [
+            {"image": "https://i.postimg.cc/nLh4122c/IMG-0928.jpg"},
+            {"image": "https://i.postimg.cc/JnyjfhSf/IMG-3519.jpg"},
+            {"image": "https://i.postimg.cc/nLSvSmSK/IMG-3483.jpg"},
+            {"image": "https://i.postimg.cc/XNGgh2br/IMG-3584.jpg"}
+        ]
+    }, 
+    {
+        "event_name": "Hội thảo công nghệ AI, BigData, Machine Learning",
+        "slug": "hoi-thao-cong-nghe-ai-bigdata-machine-learning",
+        "type": "webinar",
+        "time": "20/10/2020",
+        "banner1": "https://i.postimg.cc/BbSMPF6d/AI.jpg",
+        "banner2": "https://i.postimg.cc/BbSMPF6d/AI.jpg",
+        "feature": "https://i.postimg.cc/ZYwLDC05/123047526-182156673461370-2513597115865290183-n.jpg",
+        "summary": "Nằm trong chuỗi dự án hoạt động kết nối sinh viên và doanh nghiệp, CLB tiếp tực với hoạt động giao lưu chia sẻ tại hội thảo về công nghệ AI, BigData, Machine Learning, IOT cùng đại diện các tập đoàn Microsoft, Lenovo và Intel.",
+        "content": "Nằm trong chuỗi dự án hoạt động kết nối sinh viên và doanh nghiệp, CLB tiếp tực với hoạt động giao lưu chia sẻ tại hội thảo về công nghệ AI, BigData, Machine Learning, IOT cùng đại diện các tập đoàn Microsoft, Lenovo và Intel. Tại đây các bạn sinh  viên đã có cơ hôi được lắng nghe chia sẻ và trao đổi trực tiếp  cùng các đại diện các tập đoàn về các lĩnh vực công nghệ mới newtech cũng như tìm hiểu về các chương trình thực tập cũng  như cơ hooin việc làm tại các tập đoàn lớn. Ngoài ra tại buổi hội  thảo lần này các bạn sinh viên đã có cơ hội tìm hiểu về các sản  phẩm 'phần cứng và phần mềm' ứng dụng trong AI, BigData, Machine Learning và IOT của các tập đoàn Microsoft, Lenovo và  Intel. Số lượng sinh viên tham gia chương trình: 170 sinh viên.",
+        "images": [
+            {"image": "https://i.postimg.cc/zvvT1F3X/122777152-182165353460502-8102247378914198867-n.jpg"},
+            {"image": "https://i.postimg.cc/R0x1ntpX/122875640-182156596794711-4868200008264007439-n.jpg"},
+            {"image": "https://i.postimg.cc/TPjVjPZG/123143902-182157110127993-1759582042626844874-n.jpg"},
+            {"image": "https://i.postimg.cc/ncM18pQY/123011528-182156910128013-4206370095452750828-n.jpg"}
+        ]
+    },
+    {
+        "event_name": "Workshop Webinar - Python for Data Analysis",
+        "slug": "workshop-webinar-python-for-data-analysis",
+        "type": "webinar",
+        "time": "26/06/2021",
+        "banner1": "https://i.postimg.cc/J4GjY8yw/201757786-319900456353657-7271286392903478611-n.jpg",
+        "banner2": "https://i.postimg.cc/ryhS9sw-C/207535015-322325812777788-5497701254932609870-n.jpg",
+        "feature": "https://i.postimg.cc/brv1hc3t/197305998-322463222764047-8972501569736808034-n.jpg",
+        "summary": "Nằm trong chuỗi hoạt động giao lưu kết nối chia sẻ cũng các bạn sinh viên, CLB đã lên kế hoạch chuẩn bị và tổ chức thành công chuỗi workshop webinar với sự tham gia của gần 170 bạn sinh viên Khoa Quốc Tế.",
+        "content": "Nằm trong chuỗi hoạt động giao lưu kết nối chia sẻ cũng các bạn sinh viên, CLB đã lên kế hoạch chuẩn bị và tổ chức thành công chuỗi workshop webinar với sự tham gia của gần 170 bạn sinh viên Khoa Quốc Tế. Tại đây các bạn đã được lắng nghe chia sẻ và được trainning những kiến thức cơ bản về ngôn ngữ lập trình Python và phân tích dữ liệu Data Analysis. Ngoài ra các bạn còn được lắng nghe những chia sẻ của đồng chí bí thư đoàn khoa Nguyễn Văn Tánh về tầm quan trọng và cơ hội nghề nghiệp ở lĩnh vực này. Chuỗi workshop khép lại đã nhận được rất nhiều  phản hồi tích cực đến từ các bạn sinh viên tham gia, tạo động lực và tiền đề để CLB tiếp tục triển khai các kế hoạch tiếp theo trong thời gian tới.",
+        "images": [
+            {"image": "https://i.postimg.cc/4yFV4LSF/201869941-322463952763974-6114671405440427874-n.jpg"},
+            {"image": "https://i.postimg.cc/4dPpqNbG/202009984-322462512764118-7020026415789028488-n.jpg"},
+            {"image": "https://i.postimg.cc/jjzH6hDL/203209418-322463299430706-2338550240436739835-n.jpg"},
+            {"image": "https://i.postimg.cc/25pdBt8s/205080144-323079712702398-2603733710809300573-n.png"}
+        ]
+    }, 
+    {
+        "event_name": "Workshop \"NetSmart - Think before you click\"",
+        "slug": "workshop-netsmart-think-before-you-click",
+        "type": "webinar",
+        "time": "23/01/2022",
+        "banner1": "https://i.postimg.cc/J4GjY8yw/201757786-319900456353657-7271286392903478611-n.jpg",
+        "banner2": "https://i.postimg.cc/ryhS9sw-C/207535015-322325812777788-5497701254932609870-n.jpg",
+        "feature": "",
+        "summary": "Workshop “NetSmart - Think before you click” giúp các bạn sinh viên có những nhận thức rõ ràng hơn về các mối nguy hại mà không gian mạng mang lại cũng như biết được cách phòng tránh chúng.",
+        "content": "Qua buổi workshop, các bạn sinh viên đã có được các kiến thức về không gian mạng, giao lưu với Guest Speaker \"xịn sò\", được điểm rèn luyện và \"rinh\" về cho mình Giấy chún nhận tham gia Workshop - Kết thúc sự kiện đã thu hút hơn 300 bạn sinh viên đăng kí và gần 200 bạn tham gia online",
+        "images": [
+            {"image": "https://i.postimg.cc/4yFV4LSF/201869941-322463952763974-6114671405440427874-n.jpg"},
+            {"image": "https://i.postimg.cc/4dPpqNbG/202009984-322462512764118-7020026415789028488-n.jpg"},
+            {"image": "https://i.postimg.cc/jjzH6hDL/203209418-322463299430706-2338550240436739835-n.jpg"},
+            {"image": "https://i.postimg.cc/25pdBt8s/205080144-323079712702398-2603733710809300573-n.png"}
+        ]
+    }
+]

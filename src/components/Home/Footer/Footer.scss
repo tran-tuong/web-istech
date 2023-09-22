@@ -1,12 +1,15 @@
-footer {
+.footer-wrapper {
+    font-family: "Montserrat", sans-serif;
     width: 100%;
+    padding: 26px 0;
     background-color: var(--primary-color);
     
     .club-info {
         font-size: 1.6rem;
         
         p {
-            font-weight: 600;
+            font-size: 1.8rem;
+            font-weight: 700;
             margin-bottom: 2px;
         }
 
@@ -20,14 +23,23 @@ footer {
     }
 
     .club-media {
+        text-align: center;
         .media {
-            gap: 8px;
+            gap: 20px;
         }
     
         .languages {
+            margin-top: 20px;
+
+            .vn-language,
+            .en-language {
+                display: inline-block;
+                margin: 0 6px;
+            }
+
             img {
                 width: 40px;
-                height: 20px;
+                height: 25px;
                 transition: all .4s ease 0s;
 
                 &:hover {

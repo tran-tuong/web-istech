@@ -27,11 +27,6 @@ body {
   font-size: 1.6rem;
   text-rendering: optimizeSpeed;
   color: var(--primary);
-  background-color: #131620;
-  background-image: url('../../assets/images/background/background-BoD.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background-position: center;
   position: relative;
   margin: 0 auto;
 }
@@ -41,6 +36,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.background {
+  background-image: url('../../assets/images/background/background-BoD.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: center;
 }
 
 .no-scroll {
@@ -93,6 +95,36 @@ a[href] {
       font-weight: bold;
       margin-bottom: 30px;
     }
+  }
+}
+
+.breadcrumb {
+  display: block;
+  margin-bottom: 70px;
+  
+  .list-unstyled {
+      display: flex;
+      gap: 16px;
+
+      li {
+          transition: .3s;
+
+          .item-link {
+              color: var(--primary);
+          }
+
+          .department-active {
+              font-weight: 600;
+          }
+
+          &:first-child:hover {
+              scale: 1.2;
+          }
+
+          &:hover {
+              opacity: .8;
+          }
+      }
   }
 }
 
