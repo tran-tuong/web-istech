@@ -1,290 +1,290 @@
 [
-    {
-        "id":"fullstack",
-        "img":"https://cdn.dribbble.com/users/763363/screenshots/3557947/attachments/791767/fullstack-logo-light.png?compress=1&resize=400x300&vertical=center",
-        "Department":"Full Stack Dev",
-        "Des":"Trong các ban chuyên môn của chúng mình, chắc chắn không thể không kể đến Full-stack-dev - một phân ban vô cùng đa zi năng, đảm nhiệm công việc ứng dụng phát triển website và lập trình. Với sứ mệnh kết nối sự sáng tạo, phát triển toàn diện, Full-stack hứa hẹn sẽ đem lại thật nhiều cơ hội phát triển và học tập cho những quý ông đa zi năng trong tương lai.",
-        "listSkill":[
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"}
-        ],
-        "Leader":{
-            "name":"Trần Văn Tưởng",
-            "class":"ICE2021",
-            "job":"Leader",
-            "img":"./member_avatar/Fullstack/TranTuong.png"
-        },
-        "Members":[
-            {
-                "name":"Trần Việt Long",
-                "class":"MIS2018",
-                "img":"./member_avatar/Fullstack/TranVietLong.png"
-            },
-            {
-                "name":"Nguyễn Nam Khánh",
-                "class":"ICE2019",
-                "img":"./member_avatar/man.png"
-            },
-            {
-                "name":"Đào Quý Tiến",
-                "class":"ICE2020",
-                "img":"./member_avatar/man.png"
-            },
-            {
-                "name":"Phạm Gia Khiêm",
-                "class":"ICE2020",
-                "img":"./member_avatar/man.png"
-            },
-            {
-                "name":"Hoàng Tuấn Anh Đạt",
-                "class":"ICE2021",
-                "img":"./member_avatar/Fullstack/HoangTuanAnhDat.png"
-            },
-            {
-                "name":"Trần Bảo Trung",
-                "class":"MIS2021",
-                "img":"./member_avatar/Fullstack/TranBaoTrung.png"
-            },
-            {
-                "name":"Vũ Minh Đức",
-                "class":"AIT2022",
-                "img":"./member_avatar/Fullstack/VuMinhDuc.png"
-            }
-        ],
-        "Mentor":[
-            {
-                "name":"Lê Anh Đức",
-                "class":"ICE2018A",
-                "img":"./member_avatar/BoardOfDirectors/LeAnhDuc.png"
-            },
-            {
-                "name":"Phạm Đức Nghĩa",
-                "class":"ICE2018A",
-                "img":"./member_avatar/Fullstack/DucNghiaPham.png"
-            }
-        ]
+  {
+    "id": "fullstack",
+    "img": "https://cdn.dribbble.com/users/763363/screenshots/3557947/attachments/791767/fullstack-logo-light.png?compress=1&resize=400x300&vertical=center",
+    "Department": "Full Stack Dev",
+    "Des": "Trong các ban chuyên môn của chúng mình, chắc chắn không thể không kể đến Full-stack-dev - một phân ban vô cùng đa zi năng, đảm nhiệm công việc ứng dụng phát triển website và lập trình. Với sứ mệnh kết nối sự sáng tạo, phát triển toàn diện, Full-stack hứa hẹn sẽ đem lại thật nhiều cơ hội phát triển và học tập cho những quý ông đa zi năng trong tương lai.",
+    "listSkill": [
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" }
+    ],
+    "Leader": {
+      "name": "Trần Văn Tưởng",
+      "class": "ICE2021",
+      "job": "Leader",
+      "img": "./member_avatar/Fullstack/TranTuong.png"
     },
-    {
-        "id":"data-science",
-        "img":"https://previews.123rf.com/images/essaphear/essaphear1709/essaphear170900001/86808937-data-science-logo-icon-design-vector.jpg",
-        "Department":"Data Science",
-        "Des":"Một trong những ban “hot trend” đi theo thời đại chắc chắn phải nhớ tới Data Science. Bộ nhận diện sáng giá của ISTECH, nơi có những thành viên của thời đại mới, họ mang trong mình niềm say mê với dòng chảy dữ liệu khổng lồ. Ban Data Science tự hào với sứ mệnh truyền cảm hứng về khoa học dữ liệu tới cộng đồng và cung cấp cho mọi người những kinh nghiệm trên con đường lĩnh hội kiến thức của Data Science.",
-        "listSkill":[
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"}
-        ],
-        "Leader":{
-            "name":"Trần Ngọc Thanh Bình",
-            "class":"BDA2020",
-            "job":"Leader",
-            "img":"./member_avatar/DataScience/TranNgocThanhBinh.png"
-        },
-        "Members":[
-            {
-                "name":"Trần Quốc Đăng",
-                "class":"ICE2020A",
-                "img":"./member_avatar/DataScience/TranQuocDang.png"
-            },
-            {
-                "name":"Lê Thị Nhung",
-                "class":"ICE2020B",
-                "img":"./member_avatar/DataScience/LeThiNhung.png"
-            },
-            {
-                "name":"Trần Thảo Chi",
-                "class":"BDA2021",
-                "img":"./member_avatar/women.png"
-            },
-            {
-                "name":"Đinh Lê Đức Nam",
-                "class":"BDA2021",
-                "img":"./member_avatar/DataScience/DinhLeDucNam.png"
-            },
-            {
-                "name":"Vũ Thanh Phương",
-                "class":"MIS2021A",
-                "img":"./member_avatar/DataScience/VuThanhPhuong.png"
-            },
-            {
-                "name":"Đào Đức Trọng",
-                "class":"BDA2021",
-                "img":"./member_avatar/man.png"
-            },
-            {
-                "name":"Lương Khánh Phương",
-                "class":"BDA2022",
-                "img":"./member_avatar/DataScience/LuongKhanhPhuong.png"
-            }
-        ],
-        "Mentor":[
-            {
-                "name":"Lê Anh Đức",
-                "class":"ICE2021",
-                "img":"./member_avatar/man.png"
-            },
-            {
-                "name":"Phạm Đức Nghĩa",
-                "class":"ICE2021",
-                "img":"./member_avatar/Fullstack/DucNghiaPham.png"
-            }
-        ]
+    "Members": [
+      {
+        "name": "Trần Việt Long",
+        "class": "MIS2018",
+        "img": "./member_avatar/Fullstack/TranVietLong.png"
+      },
+      {
+        "name": "Nguyễn Nam Khánh",
+        "class": "ICE2019",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Đào Quý Tiến",
+        "class": "ICE2020",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Phạm Gia Khiêm",
+        "class": "ICE2020",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Hoàng Tuấn Anh Đạt",
+        "class": "ICE2021",
+        "img": "./member_avatar/Fullstack/HoangTuanAnhDat.png"
+      },
+      {
+        "name": "Trần Bảo Trung",
+        "class": "MIS2021",
+        "img": "./member_avatar/Fullstack/TranBaoTrung.png"
+      },
+      {
+        "name": "Vũ Minh Đức",
+        "class": "AIT2022",
+        "img": "./member_avatar/Fullstack/VuMinhDuc.png"
+      }
+    ],
+    "Mentor": [
+      {
+        "name": "Lê Anh Đức",
+        "class": "ICE2018A",
+        "img": "./member_avatar/BoardOfDirectors/LeAnhDuc.png"
+      },
+      {
+        "name": "Phạm Đức Nghĩa",
+        "class": "ICE2018A",
+        "img": "./member_avatar/Fullstack/DucNghiaPham.png"
+      }
+    ]
+  },
+  {
+    "id": "data-science",
+    "img": "https://previews.123rf.com/images/essaphear/essaphear1709/essaphear170900001/86808937-data-science-logo-icon-design-vector.jpg",
+    "Department": "Data Science",
+    "Des": "Một trong những ban “hot trend” đi theo thời đại chắc chắn phải nhớ tới Data Science. Bộ nhận diện sáng giá của ISTECH, nơi có những thành viên của thời đại mới, họ mang trong mình niềm say mê với dòng chảy dữ liệu khổng lồ. Ban Data Science tự hào với sứ mệnh truyền cảm hứng về khoa học dữ liệu tới cộng đồng và cung cấp cho mọi người những kinh nghiệm trên con đường lĩnh hội kiến thức của Data Science.",
+    "listSkill": [
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" }
+    ],
+    "Leader": {
+      "name": "Trần Ngọc Thanh Bình",
+      "class": "BDA2020",
+      "job": "Leader",
+      "img": "./member_avatar/DataScience/TranNgocThanhBinh.png"
     },
-    {
-        "id":"game",
-        "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
-        "Department":"Game Dev",
-        "Des":"“Game” là thứ được nhiệt liệt chào mừng trong ISTECH, bạn đam mê game, yêu thích tạo ra một game mà do chính mình sở hữu thì ban Game Dev sinh ra để giúp bạn đạt được điều ấy. Đúng như tính cách của các “Game thủ”, thành viên trong Game Dev luôn vui nhộn, hài hước, trẻ trung và đó chính là nhân tố tuyệt vời nhất khi nhận định ban Game Dev là linh hồn trẻ của ISTECH.",
-        "listSkill":[
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"}
-        ],
-        "Leader":{
-            "name":"Phạm Đức Long",
-            "class":"ICE2020",
-            "job":"Leader",
-            "img":"./member_avatar/Game/PhamDucLong.png"
-        },
-        "Members":[
-            {
-                "name":"Nguyễn Bảo Quang",
-                "class":"ICE2019A",
-                "img":"./member_avatar/Game/NguyenBaoQuang.png"
-            },
-            {
-                "name":"Cao Sỹ Minh",
-                "class":"ICE2019A",
-                "img":"./member_avatar/man.png"
-            }, 
-            {
-                "name":"Võ Lê Phương",
-                "class":"MIS2020B",
-                "img":"./member_avatar/Game/PhuongLeVo.png"
-            }, 
-            {
-                "name":"Đỗ Ngọc Tiến",
-                "class":"ICE2021",
-                "img":"./member_avatar/man.png"
-            }, 
-            {
-                "name":"Nguyễn Thế Hùng",
-                "class":"MIS2022",
-                "img":"./member_avatar/Game/HungTheNguyen.png"
-            },
-            {
-                "name":"Dương Ngô Nhật Minh",
-                "class":"AIT2022",
-                "img":"./member_avatar/Game/DuongNgoNhatMinh.png"
-            },
-            {
-                "name":"Nguyễn Hải Đăng",
-                "class":"ICE2022",
-                "img":"./member_avatar/Game/DangNguyen.png"
-            },
-            {
-                "name":"Đặng Nguyễn Cao Sơn",
-                "class":"ICE2022",
-                "img":"./member_avatar/Game/DangNguyenCaoSon.png"
-            }
-        ],
-        "Mentor":[
-            {
-                "name":"Lê Anh Đức",
-                "class":"ICE2021",
-                "img":"./member_avatar/man.png"
-            },
-            {
-                "name":"Phạm Đức Nghĩa",
-                "class":"ICE2021",
-                "img":"./member_avatar/Fullstack/DucNghiaPham.png"
-            }
-        ]
+    "Members": [
+      {
+        "name": "Trần Quốc Đăng",
+        "class": "ICE2020A",
+        "img": "./member_avatar/DataScience/TranQuocDang.png"
+      },
+      {
+        "name": "Lê Thị Nhung",
+        "class": "ICE2020B",
+        "img": "./member_avatar/DataScience/LeThiNhung.png"
+      },
+      {
+        "name": "Trần Thảo Chi",
+        "class": "BDA2021",
+        "img": "./member_avatar/women.png"
+      },
+      {
+        "name": "Đinh Lê Đức Nam",
+        "class": "BDA2021",
+        "img": "./member_avatar/DataScience/DinhLeDucNam.png"
+      },
+      {
+        "name": "Vũ Thanh Phương",
+        "class": "MIS2021A",
+        "img": "./member_avatar/DataScience/VuThanhPhuong.png"
+      },
+      {
+        "name": "Đào Đức Trọng",
+        "class": "BDA2021",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Lương Khánh Phương",
+        "class": "BDA2022",
+        "img": "./member_avatar/DataScience/LuongKhanhPhuong.png"
+      }
+    ],
+    "Mentor": [
+      {
+        "name": "Lê Anh Đức",
+        "class": "ICE2021",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Phạm Đức Nghĩa",
+        "class": "ICE2021",
+        "img": "./member_avatar/Fullstack/DucNghiaPham.png"
+      }
+    ]
+  },
+  {
+    "id": "game",
+    "img": "https://i.pinimg.com/564x/48/99/1f/48991f90e9a0eed6f972f7c310bdd3e0.jpg",
+    "Department": "Game Dev",
+    "Des": "“Game” là thứ được nhiệt liệt chào mừng trong ISTECH, bạn đam mê game, yêu thích tạo ra một game mà do chính mình sở hữu thì ban Game Dev sinh ra để giúp bạn đạt được điều ấy. Đúng như tính cách của các “Game thủ”, thành viên trong Game Dev luôn vui nhộn, hài hước, trẻ trung và đó chính là nhân tố tuyệt vời nhất khi nhận định ban Game Dev là linh hồn trẻ của ISTECH.",
+    "listSkill": [
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" }
+    ],
+    "Leader": {
+      "name": "Phạm Đức Long",
+      "class": "ICE2020",
+      "job": "Leader",
+      "img": "./member_avatar/Game/PhamDucLong.png"
     },
-    {
-        "id":"media-events",
-        "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
-        "Department":"Media & Event",
-        "Des":"Được ví như bộ mặt của CLB, Media & Event là nơi hội tụ những khối óc mang niềm đam mê với không chỉ công nghệ mà còn cả với truyền thông. Với gốc rễ là các hoạt động truyền thông và tổ chức sự kiện, các thành viên của ban Media & Event có thể thỏa sức sáng tạo nên những kế hoạch, nội dung đầy phá cách và hấp dẫn. Không chỉ vậy, ban Media & Event còn là nơi để các thành viên có cơ hội giao lưu, học hỏi từ những con người dày dặn kinh nghiệm trong lĩnh vực, từ đó mở rộng thêm vốn kiến thức cũng như hình thành nên những mối quan hệ bền vững, tốt đẹp.",
-        "listSkill":[
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"},
-            {"img":"http:kjasdnasd"}
-        ],
-        "Leader":{
-            "name":"Hoàng Thị Ngọc Thư",
-            "class":"AC2019",
-            "job":"Leader",
-            "img":"./member_avatar/BoardOfDirectors/HoangThiNgocThu.png"
-        },
-        "Members":[
-            {
-                "name":"Nguyễn Quốc Bảo",
-                "class":"IB2018",
-                "img":"./member_avatar/man.png"
-            },
-            {
-                "name":"Lê Thúy Hằng",
-                "class":"ICE2018A",
-                "img":"./member_avatar/women.png"
-            },
-            {
-                "name":"Đinh Chính Thanh Sang",
-                "class":"IB2019",
-                "img":"./member_avatar/man.png"
-            },
-            {
-                "name":"Cao Sỹ Minh",
-                "class":"ICE2019",
-                "img":"./member_avatar/man.png"
-            },
-            {
-                "name":"Hà Linh Chi",
-                "class":"AC2021B",
-                "img":"./member_avatar/Media/HaLinhChi.png"
-            },
-            {
-                "name":"Đinh Thu Hương",
-                "class":"IB2021C",
-                "img":"./member_avatar/women.png"
-            },
-            {
-                "name":"Hoàng Minh Hà",
-                "class":"IB2021",
-                "img":"./member_avatar/women.png"
-            },
-            {
-                "name":"Vũ Thị Như Quỳnh",
-                "class":"UEL2021",
-                "img":"./member_avatar/women.png"
-            },
-            {
-                "name":"Nguyễn Thị Thanh Bình",
-                "class":"MIS2021",
-                "img":"./member_avatar/Media/NguyenThanhBinh.png"
-            },
-            {
-                "name":"Đỗ Thị Trung Anh",
-                "class":"BDA2021C",
-                "img":"./member_avatar/Media/DoThiTrungAnh.png"
-            }
-        ],
-        "Mentor":[
-            {
-                "name":"Lê Anh Đức",
-                "class":"ICE2021",
-                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
-            },
-            {
-                "name":"Phạm Đức Nghĩa",
-                "class":"ICE2021",
-                "img":"https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
-            }
-        ]
-    }
+    "Members": [
+      {
+        "name": "Nguyễn Bảo Quang",
+        "class": "ICE2019A",
+        "img": "./member_avatar/Game/NguyenBaoQuang.png"
+      },
+      {
+        "name": "Cao Sỹ Minh",
+        "class": "ICE2019A",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Võ Lê Phương",
+        "class": "MIS2020B",
+        "img": "./member_avatar/Game/PhuongLeVo.png"
+      },
+      {
+        "name": "Đỗ Ngọc Tiến",
+        "class": "ICE2021",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Nguyễn Thế Hùng",
+        "class": "MIS2022",
+        "img": "./member_avatar/Game/HungTheNguyen.png"
+      },
+      {
+        "name": "Dương Ngô Nhật Minh",
+        "class": "AIT2022",
+        "img": "./member_avatar/Game/DuongNgoNhatMinh.png"
+      },
+      {
+        "name": "Nguyễn Hải Đăng",
+        "class": "ICE2022",
+        "img": "./member_avatar/Game/DangNguyen.png"
+      },
+      {
+        "name": "Đặng Nguyễn Cao Sơn",
+        "class": "ICE2022",
+        "img": "./member_avatar/Game/DangNguyenCaoSon.png"
+      }
+    ],
+    "Mentor": [
+      {
+        "name": "Lê Anh Đức",
+        "class": "ICE2021",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Phạm Đức Nghĩa",
+        "class": "ICE2021",
+        "img": "./member_avatar/Fullstack/DucNghiaPham.png"
+      }
+    ]
+  },
+  {
+    "id": "media-events",
+    "img": "https://i.pinimg.com/474x/83/f3/22/83f322ad7f8a3122b56d49afe20b1400.jpg",
+    "Department": "Media & Event",
+    "Des": "Được ví như bộ mặt của CLB, Media & Event là nơi hội tụ những khối óc mang niềm đam mê với không chỉ công nghệ mà còn cả với truyền thông. Với gốc rễ là các hoạt động truyền thông và tổ chức sự kiện, các thành viên của ban Media & Event có thể thỏa sức sáng tạo nên những kế hoạch, nội dung đầy phá cách và hấp dẫn. Không chỉ vậy, ban Media & Event còn là nơi để các thành viên có cơ hội giao lưu, học hỏi từ những con người dày dặn kinh nghiệm trong lĩnh vực, từ đó mở rộng thêm vốn kiến thức cũng như hình thành nên những mối quan hệ bền vững, tốt đẹp.",
+    "listSkill": [
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" },
+      { "img": "http:kjasdnasd" }
+    ],
+    "Leader": {
+      "name": "Hoàng Thị Ngọc Thư",
+      "class": "AC2019",
+      "job": "Leader",
+      "img": "./member_avatar/BoardOfDirectors/HoangThiNgocThu.png"
+    },
+    "Members": [
+      {
+        "name": "Nguyễn Quốc Bảo",
+        "class": "IB2018",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Lê Thúy Hằng",
+        "class": "ICE2018A",
+        "img": "./member_avatar/women.png"
+      },
+      {
+        "name": "Đinh Chính Thanh Sang",
+        "class": "IB2019",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Cao Sỹ Minh",
+        "class": "ICE2019",
+        "img": "./member_avatar/man.png"
+      },
+      {
+        "name": "Hà Linh Chi",
+        "class": "AC2021B",
+        "img": "./member_avatar/Media/HaLinhChi.png"
+      },
+      {
+        "name": "Đinh Thu Hương",
+        "class": "IB2021C",
+        "img": "./member_avatar/women.png"
+      },
+      {
+        "name": "Hoàng Minh Hà",
+        "class": "IB2021",
+        "img": "./member_avatar/women.png"
+      },
+      {
+        "name": "Vũ Thị Như Quỳnh",
+        "class": "UEL2021",
+        "img": "./member_avatar/women.png"
+      },
+      {
+        "name": "Nguyễn Thị Thanh Bình",
+        "class": "MIS2021",
+        "img": "./member_avatar/Media/NguyenThanhBinh.png"
+      },
+      {
+        "name": "Đỗ Thị Trung Anh",
+        "class": "BDA2021C",
+        "img": "./member_avatar/Media/DoThiTrungAnh.png"
+      }
+    ],
+    "Mentor": [
+      {
+        "name": "Lê Anh Đức",
+        "class": "ICE2021",
+        "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+      },
+      {
+        "name": "Phạm Đức Nghĩa",
+        "class": "ICE2021",
+        "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+      }
+    ]
+  }
 ]

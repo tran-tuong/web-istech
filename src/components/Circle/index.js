@@ -16,7 +16,7 @@ function Circle({ border, data, partner }) {
         </div>
       </>
     );
-  }  else if (partner) {
+  } else if (partner) {
     return (
       <>
         <div className="rectangle-p">
@@ -26,17 +26,21 @@ function Circle({ border, data, partner }) {
             </div>
             {partner && (
               <div className="partner">
-                <img src={images.globe} alt="Globe icon" className="icon-globe" />
-                <span className="partner-name ">{data.nameP}</span>
+                <img
+                  src={images.globe}
+                  alt="Globe icon"
+                  className="icon-globe"
+                />
+                <a href={data.link} className="partner-name">
+                  {data.nameP}
+                </a>
               </div>
             )}
           </div>
         </div>
       </>
     );
-  } 
-  
-  else {
+  } else {
     return (
       <>
         <div className="circle-content">
@@ -53,6 +57,5 @@ function Circle({ border, data, partner }) {
     );
   }
 }
-
 
 export default Circle;

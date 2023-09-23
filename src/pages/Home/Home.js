@@ -4,6 +4,8 @@ import images from "../../assets/images";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import Button from "../../components/Button";
+import Typewriter from "typewriter-effect";
+import { tab } from "@testing-library/user-event/dist/tab";
 
 export default function Home() {
   const [Counter, setCounter] = useState(false);
@@ -21,23 +23,32 @@ export default function Home() {
           <div className="row AboutFlex">
             <div className="col-12 col-md-7 AboutLeft" data-aos="fade-up">
               <h1>ISTECH</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-              <p>
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.
-              </p>
-              <Button className="btn-more-about">MORE ABOUT ISTECH</Button>
+              <p className="is-hiiiii">Hi guys!</p>
+              <div className="txt-animation">
+                <p className="stactic-animation">We are </p>
+                <p className="animation-of-txt">
+                  <Typewriter
+                    options={{
+                      strings: [
+                        "Fullstack developer",
+                        "Data Scientist",
+                        "Game developer",
+                        "Embedded developer",
+                        "Mobile developer",
+                      ],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </p>
+              </div>
+              <Button to="/about" className="btn-more-about">
+                MORE ABOUT ISTECH
+              </Button>
             </div>
             <div className="col-12 col-md-5 AboutRight">
               <div className="About_img">
-                <img
-                  className=""
-                  src={images.homeAbout}
-                  alt="ảnh"
-                ></img>
+                <img className="" src={images.homeAbout} alt="ảnh"></img>
               </div>
             </div>
           </div>
@@ -171,7 +182,10 @@ export default function Home() {
                 <p className="figure">Lorem</p>
               </div>
 
-              <div className="col-12 col-lg-6 col-sm-5 LearnMore_Button" data-aos="fade-up">
+              <div
+                className="col-12 col-lg-6 col-sm-5 LearnMore_Button"
+                data-aos="fade-up"
+              >
                 <h1>LEARN MORE</h1>
                 <div className="btn-group">
                   <Button to="/departments" className="btn-learn-more">

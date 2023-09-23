@@ -14,11 +14,6 @@ export default function Contact() {
                 <div className="col-12 heading-div">
                     <section className="content-heading">
                         <h1>Contact Us</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.
-                        </p>
                     </section>
                 </div>
             </div>
