@@ -1,9 +1,13 @@
 import React from 'react'
 import './Login.scss'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import axios from 'axios';
 export default function Login() {
+
+    const navigate = useNavigate();
+
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -13,8 +17,23 @@ export default function Login() {
             password: Yup.string().required('Required'),
             email: Yup.string().email('Invalid email address').required('Required'),
         }),
-        onSubmit: values => {
+        onSubmit: async (values) => {
             console.log(values);
+
+            const result = await axios(
+                {
+                    url: 'http://localhost:3001/account/signin',
+                    method: 'POST',
+                    data: values
+                }
+            );
+
+            if (result.status === 200) {
+                navigate('/');
+                //  http://localhost:3001/member/me
+            }
+        
+            console.log(result);
         },
     });
 

@@ -2,40 +2,65 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import "./Register.scss"
+import axios from "axios";
 
 export default function Register() {
   const formik = useFormik({
     initialValues: {
-      fullname: "",
-      sdt: Yup.number,
+      generation: "Gen 5",
+      full_name: "",
+      phone: Yup.number,
       email: "",
-      birthdayDate: Yup.date,
-      optionNganh: 2,
-      gender: 2,
-      linkfb: "",
-      optionBan: 2,
-      masv: Yup.number,
-      tieuban:2,
-      reason:"",
-      experience:"",
-      strengthendWeakness:"",
-      visionFuture:""
+      know_istech_through: "",
+      dob: Yup.date,
+      major: "MIS",
+      gender: "MALE",
+      facebook_account: "",
+      student_id: Yup.number,
+      department_registered: "Fullstack",
+      position_in_department: "UI/UX",
+      position_experiences: true,
+      reason_apply_department: "",
+      other_interested_department: false,
+      strength: "",
+      weakness: "",
+      candidate_sharing: ""
     },
     validationSchema: Yup.object({
-      fullname: Yup.string().required("Không được bỏ trống"),
-      sdt: Yup.number("vui lòng nhập số").required("Không được bỏ trống").moreThan(100000000,"vui lòng nhập đúng").lessThan(1000000000,"vui lòng nhập đúng"),
+      full_name: Yup.string().required("Không được bỏ trống"),
+      phone: Yup.number("vui lòng nhập số").required("Không được bỏ trống").moreThan(100000000,"vui lòng nhập đúng").lessThan(1000000000,"vui lòng nhập đúng"),
       email: Yup.string().email("Invalid email").required("Required"),
-      linkfb: Yup.string().required("Không được bỏ trống"),
-      birthdayDate: Yup.date("vui lòng nhập ngày"),
-      masv: Yup.number("vui lòng nhập số").required("Không được bỏ trống").moreThan(10000000,"vui lòng nhập đúng").lessThan(100000000,"vui lòng nhập đúng"),
+      facebook_account: Yup.string().required("Không được bỏ trống"),
+      dob: Yup.date("vui lòng nhập ngày"),
+      student_id: Yup.number("vui lòng nhập số").required("Không được bỏ trống").moreThan(10000000,"vui lòng nhập đúng").lessThan(100000000,"vui lòng nhập đúng"),
 
-      reason:Yup.string().required("Không được bỏ trống"),
-      experience:Yup.string().required("Không được bỏ trống"),
-      strengthendWeakness:Yup.string().required("Không được bỏ trống"),
-      visionFuture:Yup.string().required("Không được bỏ trống"),
+      reason_apply_department:Yup.string().required("Không được bỏ trống"),
+      strength:Yup.string().required("Không được bỏ trống"),
+      weakness:Yup.string().required("Không được bỏ trống"),
+      candidate_sharing:Yup.string().required("Không được bỏ trống"),
     }),
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      
+
+      values.phone.toString();
+      values.student_id.toString();
+
+      const newValues = {
+        ...values,
+        phone: values.phone.toString(),
+        student_id: values.student_id.toString()
+      }
+      console.log(newValues);
+      const result = await axios(
+        {
+          url: 'http://localhost:3001/candidate/register',
+          method: 'POST',
+          data: newValues
+        }
+      );
+
+      console.log(result);
+
     },
   });
 
@@ -59,17 +84,17 @@ export default function Register() {
                         <div className="form-outline">
                           <input
                             type="text"
-                            id="fullname"
-                            name="fullname"
+                            id="full_name"
+                            name="full_name"
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            value={formik.values.fullname}
+                            value={formik.values.full_name}
                             className="form-control form-control-lg"
                           />
-                          {formik.touched.fullname && formik.errors.fullname ? (
-                            <div className="warning_input">{formik.errors.fullname}</div>
+                          {formik.touched.full_name && formik.errors.full_name ? (
+                            <div className="warning_input">{formik.errors.full_name}</div>
                           ) : null}
-                          <label className="form-label" htmlFor="fullname">
+                          <label className="form-label" htmlFor="full_name">
                             Họ Và Tên
                           </label>
                         </div>
@@ -79,17 +104,17 @@ export default function Register() {
                         <div className="form-outline">
                           <input
                             type="number"
-                            id="sdt"
-                            name="sdt"
+                            id="phone"
+                            name="phone"
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            value={formik.values.sdt}
+                            value={formik.values.phone}
                             className="form-control form-control-lg"
                           />
-                          {formik.touched.sdt && formik.errors.sdt ? (
-                            <div className="warning_input" >{formik.errors.sdt}</div>
+                          {formik.touched.phone && formik.errors.phone ? (
+                            <div className="warning_input" >{formik.errors.phone}</div>
                           ) : null}
-                          <label className="form-label" htmlFor="sdt">
+                          <label className="form-label" htmlFor="phone">
                             Số Điện Thoại
                           </label>
                         </div>
@@ -101,17 +126,17 @@ export default function Register() {
                           <input
                             type="date"
                             className="form-control form-control-lg"
-                            id="birthdayDate"
-                            name="birthdayDate"
+                            id="dob"
+                            name="dob"
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            value={formik.values.birthdayDate}
+                            value={formik.values.dob}
                           />
-                          {formik.touched.birthdayDate &&
-                          formik.errors.birthdayDate ? (
+                          {formik.touched.dob &&
+                          formik.errors.dob ? (
                             <div className="warning_input">Không được bỏ trống</div>
                           ) : null}
-                          <label htmlFor="birthdayDate" className="form-label">
+                          <label htmlFor="dob" className="form-label">
                             Birthday
                           </label>
                         </div>
@@ -124,18 +149,37 @@ export default function Register() {
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
                         >
-                          <option value={1} disabled>
-                            Choose option
-                          </option>
-                          <option value={2}>Man</option>
-                          <option value={3}>Woman</option>
-                          <option value={4}>Other</option>
+                          <option value="MALE">Man</option>
+                          <option value="FEMALE">Woman</option>
+                          <option value="OTHERS">Other</option>
                         </select>
                         <label className="form-label select-label">
                           Choose option
                         </label>
                       </div>
+
+                      <div className="col-md-6 mb-4">
+                        <select
+                          className="select form-control-lg"
+                          name="know_istech_through"
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                        >
+                          <option value={1} disabled>
+                            Choose option
+                          </option>
+                          <option value="GMAIL">Man</option>
+                          <option value="FACEBOOK">Woman</option>
+                          <option value="ADMISSIONS_DAY">Other</option>
+                          <option value="UPPERCLASSMEN">Upperclassmen</option>
+                          <option value="FRIEND">Friend</option>
+                        </select>
+                        <label className="form-label select-label">
+                          Biết isech qua đâu????
+                        </label>
+                      </div>
                     </div>
+
 
                     <div className="row">
                       <div className="col-md-6 mb-4 pb-2">
@@ -160,15 +204,15 @@ export default function Register() {
                       <div className="col-md-6 mb-4 pb-2">
                         <div className="form-outline">
                           <input
-                            id="linkfb"
-                            name="linkfb"
+                            id="facebook_account"
+                            name="facebook_account"
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            value={formik.values.linkfb}
+                            value={formik.values.facebook_account}
                             className="form-control form-control-lg"
                           />
-                          {formik.touched.linkfb && formik.errors.linkfb ? (
-                            <div className="warning_input">{formik.errors.linkfb}</div>
+                          {formik.touched.facebook_account && formik.errors.facebook_account ? (
+                            <div className="warning_input">{formik.errors.facebook_account}</div>
                           ) : null}
                           <label className="form-label" htmlFor="phoneNumber">
                             link facebook
@@ -181,16 +225,13 @@ export default function Register() {
                       <div className="col-md-6 mb-4 pb-2">
                         <select
                           className="select form-control-lg"
-                          name="optionNganh"
+                          name="major"
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
                         >
-                          <option value={1} disabled>
-                            Choose option
-                          </option>
-                          <option value={2}>Subject 1</option>
-                          <option value={3}>Subject 2</option>
-                          <option value={4}>Subject 3</option>
+                          <option value="MIS">Subject 1</option>
+                          <option value="ICE">Subject 2</option>
+                          <option value="AIT">Subject 3</option>
                         </select>
                         <label className="form-label select-label">
                           Choose option
@@ -200,18 +241,18 @@ export default function Register() {
                       <div className="col-md-6 mb-4 pb-2">
                         <div className="form-outline">
                           <input
-                            id="masv"
-                            name="masv"
+                            id="student_id"
+                            name="student_id"
                             type="number"
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            value={formik.values.masv}
+                            value={formik.values.student_id}
                             className="form-control form-control-lg"
                           />
-                          {formik.touched.masv && formik.errors.masv ? (
-                            <div className="warning_input">{formik.errors.masv}</div>
+                          {formik.touched.student_id && formik.errors.student_id ? (
+                            <div className="warning_input">{formik.errors.student_id}</div>
                           ) : null}
-                          <label className="form-label" htmlFor="masv">
+                          <label className="form-label" htmlFor="student_id">
                             Mã sinh viên
                           </label>
                         </div>
@@ -222,16 +263,13 @@ export default function Register() {
                       <div className="col-md-6 mb-4 pb-2">
                         <select
                           className="select form-control-lg"
-                          name="optionBan"
+                          name="department_registered"
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
                         >
-                          <option value={1} disabled>
-                            Chon Ban
-                          </option>
-                          <option value={2}>Subject 1</option>
-                          <option value={3}>Subject 2</option>
-                          <option value={4}>Subject 3</option>
+                          <option value="Fullstack">Fullstack</option>
+                          <option value="Data Science">Subject 2</option>
+                          <option value="Media">Subject 3</option>
                         </select>
                         <label className="form-label select-label">
                           Chọn Ban
@@ -241,16 +279,13 @@ export default function Register() {
                       <div className="col-md-6 mb-4 pb-2">
                         <select
                           className="select form-control-lg"
-                          name="tieuban"
+                          name="position_in_department"
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
                         >
-                          <option value={1} disabled>
-                            Chon Tieu Ban
-                          </option>
-                          <option value={2}>Subject 1</option>
-                          <option value={3}>Subject 2</option>
-                          <option value={4}>Subject 3</option>
+                          <option value="UI/UX">UI/UX</option>
+                          <option value="FE">Subject 2</option>
+                          <option value="BE">Subject 3</option>
                         </select>
                         <label className="form-label select-label">
                         Chon Tieu Ban
@@ -265,73 +300,104 @@ export default function Register() {
                         <div className="form-outline">
                           <input
                             type="text"
-                            id="reason"
-                            name="reason"
+                            id="reason_apply_department"
+                            name="reason_apply_department"
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            value={formik.values.reason}
+                            value={formik.values.reason_apply_department}
                             className="form-control form-control-lg"
                           />
-                          {formik.touched.reason && formik.errors.reason ? (
-                            <div className="warning_input">{formik.errors.reason}</div>
+                          {formik.touched.reason_apply_department && formik.errors.reason_apply_department ? (
+                            <div className="warning_input">{formik.errors.reason_apply_department}</div>
                           ) : null}
-                          <label className="form-label" htmlFor="reason">
+                          <label className="form-label" htmlFor="reason_apply_department">
                             Chia sẻ lý do chọn ban của bạn 
                           </label>
                         </div>
                       </div>
 
                       <div className="col-md-6 mb-4 pb-2">
-                        <div className="form-outline">
-                          <input
-                            id="experience"
-                            name="experience"
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            value={formik.values.experience}
-                            className="form-control form-control-lg"
-                          />
-                          {formik.touched.experience && formik.errors.experience ? (
-                            <div className="warning_input">{formik.errors.experience}</div>
-                          ) : null}
-                          <label className="form-label" htmlFor="experience">
-                            Bạn đã có kinh nghiệm về lĩnh vực này chưa
-                          </label>
-                        </div>
+                        <select
+                          className="select form-control-lg"
+                          name="position_experiences"
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                        >
+                          <option disabled>
+                            Experiences
+                          </option>
+                          <option value={true}>Có</option>
+                          <option value={false}>Không</option>
+                        </select>
+                        <label className="form-label select-label">
+                        Chon Tieu Ban
+                        </label>
+                      </div>
+                    </div>
+
+                    <div className="row">
+                      <div className="col-md-6 mb-4 pb-2">
+                        <select
+                          className="select form-control-lg"
+                          name="other_interested_department"
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                        >
+                          <option disabled>
+                            Experiences
+                          </option>
+                          <option value={true}>Có</option>
+                          <option value={false}>Không</option>
+                        </select>
+                        <label className="form-label select-label">
+                          Có muốn apply ban khác ko???
+                        </label>
                       </div>
                     </div>
 
                     <div className="row">
 
                       <div className="mb-4 pb-2">
-                         <textarea class="form-control" id="strengthendWeakness"
-                                               
-                                                     name="strengthendWeakness"
-                                                     onChange={formik.handleChange}
-                                                     onBlur={formik.handleBlur}
-                                                     value={formik.values.strengthendWeakness}
-                         rows="10"></textarea>
-                          {formik.touched.strengthendWeakness && formik.errors.strengthendWeakness ? (
-                            <div className="warning_input">{formik.errors.strengthendWeakness}</div>
+                        <textarea class="form-control" id="strength"
+                            name="strength"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.strength}
+                        rows="3"></textarea>
+                          {formik.touched.strength && formik.errors.strength ? (
+                            <div className="warning_input">{formik.errors.strength}</div>
                           ) : null}
-                         <label for="strengthendWeakness">Example textarea</label>
+                        <label for="strength">Strength</label>
+                      </div>
+
+                      <div className="mb-4 pb-2">
+                        <textarea class="form-control" id="weakness"
+                            name="weakness"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.weakness}
+                        rows="3"></textarea>
+                          {formik.touched.weakness && formik.errors.weakness ? (
+                            <div className="warning_input">{formik.errors.weakness}</div>
+                          ) : null}
+                        <label for="weakness">Weakness</label>
                       </div>
 
                       <div className="mb-4 pb-2">
                         <div className="form-outline">
                           <input
                             type="text"
-                            id="visionFuture"
-                            name="visionFuture"
+                            id="candidate_sharing"
+                            name="candidate_sharing"
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            value={formik.values.visionFuture}
+                            value={formik.values.candidate_sharing}
                             className="form-control form-control-lg"
                           />
-                          {formik.touched.visionFuture && formik.errors.visionFuture ? (
-                            <div className="warning_input">{formik.errors.visionFuture}</div>
+                          {formik.touched.candidate_sharing && formik.errors.candidate_sharing ? (
+                            <div className="warning_input">{formik.errors.candidate_sharing}</div>
                           ) : null}
-                          <label className="form-label" htmlFor="visionFuture">
+                          <label className="form-label" htmlFor="candidate_sharing">
                             Chia sẻ mong muốn khi tham gia ISTECH
                           </label>
                         </div>
