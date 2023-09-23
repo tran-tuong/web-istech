@@ -86,7 +86,7 @@
             margin-bottom: 30px;
         }
         .is-hiiiii {
-            font-size: 25px;
+            font-size: 40px;
             font-weight: 700;
             text-transform: uppercase;
         }
@@ -98,6 +98,20 @@
 
         .btn-more-about {
             padding: 12px 26px;
+        }
+        .txt-animation {
+            display: inline-flex;
+            width: 100%;
+            .stactic-animation {
+                margin-right: 0.7rem;
+                font-size:  45px;
+                font-weight: 900;
+            }
+            .animation-of-txt {
+                font-size:  45px;
+                font-weight: 900;
+                color: #4176cc;
+            }
         }
     }
 

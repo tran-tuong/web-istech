@@ -4,6 +4,8 @@ import images from "../../assets/images";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import Button from "../../components/Button";
+import Typewriter from "typewriter-effect";
+import { tab } from "@testing-library/user-event/dist/tab";
 
 export default function Home() {
   const [Counter, setCounter] = useState(false);
@@ -21,11 +23,25 @@ export default function Home() {
           <div className="row AboutFlex">
             <div className="col-12 col-md-7 AboutLeft" data-aos="fade-up">
               <h1>ISTECH</h1>
-              <p className="is-hiiiii">Hi guys, </p>
-              <p>
-                🌟We are Information Technology Club of International School -
-                ISTECH🌟
-              </p>
+              <p className="is-hiiiii">Hi guys!</p>
+              <div className="txt-animation">
+                <p className="stactic-animation">We are </p>
+                <p className="animation-of-txt">
+                  <Typewriter
+                    options={{
+                      strings: [
+                        "Fullstack developer",
+                        "Data Scientist",
+                        "Game developer",
+                        "Embedded developer",
+                        "Mobile developer",
+                      ],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </p>
+              </div>
               <Button to="/about" className="btn-more-about">
                 MORE ABOUT ISTECH
               </Button>
