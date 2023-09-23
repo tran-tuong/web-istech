@@ -6,7 +6,7 @@ import Maintainance from "./pages/Maintainance";
 import { publicRoutes } from "./routes";
 import { Fragment } from "react";
 import { Provider } from "react-redux";
-import { store } from "./reudux/ConfigStore";
+import { store } from "./reudux/configStore";
 
 function App() {
   return (

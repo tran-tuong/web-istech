@@ -41,7 +41,7 @@ export default function EventType() {
 
 
     return (
-        <div className="container" style={{ marginBottom: '150px'}}>
+        <div className="container main-event-wrapper" style={{ marginBottom: '150px'}}>
             <div className="row d-flex justify-content-between align-items-center main-event-header">
                 <nav className="col-6 breadcrumb">
                     <ul className="list-unstyled">
