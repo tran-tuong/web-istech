@@ -1,0 +1,18 @@
+.warning_input {
+    color: red;
+}
+
+.register_form{
+    height: 1000px;
+}
+
+@media screen and (max-width:767px) {
+    .register_form{
+        height: 1350px;
+    }
+}
+@media screen and (max-width:400px) {
+    .register_form{
+        height: 1400px;
+    }
+}
