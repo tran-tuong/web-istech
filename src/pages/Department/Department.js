@@ -21,12 +21,12 @@ export default function Department() {
       {
         path: "game",
         name: "Game Dev",
-        image: "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+        image: "https://i.pinimg.com/564x/48/99/1f/48991f90e9a0eed6f972f7c310bdd3e0.jpg"
       },
       {
         path: "media-events",
         name: "Media & Events",
-        image: "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+        image: "https://i.pinimg.com/474x/83/f3/22/83f322ad7f8a3122b56d49afe20b1400.jpg"
       },
     ];
 
@@ -41,7 +41,7 @@ export default function Department() {
           <div className='department-header'>
             <div className='content-heading'>
               <h1>Departments</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+              <p>We are aim to develop 4 field of Software Engineering</p>
             </div>
           </div>
           
