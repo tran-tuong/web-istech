@@ -47,7 +47,7 @@ export default function EventGallery({ event_image }) {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        // autoplay: true,
+        autoplay: true,
         vertical: true,
         verticalSwiping: true,
         prevArrow: <PrevArrow />,

@@ -35,7 +35,7 @@
                 "linkedin": "linkedin.com"
             },
             {
-                "img": "./departments/member_avatar/women.png",
+                "img": "./departments/member_avatar/BoardOfDirectors/NguyenHaiVan.png",
                 "job": "Vice President",
                 "name": "Nguyễn Hải Vân",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
@@ -44,7 +44,7 @@
                 "linkedin": "linkedin.com"
             },
             {
-                "img": "./departments/member_avatar/women.png",
+                "img": "./departments/member_avatar/BoardOfDirectors/NguyenThiPhuongAnh.png",
                 "job": "Vice President",
                 "name": "Nguyễn Thị Phương Anh",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
@@ -58,7 +58,7 @@
         "Year": "2020 - 2021 Academic Year",
         "listPresidence": [
             {
-                "img": "./departments/member_avatar/man.png",
+                "img": "./departments/member_avatar/BoardOfDirectors/DoVanQuy.png",
                 "job": "President",
                 "name": "Đỗ Văn Quý",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
@@ -76,7 +76,7 @@
                 "linkedin": "linkedin.com"
             },
             {
-                "img": "./departments/member_avatar/man.png",
+                "img": "./departments/member_avatar/BoardOfDirectors/LeMaiAnhThang.png",
                 "job": "Vice President",
                 "name": "Lê Mai Anh Thắng",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",

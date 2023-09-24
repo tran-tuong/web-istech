@@ -118,6 +118,11 @@
 
             .title {
                 font-size: 2.2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
             }
 
             .desc {
@@ -136,33 +141,56 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .event-main {
+        .event-title {
+            font-size: 3.2rem;
+        }
+
+        .event-desc {
+            font-size: 1.6rem;
+        }
+    }
+
     .event-type-list {
         .event-type-item {
             .event-banner-wrapper {
                 flex: 5;
                 width: 100%;
-                height: 90%;
+                height: 100px;
+                overflow: hidden;
 
                 img {
                     width: 100%;
                     height: 100%;
+                    object-fit: cover;
                 }
             }
             .event-type-info {
                 flex: 5;
                 .info {
-                    display: none;
-                    // .type {
-                    //     font-size: 1.2rem;
-                    //     margin-right: 8px;
-                    // }
+                    align-items: center;
+                    gap: 6px;
+                    margin-bottom: 10px;
 
-                    // .time {
-                    //     display: flex;
-                    //     align-items: center;
-                    //     font-size: 1.2rem;
-                    //     margin-left: 8px;
-                    // }
+                    .type {
+                        font-size: 1.2rem;
+                        margin-right: 0;
+                    }
+
+                    .separate {
+                        display: none;
+                    }
+
+                    .time {
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.2rem;
+                        margin-left: 0;
+
+                        .icon-clock {
+                            margin-right: 4px;
+                        }
+                    }
                 }
 
                 .title {
@@ -186,6 +214,21 @@
 @media only screen and (max-width: 767px) {
     .main-event-wrapper {
         margin-bottom: 50px !important;
+
+        .main-event-header {
+            .breadcrumb {
+                flex: 4;
+            }
+
+            .btn-see-all-event {
+                flex: 6;
+                padding-right: 7.5px;
+                a {
+                    font-size: 1.6rem;
+                    padding: 12px 30px;
+                }
+            }
+        }
     }
     .btn-see-all-event {
         width: 100%;

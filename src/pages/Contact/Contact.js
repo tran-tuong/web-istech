@@ -28,7 +28,7 @@ export default function Contact() {
                         <div className="contact-list-info">
                             <section className="contact-image">
                                 <img
-                                    src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/306155551_514550010678054_5787662117059003930_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=49d041&_nc_ohc=rs2cbqeSrrMAX8RmaOF&_nc_ht=scontent.fhan15-1.fna&oh=00_AfCOroZpW2nRO7Q4R_ev6_H09XqGrN5QJsE7Ax6hU-F7Tg&oe=650621B9"
+                                    src="https://i.postimg.cc/N0fRNXcv/306155551-514550010678054-5787662117059003930-n.jpg"
                                     alt="Contact"
                                 />
                             </section>

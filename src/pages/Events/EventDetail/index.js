@@ -15,7 +15,7 @@ export default function EventDetail() {
     return (
         <main className="" style={{ marginBottom: '150px'}}>
             <div className="container">
-                <nav className="col-6 breadcrumb mt-5">
+                <nav className="col-12 breadcrumb mt-5">
                     <ul className="list-unstyled">
                         <li>
                             <Link className="item-link" to="/">
@@ -31,7 +31,7 @@ export default function EventDetail() {
                         <li>/</li>
                         <li>
                             <Link className="item-link event-active" to="/events">
-                                Events
+                                {eventDetail.event_name}
                             </Link>
                         </li>
                     </ul>

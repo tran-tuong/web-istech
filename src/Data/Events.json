@@ -1,11 +1,47 @@
 [
     {
+        "event_name": "OEG x VNU-IS: The glory of Charmers",
+        "slug": "oeg-vnu-is-the-glory-of-charmers",
+        "type": "webinar",
+        "time": "12/05/2023", 
+        "banner1": "https://i.postimg.cc/RVwpwDfY/344335072-1383232385866541-1616684018989529587-n.png",
+        "banner2": "https://i.postimg.cc/P5zcnR5D/344342943-182384538059205-2019369747545015759-n.jpg",
+        "feature": "https://i.postimg.cc/RhHssPYN/347003888-283635283997427-38214069761177817-n.jpg",
+        "summary": "Sau thời gian chuẩn bị kỹ lưỡng về cả mặt nội dung lẫn hình thức, chúng mình đã chính thức quay trở lại và lợi hại hơn xưa. Ngày hôm nay chúng mình chính thức “chiêu mộ” những chiến binh đã sẵn sàng cho giải đấu E-Sports Liên minh huyền thoại 2023.",
+        "content": "Sau thời gian chuẩn bị kỹ lưỡng về cả mặt nội dung lẫn hình thức, chúng mình đã chính thức quay trở lại và lợi hại hơn xưa. Ngày hôm nay chúng mình chính thức “chiêu mộ” những chiến binh đã sẵn sàng cho giải đấu E-Sports Liên minh huyền thoại 2023. Quy mô giải đấu lần này sẽ không chỉ gói gọn trong khuôn khổ VNU-IS nữa mà sẽ mở rộng ra toàn bộ các bạn sinh viên trên địa bàn thành phố Hà Nội.CLB đã tìm được nhà tài trợ và tổ chức thành công giải game offline đầu tiên tại trường Quốc Tế với quy mô dành cho toàn sinh viên thành phố Hà Nội với hơn 120 bạn sinh viên tham gia giải.",
+        "images": [
+            {"image": "https://i.postimg.cc/8zV33SND/347246688-807454550512024-998609946223990058-n.jpg"},
+            {"image": "https://i.postimg.cc/4NcqBdCB/347407686-243854178372388-4651621603886748024-n.jpg"},
+            {"image": "https://i.postimg.cc/1t4Y6Rc0/349328915-1840420256329501-1669465723623324335-n.jpg"},
+            {"image": "https://i.postimg.cc/FKr6rVYB/350100059-628702182613490-1317742454188732613-n.jpg"},
+            {"image": "https://i.postimg.cc/CKcQznDL/350104033-584675323646514-3536900846039991652-n.jpg"},
+            {"image": "https://i.postimg.cc/9MSgB3J6/350096876-6604366646242952-2892479328118640102-n.jpg"}
+        ]
+    },
+    {
+        "event_name": "Workshop “Fintech và Digital business: Opportunities, Challenges and Prospects”",
+        "slug": "workshop-fintech-digital-business",
+        "type": "webinar",
+        "time": "27/06/2022", 
+        "banner1": "https://i.postimg.cc/FRNx3Kr7/279388069-514220936921607-5699196366910632519-n.jpg",
+        "banner2": "https://i.postimg.cc/SsdfrpRV/cover.png",
+        "feature": "https://i.postimg.cc/MKw2r79L/Thie-t-ke-chu-a-co-te-n.png",
+        "summary": "Cung cấp những kiến thức nền tảng cho người mới nhập môn, đặc biệt đây còn là bước đệm hoàn hảo dành cho các thí sinh tham gia Cuộc thi sinh viên khởi nghiệp tài chính “Finnovation 2022”.",
+        "content": "Chương trình đã nhận được sự chia sẻ, lý giải đến từ các vị diễn giả về cơ hội, thách thức, triển vọng của các vị diễn giả đến từ công ty Fintech, ngân hàng MB, BampuUp trình bày góc nhìn về sự phát triển của ngân hàng số, các dịch vụ thuộc vấn đề kinh doanh số, sự khác biệt giữa công nghệ tài chính và dịch vụ ngân hàng.",
+        "images": [
+            {"image": "https://i.postimg.cc/MHGb3rjw/280215320-517809026562798-6213371834423927139-n.jpg"},
+            {"image": "https://i.postimg.cc/02b0pFsd/280238141-517808893229478-6657140386624734762-n.jpg"},
+            {"image": "https://i.postimg.cc/pX4YkCVN/280265399-517808796562821-262849502124494176-n.jpg"},
+            {"image": "https://i.postimg.cc/qBmG609v/280204516-517808939896140-338162028307267753-n.jpg"}
+        ]
+    },
+    {
         "event_name": "Tham quan FPT TOUR",
         "slug": "tham-quan-fpt-tour",
         "type": "webinar",
         "time": "10/10/2020",
         "banner1": "https://i.postimg.cc/MKMYCmkB/120262556-174128007597570-5670250056992119384-n.png",
-        "banner2": "https://i.postimg.cc/9M1rgKFh/banner-fpt-2.png",
+        "banner2": "https://i.postimg.cc/Yq8ZQWBF/rsz-120528690-174750140868690-845553402139212218-n.png",
         "feature": "https://i.postimg.cc/VLXWsd51/IMG-3572.jpg",
         "summary": "Đây là hoạt động mở đầu cho chuỗi hoạt động kết nối giao lưu chia sẻ các bạn sinh viên và doanh nghiệp của câu lạc bộ. FSOFT TOUR là chuyến tham quan trải nghiệm khám phá môi trường  làm việc của công ty FPT SOFTWARE Hòa Lạc.",
         "content": "Đây là hoạt động mở đầu cho chuỗi hoạt động kết nối giao lưu chia sẻ các bạn sinh viên và doanh nghiệp của câu lạc bộ. FSOFT TOUR là chuyến tham quan trải nghiệm khám phá môi trường  làm việc của công ty FPT SOFTWARE Hòa Lạc. Là cơ hội để các bạn sinh viên được lắng nghe và trao đổi với các chuyên gia tại FPT SOFTWARE về định hướng nghề nghiệp và lộ trình trở thành lập trình viên chuyên nghiệp. Bên cạnh đó chuyến đi này còn giúp các bạn sinh viên tìm hiểu thêm về các cơ hội thực tập, làm việc và các chương trình đào tạo đặc biệt dành cho sinh viên tại FPT SOFTWARE. Hoạt động đã thu hút được sự tham gia của 150 bạn sinh viên.",
@@ -43,23 +79,6 @@
         "feature": "https://i.postimg.cc/brv1hc3t/197305998-322463222764047-8972501569736808034-n.jpg",
         "summary": "Nằm trong chuỗi hoạt động giao lưu kết nối chia sẻ cũng các bạn sinh viên, CLB đã lên kế hoạch chuẩn bị và tổ chức thành công chuỗi workshop webinar với sự tham gia của gần 170 bạn sinh viên Khoa Quốc Tế.",
         "content": "Nằm trong chuỗi hoạt động giao lưu kết nối chia sẻ cũng các bạn sinh viên, CLB đã lên kế hoạch chuẩn bị và tổ chức thành công chuỗi workshop webinar với sự tham gia của gần 170 bạn sinh viên Khoa Quốc Tế. Tại đây các bạn đã được lắng nghe chia sẻ và được trainning những kiến thức cơ bản về ngôn ngữ lập trình Python và phân tích dữ liệu Data Analysis. Ngoài ra các bạn còn được lắng nghe những chia sẻ của đồng chí bí thư đoàn khoa Nguyễn Văn Tánh về tầm quan trọng và cơ hội nghề nghiệp ở lĩnh vực này. Chuỗi workshop khép lại đã nhận được rất nhiều  phản hồi tích cực đến từ các bạn sinh viên tham gia, tạo động lực và tiền đề để CLB tiếp tục triển khai các kế hoạch tiếp theo trong thời gian tới.",
-        "images": [
-            {"image": "https://i.postimg.cc/4yFV4LSF/201869941-322463952763974-6114671405440427874-n.jpg"},
-            {"image": "https://i.postimg.cc/4dPpqNbG/202009984-322462512764118-7020026415789028488-n.jpg"},
-            {"image": "https://i.postimg.cc/jjzH6hDL/203209418-322463299430706-2338550240436739835-n.jpg"},
-            {"image": "https://i.postimg.cc/25pdBt8s/205080144-323079712702398-2603733710809300573-n.png"}
-        ]
-    }, 
-    {
-        "event_name": "Workshop \"NetSmart - Think before you click\"",
-        "slug": "workshop-netsmart-think-before-you-click",
-        "type": "webinar",
-        "time": "23/01/2022",
-        "banner1": "https://i.postimg.cc/J4GjY8yw/201757786-319900456353657-7271286392903478611-n.jpg",
-        "banner2": "https://i.postimg.cc/ryhS9sw-C/207535015-322325812777788-5497701254932609870-n.jpg",
-        "feature": "",
-        "summary": "Workshop “NetSmart - Think before you click” giúp các bạn sinh viên có những nhận thức rõ ràng hơn về các mối nguy hại mà không gian mạng mang lại cũng như biết được cách phòng tránh chúng.",
-        "content": "Qua buổi workshop, các bạn sinh viên đã có được các kiến thức về không gian mạng, giao lưu với Guest Speaker \"xịn sò\", được điểm rèn luyện và \"rinh\" về cho mình Giấy chún nhận tham gia Workshop - Kết thúc sự kiện đã thu hút hơn 300 bạn sinh viên đăng kí và gần 200 bạn tham gia online",
         "images": [
             {"image": "https://i.postimg.cc/4yFV4LSF/201869941-322463952763974-6114671405440427874-n.jpg"},
             {"image": "https://i.postimg.cc/4dPpqNbG/202009984-322462512764118-7020026415789028488-n.jpg"},
