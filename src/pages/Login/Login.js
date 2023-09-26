@@ -24,6 +24,7 @@ export default function Login() {
                 {
                     url: 'http://localhost:3001/account/signin',
                     method: 'POST',
+                    withCredentials: true,
                     data: values
                 }
             );

@@ -47,14 +47,17 @@ export default function Register() {
 
       const newValues = {
         ...values,
-        phone: values.phone.toString(),
-        student_id: values.student_id.toString()
+        phone: "0" + values.phone.toString(),
+        student_id: values.student_id.toString(),
+        position_experiences: values.position_experiences === 'true',
+        other_interested_department: values.other_interested_department === 'true'
       }
       console.log(newValues);
       const result = await axios(
         {
           url: 'http://localhost:3001/candidate/register',
           method: 'POST',
+          withCredentials: true,
           data: newValues
         }
       );
@@ -323,14 +326,11 @@ export default function Register() {
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
                         >
-                          <option disabled>
-                            Experiences
-                          </option>
                           <option value={true}>Có</option>
                           <option value={false}>Không</option>
                         </select>
                         <label className="form-label select-label">
-                        Chon Tieu Ban
+                        Có kinh nghiệm chưa???
                         </label>
                       </div>
                     </div>
@@ -343,9 +343,6 @@ export default function Register() {
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
                         >
-                          <option disabled>
-                            Experiences
-                          </option>
                           <option value={true}>Có</option>
                           <option value={false}>Không</option>
                         </select>
