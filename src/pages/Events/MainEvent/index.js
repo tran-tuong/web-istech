@@ -40,7 +40,6 @@ export default function EventType() {
         ))
     }
 
-
     return (
         <div className="container main-event-wrapper" style={{ marginBottom: '150px'}}>
             <div className="row d-flex justify-content-between align-items-center main-event-header">
