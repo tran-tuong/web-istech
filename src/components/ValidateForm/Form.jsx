@@ -41,7 +41,7 @@ export const Form = () => {
               <BsFillCheckSquareFill /> Form has been submitted successfully
             </p>
           )}
-          <Button onClick={onSubmit} className={'btn-form'}>Send Message</Button>
+          <br/><Button onClick={onSubmit} className={'btn-form'}>Send Message</Button>
         </div>
       </form>
     </FormProvider>

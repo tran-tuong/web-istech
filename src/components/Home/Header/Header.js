@@ -175,7 +175,7 @@ export default function Header() {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Button className="" to="/login">
+                  <Button className="btn-signin-mobile" to="/login">
                     Sign In
                   </Button>
                 </li>

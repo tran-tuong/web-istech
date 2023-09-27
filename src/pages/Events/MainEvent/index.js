@@ -19,6 +19,7 @@ export default function EventType() {
                     <img 
                         src={item.banner1}
                         alt={item.event_name}
+                        loading="lazy"
                     />
                 </div>
                 <div className="event-type-info">
@@ -69,6 +70,7 @@ export default function EventType() {
                             src={newEvent.banner1}
                             className="img-fluid"
                             alt={newEvent.event_name}
+                            loading="lazy"
                         />
                         <section className="event-info">
                             <span className="event-type">{newEvent.type}</span>
