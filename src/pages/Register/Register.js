@@ -64,6 +64,7 @@ export default function Register() {
     },
   });
 
+
   return (
     <div className="register_form">
       <section className="vh-100 gradient-custom ">
