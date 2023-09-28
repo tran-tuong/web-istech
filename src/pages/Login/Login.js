@@ -32,21 +32,25 @@ export default function Login() {
             console.log(result,"result");
 
             if (result.status === 200) {
-                navigate('/');
+                // navigate('/');
                 //  http://localhost:3001/member/me
-  
-                Cookies.set('acesstoken',result.data.access_token);
-                let cookie = Cookies.get('acesstoken')
-                
-               
+
+                // Cookies.set('acesstoken',result.data.access_token);
+
+                // let access_token = Cookies.get('access_token');
+
+                // console.log(access_token);
+
                 const result2 = await axios.get("http://localhost:3001/member/me",{
-                    headers:{token: `Bearer ${cookie}` }
+                    headers:{
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${result.data.access_token}`
+                    },
+                    withCredentials: true
                 }
                 )
                 console.log(result2,"resule2");
             } 
-        
-            
         },
     });
 
