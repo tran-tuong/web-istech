@@ -81,14 +81,14 @@ export default function Register() {
                     );
                 }
             } else {
-                const newValues = {
-                    ...formData,
-                    student_id: formData.student_id.toString(),
-                    position_experiences:
-                        formData.position_experiences === "true",
-                    other_interested_department:
-                        formData.other_interested_department === "true",
-                };
+                // const newValues = {
+                //     ...formData,
+                //     student_id: formData.student_id.toString(),
+                //     position_experiences:
+                //         formData.position_experiences === "true",
+                //     other_interested_department:
+                //         formData.other_interested_department === "true",
+                // };
                 // console.log(newValues);
                 // const result = await axios({
                 //     url: "http://localhost:3001/candidate/register",
@@ -96,13 +96,13 @@ export default function Register() {
                 //     withCredentials: true,
                 //     data: newValues,
                 // });
-                // const a = 201;
-                // if (a === 201) {
-                //     swal("Good job!", "Bạn đã đăng ký thành công", "success")
-                //         .then(value => navigate('/'));
-                // } else {
-                //     swal("Bad job!", "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào", "error");
-                // }
+                const a = 201;
+                if (a === 201) {
+                    swal("Good job!", "Bạn đã đăng ký thành công", "success")
+                        .then(value => navigate('/'));
+                } else {
+                    swal("Bad job!", "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào", "error");
+                }
             }
         } else {
             swal("Bad job!", "Vui lòng điền đầy đủ thông tin", "error").then(
