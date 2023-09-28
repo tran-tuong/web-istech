@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
+import Cookies from 'js-cookie';
 export default function Login() {
 
     const navigate = useNavigate();
@@ -24,17 +25,28 @@ export default function Login() {
                 {
                     url: 'http://localhost:3001/account/signin',
                     method: 'POST',
-                    withCredentials: true,
-                    data: values
+                    data: values,
+                    withCredentials:true
                 }
             );
+            console.log(result,"result");
 
             if (result.status === 200) {
                 navigate('/');
                 //  http://localhost:3001/member/me
-            }
+  
+                Cookies.set('acesstoken',result.data.access_token);
+                let cookie = Cookies.get('acesstoken')
+                
+               
+                const result2 = await axios.get("http://localhost:3001/member/me",{
+                    headers:{token: `Bearer ${cookie}` }
+                }
+                )
+                console.log(result2,"resule2");
+            } 
         
-            console.log(result);
+            
         },
     });
 
