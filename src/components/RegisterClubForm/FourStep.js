@@ -1,6 +1,7 @@
 import React from "react";
 import { media_links } from "../../assets/media-links";
 import './Steps.scss';
+import Button from '../Button';
 
 function FourStep() {
 
@@ -13,6 +14,7 @@ function FourStep() {
                 nhất về câu lạc bộ qua trang Facebook{" "}
                 <a className="media-link" href={media_links.facebook}>ISTECH</a> nhé!
             </p>
+            <section className="step-4-btn-wrapper"><Button to="/" className="btn-home-register">Go to Homepage</Button></section>
         </div>
     );
 }

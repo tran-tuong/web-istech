@@ -30,7 +30,7 @@ export default function Login() {
             );
 
             if (result.status === 200) {
-                navigate('/');
+                // navigate('/');
                 //  http://localhost:3001/member/me
             }
         
@@ -40,7 +40,7 @@ export default function Login() {
 
     return (
         <section className="vh-100">
-            <div className="container-fluid h-custom">
+            <div className="container h-custom">
                 <div className="row d-flex justify-content-center align-items-center h-100"
                 >
                     <div className="col-md-9 col-lg-6 col-xl-5 img_login" style={{ borderRadius: "6px" }}>

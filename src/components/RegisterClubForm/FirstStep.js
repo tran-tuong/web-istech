@@ -1,26 +1,22 @@
 import React from "react";
-import { Button } from "@mui/material";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
 function FirstStep({ formData, setFormData }) {
     const formik = useFormik({
-        initialValues: {
-            full_name: ""
-        },
         validationSchema: Yup.object({
             full_name: Yup.string().required("Không được bỏ trống"),
-            phone: Yup.number("vui lòng nhập số")
+            phone: Yup.number("Vui lòng nhập số")
                 .required("Không được bỏ trống")
                 .moreThan(100000000, "vui lòng nhập đúng")
                 .lessThan(1000000000, "vui lòng nhập đúng"),
-            email: Yup.string().email("Invalid email").required("Required"),
+            email: Yup.string().email("Email không hợp lệ").required("Không được bỏ trống"),
             facebook_account: Yup.string().required("Không được bỏ trống"),
-            dob: Yup.date("vui lòng nhập ngày"),
-            student_id: Yup.number("vui lòng nhập số")
+            dob: Yup.date("Vui lòng nhập ngày"),
+            student_id: Yup.number("Vui lòng nhập số")
                 .required("Không được bỏ trống")
-                .moreThan(10000000, "vui lòng nhập đúng")
-                .lessThan(100000000, "vui lòng nhập đúng"),
+                .moreThan(10000000, "Vui lòng nhập đúng")
+                .lessThan(100000000, "Vui lòng nhập đúng"),
         }),
     });
 
@@ -47,9 +43,9 @@ function FirstStep({ formData, setFormData }) {
                             className="form-control form-control-lg"
                         />
                         {formik.touched.full_name && formData.full_name === "" ? (
-                            <div className="warning_input">
+                            <span className="warning_input">
                                 {formik.errors.full_name}
-                            </div>
+                            </span>
                         ) : null}
                     </div>
                 </div>
@@ -74,7 +70,7 @@ function FirstStep({ formData, setFormData }) {
                             value={formData.dob}
                         />
                         {formik.touched.dob && !formData.dob ? (
-                            <div className="warning_input">Không được bỏ trống</div>
+                            <span className="warning_input">Không được bỏ trống</span>
                         ) : null}
                     </div>
                 </div>
@@ -97,6 +93,9 @@ function FirstStep({ formData, setFormData }) {
                         <option value="FEMALE">Female</option>
                         <option value="OTHERS">Others</option>
                     </select>
+                    {formik.touched.gender && formData.gender === '' ? (
+                        <><br/><span className="warning_input">Chọn 1 option</span></>
+                    ) : null}
                 </div>
     
                 <div className="col-md-6 mb-4">
@@ -122,6 +121,9 @@ function FirstStep({ formData, setFormData }) {
                         <option value="UPPERCLASSMEN">Các anh/chị khóa trên</option>
                         <option value="FRIEND">Bạn bè</option>
                     </select>
+                    {formik.touched.know_istech_through && formData.know_istech_through === '' ? (
+                        <><br/><span className="warning_input">Chọn 1 option</span></>
+                    ) : null}
                 </div>
             </div>
 
@@ -145,9 +147,9 @@ function FirstStep({ formData, setFormData }) {
                         className="form-control form-control-lg"
                     />
                     {formik.touched.email && formData.email === "" ? (
-                        <div className="warning_input">
+                        <span className="warning_input">
                             {formik.errors.email}
-                        </div>
+                        </span>
                     ) : null}
                 </div>
             </div>
@@ -172,9 +174,9 @@ function FirstStep({ formData, setFormData }) {
                         className="form-control form-control-lg"
                     />
                     {formik.touched.phone && !formData.phone ? (
-                        <div className="warning_input">
+                        <span className="warning_input">
                             {formik.errors.phone}
-                        </div>
+                        </span>
                     ) : null}
                 </div>
             </div>
@@ -198,9 +200,9 @@ function FirstStep({ formData, setFormData }) {
                         className="form-control form-control-lg"
                     />
                     {formik.touched.facebook_account && formData.facebook_account === "" ? (
-                        <div className="warning_input">
+                        <span className="warning_input">
                             {formik.errors.facebook_account}
-                        </div>
+                        </span>
                     ) : null}
                 </div>
             </div>
@@ -222,6 +224,9 @@ function FirstStep({ formData, setFormData }) {
                         <option value="ICE">ICE</option>
                         <option value="AIT">AIT</option>
                     </select>
+                    {formik.touched.major && formData.major === '' ? (
+                        <><br/><span className="warning_input">Chọn 1 option</span></>
+                    ) : null}
                 </div>
     
                 <div className="col-md-6 mb-4">
@@ -244,9 +249,9 @@ function FirstStep({ formData, setFormData }) {
                             className="form-control form-control-lg"
                         />
                         {formik.touched.student_id && formData.student_id === "" ? (
-                            <div className="warning_input">
+                            <span className="warning_input">
                                 {formik.errors.student_id}
-                            </div>
+                            </span>
                         ) : null}
                     </div>
                 </div>

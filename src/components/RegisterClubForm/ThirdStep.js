@@ -19,7 +19,7 @@ function ThirdStep({ formData, setFormData }) {
                     Bạn hãy liệt kê 3 điểm mạnh của bản thân
                 </label>
                 <textarea
-                    class="form-control"
+                    className="form-control"
                     id="strength"
                     name="strength"
                     onChange={(event) =>
@@ -44,7 +44,7 @@ function ThirdStep({ formData, setFormData }) {
                     Bạn hãy liệt kê 3 điểm yếu của bản thân
                 </label>
                 <textarea
-                    class="form-control"
+                    className="form-control"
                     id="weakness"
                     name="weakness"
                     onChange={(event) =>
@@ -71,8 +71,8 @@ function ThirdStep({ formData, setFormData }) {
                         giúp bạn phát huy những điểm mạnh và khắc phục những
                         điểm yếu trên như thế nào?
                     </label>
-                    <input
-                        type="text"
+                    <textarea
+                        className="form-control"
                         id="candidate_sharing"
                         name="candidate_sharing"
                         onChange={(event) =>
@@ -83,9 +83,10 @@ function ThirdStep({ formData, setFormData }) {
                         }
                         onBlur={formik.handleBlur}
                         value={formData.candidate_sharing}
-                        className="form-control form-control-lg"
-                    />
-                    {formik.touched?.candidate_sharing && formData.candidate_sharing === "" ? (
+                        rows="3"
+                    ></textarea>
+                    {formik.touched?.candidate_sharing &&
+                    formData.candidate_sharing === "" ? (
                         <div className="warning_input">
                             {formik.errors.candidate_sharing}
                         </div>

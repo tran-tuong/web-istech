@@ -15,4 +15,20 @@
             font-weight: 600;
         }
     }
+
+    .step-4-btn-wrapper {
+        display: flex;
+        justify-content: center;
+        .btn-home-register {
+            color: #102462;
+            border-color: #102462;
+            margin-top: 20px;
+            padding: 8px 33px;
+    
+            &:hover {
+                background-color: #102462;
+                color: white !important;
+            }
+        }
+    }
 }

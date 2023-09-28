@@ -14,6 +14,7 @@ import { useNavigate } from "react-router-dom";
 export default function Register() {
     const navigate = useNavigate();
     const [page, setPage] = useState(0);
+    const [isSummitted, setIsSubmitted] = useState(false);
     const [formData, setFormData] = useState({
         generation: "Gen 5",
         full_name: "",
@@ -35,96 +36,78 @@ export default function Register() {
         candidate_sharing: "",
     });
 
-    const formik = useFormik({
-        onSubmit: async (values) => {
-            // values.phone.toString();
-            // values.student_id.toString();
-
-            // values = formData;
-
-            // console.log({ value: values });
-
-            // console.log(formData);
-
-            const newValues = {
-                ...values,
-                phone: "0" + values.phone.toString(),
-                student_id: values.student_id.toString(),
-                position_experiences: values.position_experiences === "true",
-                other_interested_department:
-                    values.other_interested_department === "true",
-            };
-            console.log(newValues);
-            const result = await axios({
-                url: "http://localhost:3001/candidate/register",
-                method: "POST",
-                withCredentials: true,
-                data: newValues,
-            });
-
-            console.log(result);
-        },
-    });
+    const isFormValid = () => {
+        return Object.values(formData).every((value) => value !== "");
+    };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        if (formData?.other_interested_department === "0") {
-            const {
-                department_registered_2,
-                position_experiences_2,
-                position_in_department_2,
-                reason_apply_department_2,
-                ...values
-            } = formData;
+        if (isFormValid()) {
+            if (formData?.other_interested_department === "0") {
+                const {
+                    department_registered_2,
+                    position_experiences_2,
+                    position_in_department_2,
+                    reason_apply_department_2,
+                    ...values
+                } = formData;
 
-            // const newValues = {
-            //     ...values,
-            //     student_id: values.student_id.toString(),
-            //     position_experiences: values.position_experiences === "true",
-            //     other_interested_department:
-            //         values.other_interested_department === "true",
-            // };
-            // console.log(newValues);
-            // const result = await axios({
-            //     url: "http://localhost:3001/candidate/register",
-            //     method: "POST",
-            //     withCredentials: true,
-            //     data: newValues,
-            // });
-            let a = 201;
-            if (a === 201) {
-                swal("Good job!", "Bạn đã đăng ký thành công", "success").then(
-                    (value) => navigate("/")
-                );
+                // const newValues = {
+                //     ...values,
+                //     student_id: values.student_id.toString(),
+                //     position_experiences: values.position_experiences === "true",
+                //     other_interested_department:
+                //         values.other_interested_department === "true",
+                // };
+                // console.log(newValues);
+                // const result = await axios({
+                //     url: "http://localhost:3001/candidate/register",
+                //     method: "POST",
+                //     withCredentials: true,
+                //     data: newValues,
+                // });
+                let a = 201;
+                if (a === 201) {
+                    // swal("Good job!", "Bạn đã đăng ký thành công", "success").then(
+                    //     (value) => navigate("/")
+                    // );
+                    setIsSubmitted(true);
+                } else {
+                    swal(
+                        "Bad job!",
+                        "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào",
+                        "error"
+                    );
+                }
             } else {
-                swal(
-                    "Bad job!",
-                    "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào",
-                    "error"
-                );
+                const newValues = {
+                    ...formData,
+                    student_id: formData.student_id.toString(),
+                    position_experiences:
+                        formData.position_experiences === "true",
+                    other_interested_department:
+                        formData.other_interested_department === "true",
+                };
+                // console.log(newValues);
+                // const result = await axios({
+                //     url: "http://localhost:3001/candidate/register",
+                //     method: "POST",
+                //     withCredentials: true,
+                //     data: newValues,
+                // });
+                // const a = 201;
+                // if (a === 201) {
+                //     swal("Good job!", "Bạn đã đăng ký thành công", "success")
+                //         .then(value => navigate('/'));
+                // } else {
+                //     swal("Bad job!", "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào", "error");
+                // }
             }
         } else {
-            const newValues = {
-                ...formData,
-                student_id: formData.student_id.toString(),
-                position_experiences: formData.position_experiences === "true",
-                other_interested_department:
-                    formData.other_interested_department === "true",
-            };
-            // console.log(newValues);
-            // const result = await axios({
-            //     url: "http://localhost:3001/candidate/register",
-            //     method: "POST",
-            //     withCredentials: true,
-            //     data: newValues,
-            // });
-            // if (result.status === 201) {
-            //     swal("Good job!", "Bạn đã đăng ký thành công", "success")
-            //         .then(value => navigate('/'));
-            // } else {
-            //     swal("Bad job!", "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào", "error");
-            // }
+            swal("Bad job!", "Vui lòng điền đầy đủ thông tin", "error").then(
+                () => window.location.reload()
+            );
         }
     };
 
@@ -132,7 +115,6 @@ export default function Register() {
         "Thông tin cá nhân",
         "Nguyện vọng ứng tuyển",
         "Câu hỏi cá nhân",
-        "Title 4",
     ];
 
     const pageDisplay = () => {
@@ -160,20 +142,18 @@ export default function Register() {
             },
             "& .MuiStepLabel-labelContainer": {
                 "& .MuiStepLabel-label": {
-                    fontSize: '1.6rem'
-                }
-            }
+                    fontSize: "1.6rem",
+                },
+            },
         },
         "& .MuiStep-root": {
             "& .MuiStepConnector-root": {
                 top: "21px",
                 right: "calc(50% + 35px)",
                 left: "calc(-50% + 35px)",
-                "& .MuiStepConnector-line": {
-
-                }
-            }
-        }
+                "& .MuiStepConnector-line": {},
+            },
+        },
     };
 
     return (
@@ -190,63 +170,79 @@ export default function Register() {
                                     <h3 className="mb-4 pb-2 pb-md-0 mb-md-5">
                                         Registration Form
                                     </h3>
-                                    <Stepper
-                                        activeStep={page}
-                                        alternativeLabel
-                                        sx={stepStyle}
-                                    >
-                                        {formTitles.map((label) => (
-                                            <Step key={label}>
-                                                <StepLabel>{label}</StepLabel>
-                                            </Step>
-                                        ))}
-                                    </Stepper>
-                                    <form onSubmit={handleSubmit} className="register-form">
-                                        {pageDisplay()}
+                                    {isSummitted ? (
+                                        <FourStep />
+                                    ) : (
+                                        <>
+                                            <Stepper
+                                                activeStep={page}
+                                                alternativeLabel
+                                                sx={stepStyle}
+                                            >
+                                                {formTitles.map((label) => (
+                                                    <Step key={label}>
+                                                        <StepLabel>
+                                                            {label}
+                                                        </StepLabel>
+                                                    </Step>
+                                                ))}
+                                            </Stepper>
+                                            <form
+                                                onSubmit={handleSubmit}
+                                                className="register-form"
+                                            >
+                                                {pageDisplay()}
 
-                                        <div className="btn-register-wrapper">
-                                            <Button
-                                                hidden={
-                                                    page === 0 ? true : false
-                                                }
-                                                variant="contained"
-                                                color="primary"
-                                                onClick={() => {
-                                                    setPage(
-                                                        (currPage) =>
-                                                            currPage - 1
-                                                    );
-                                                }}
-                                            >
-                                                Back
-                                            </Button>
-                                            <Button
-                                                hidden={
-                                                    page ===
-                                                    formTitles.length - 1
-                                                }
-                                                variant="contained"
-                                                color="primary"
-                                                onClick={() => {
-                                                    setPage(
-                                                        (currPage) =>
-                                                            currPage + 1
-                                                    );
-                                                }}
-                                            >
-                                                Next
-                                            </Button>
-                                            {page === formTitles.length - 1 && (
-                                                <Button
-                                                    variant="contained"
-                                                    color="primary"
-                                                    type="Submit"
-                                                >
-                                                    Submit
-                                                </Button>
-                                            )}
-                                        </div>
-                                    </form>
+                                                <div className="btn-register-wrapper">
+                                                    <Button
+                                                        hidden={
+                                                            page === 0
+                                                                ? true
+                                                                : false
+                                                        }
+                                                        variant="contained"
+                                                        color="primary"
+                                                        onClick={() => {
+                                                            setPage(
+                                                                (currPage) =>
+                                                                    currPage - 1
+                                                            );
+                                                        }}
+                                                    >
+                                                        Back
+                                                    </Button>
+                                                    <Button
+                                                        hidden={
+                                                            page ===
+                                                            formTitles.length -
+                                                                1
+                                                        }
+                                                        variant="contained"
+                                                        color="primary"
+                                                        onClick={() => {
+                                                            setPage(
+                                                                (currPage) =>
+                                                                    currPage + 1
+                                                            );
+                                                        }}
+                                                    >
+                                                        Next
+                                                    </Button>
+                                                    {page ===
+                                                        formTitles.length -
+                                                            1 && (
+                                                        <Button
+                                                            variant="contained"
+                                                            color="primary"
+                                                            type="Submit"
+                                                        >
+                                                            Submit
+                                                        </Button>
+                                                    )}
+                                                </div>
+                                            </form>
+                                        </>
+                                    )}
                                 </div>
                             </div>
                         </div>
