@@ -53,22 +53,22 @@ export default function Register() {
                     ...values
                 } = formData;
 
-                // const newValues = {
-                //     ...values,
-                //     student_id: values.student_id.toString(),
-                //     position_experiences: values.position_experiences === "true",
-                //     other_interested_department:
-                //         values.other_interested_department === "true",
-                // };
-                // console.log(newValues);
-                // const result = await axios({
-                //     url: "http://localhost:3001/candidate/register",
-                //     method: "POST",
-                //     withCredentials: true,
-                //     data: newValues,
-                // });
+                const newValues = {
+                    ...values,
+                    student_id: values.student_id.toString(),
+                    position_experiences: values.position_experiences === "true",
+                    other_interested_department:
+                        values.other_interested_department === "true",
+                };
+                console.log(newValues);
+                const result = await axios({
+                    url: "http://localhost:3001/candidate/register",
+                    method: "POST",
+                    withCredentials: true,
+                    data: newValues,
+                });
                 let a = 201;
-                if (a === 201) {
+                if (result.status === 201) {
                     // swal("Good job!", "Bạn đã đăng ký thành công", "success").then(
                     //     (value) => navigate("/")
                     // );
@@ -81,25 +81,26 @@ export default function Register() {
                     );
                 }
             } else {
-                // const newValues = {
-                //     ...formData,
-                //     student_id: formData.student_id.toString(),
-                //     position_experiences:
-                //         formData.position_experiences === "true",
-                //     other_interested_department:
-                //         formData.other_interested_department === "true",
-                // };
-                // console.log(newValues);
-                // const result = await axios({
-                //     url: "http://localhost:3001/candidate/register",
-                //     method: "POST",
-                //     withCredentials: true,
-                //     data: newValues,
-                // });
+                const newValues = {
+                    ...formData,
+                    student_id: formData.student_id.toString(),
+                    position_experiences:
+                        formData.position_experiences === "true",
+                    other_interested_department:
+                        formData.other_interested_department === "true",
+                };
+                console.log(newValues);
+                const result = await axios({
+                    url: "http://localhost:3001/candidate/register",
+                    method: "POST",
+                    withCredentials: true,
+                    data: newValues,
+                });
                 const a = 201;
                 if (a === 201) {
-                    swal("Good job!", "Bạn đã đăng ký thành công", "success")
-                        .then(value => navigate('/'));
+                    // swal("Good job!", "Bạn đã đăng ký thành công", "success")
+                    //     .then(value => navigate('/'));
+                    setIsSubmitted(true);
                 } else {
                     swal("Bad job!", "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào", "error");
                 }
