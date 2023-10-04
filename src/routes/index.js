@@ -33,9 +33,9 @@ const publicRoutes = [
     { path: '/blog', component: Maintainance },
     { path: '/notebook', component:NoteBook },
     { path: '/resource-hub', component: Maintainance },
-    { path: '/login', component: Login },
+    { path: '/login', component: Maintainance },
+    { path: '/register', component: Maintainance},
     { path: '*', component: NotFound, status: 404 },
-    { path: '/register', component: Register},
 ];
 
 const privateRoutes = [];

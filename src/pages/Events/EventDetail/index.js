@@ -42,6 +42,7 @@ export default function EventDetail() {
                     src={eventDetail.banner2}
                     className="img-fluid"
                     alt={eventDetail.event_name}
+                    loading="lazy"
                 />
             </div>
             <div className="event-info">

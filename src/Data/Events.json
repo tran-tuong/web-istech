@@ -19,6 +19,26 @@
         ]
     },
     {
+        "event_name": "Hackathon JuncionX Hanoi",
+        "slug": "hackathon-junctionx-hanoi",
+        "type": "webinar",
+        "time": "14/04/2023", 
+        "banner1": "https://i.postimg.cc/gkT5H4vZ/338379187-564447775752183-2071710601419382843-n.jpg",
+        "banner2": "https://i.postimg.cc/zGHQtWjP/340648611-146890045009891-1327634730484203679-n.png",
+        "feature": "https://i.postimg.cc/hGj1Zqc4/341567911-224900093551494-3516981320509911795-n.jpg",
+        "summary": "Sự kiện dành cho mọi người yêu công nghệ trên khắp dải đất hình chữ S, cùng nhau cháy hết mình trong  48 giờ để mang biến những ý tưởng đột phá. Năm nay, một trải nghiệm tương tác ảo vô cùng thú vị không hề kém sự kiện thực tế thông qua Airmeet đang chờ bạn đó!",
+        "content": "CLB ISTECH có tham gia với vai trò đối tác truyền thông cùng JuncionX Hanoi nhằm lan toả cuộc thi tiếp cận với nhiều sinh viên khối ngành công nghệ tham gia. Bên cạnh đó CLB đã thành lập đội thi là các thành viên CLB tham gia cuộc thi Hackathon lần này với mục đích vận dụng các kiến thức và kĩ năng chuyên môn của CLB vào các cuộc thi, qua đó giúp các thành viên có thêm nhiều kinh nghiệm và tích luỹ kiến thức để chuẩn bị tham gia các cuộc thi công nghệ trong thời gian sắp tới.",
+        "images": [
+            {"image": "https://i.postimg.cc/bYKNV00K/340771471-3053873568240722-7506277565019315117-n.jpg"},
+            {"image": "https://i.postimg.cc/NGrQX9hb/341423638-785966919293595-6183288895225873534-n.jpg"},
+            {"image": "https://i.postimg.cc/25cCQn89/341532558-3442990332634656-7871257289717696547-n.jpg"},
+            {"image": "https://i.postimg.cc/HxFHKHMQ/341586192-963191308016729-2850775192630662954-n.jpg"},
+            {"image": "https://i.postimg.cc/43NJHWZh/341771354-1395676011197886-3328396789748941744-n.jpg"},
+            {"image": "https://i.postimg.cc/bNcp9ypP/JUNCTION-X-HACK-2774-2.jpg"},
+            {"image": "https://i.postimg.cc/CLGYv3xq/JUNCTION-X-HACK-2768-2.jpg"}
+        ]
+    },
+    {
         "event_name": "Workshop “Fintech và Digital business: Opportunities, Challenges and Prospects”",
         "slug": "workshop-fintech-digital-business",
         "type": "webinar",
@@ -33,6 +53,23 @@
             {"image": "https://i.postimg.cc/02b0pFsd/280238141-517808893229478-6657140386624734762-n.jpg"},
             {"image": "https://i.postimg.cc/pX4YkCVN/280265399-517808796562821-262849502124494176-n.jpg"},
             {"image": "https://i.postimg.cc/qBmG609v/280204516-517808939896140-338162028307267753-n.jpg"}
+        ]
+    },
+    {
+        "event_name": "Ngày hội Tư vấn tuyển sinh Hướng nghiệp tại Trường đại học Bách Khoa Hà Nội",
+        "slug": "ngay-hoi-tu-van-tuyen-sinh-huong-nghiep",
+        "type": "webinar",
+        "time": "08/05/2022", 
+        "banner1": "https://i.postimg.cc/nzK5pJ98/279907132-518493263161041-4180748606792256170-n.jpg",
+        "banner2": "https://i.postimg.cc/J0P2H5QP/306086371-512407257558996-1196853709116080547-n.jpg",
+        "feature": "https://i.postimg.cc/593GrfML/305995478-512409504225438-7778181653633472663-n.jpg",
+        "summary": "Cung cấp những kiến thức nền tảng cho người mới nhập môn, đặc biệt đây còn là bước đệm hoàn hảo dành cho các thí sinh tham gia Cuộc thi sinh viên khởi nghiệp tài chính “Finnovation 2022”.",
+        "content": "Chương trình đã nhận được sự chia sẻ, lý giải đến từ các vị diễn giả về cơ hội, thách thức, triển vọng của các vị diễn giả đến từ công ty Fintech, ngân hàng MB, BampuUp trình bày góc nhìn về sự phát triển của ngân hàng số, các dịch vụ thuộc vấn đề kinh doanh số, sự khác biệt giữa công nghệ tài chính và dịch vụ ngân hàng.",
+        "images": [
+            {"image": "https://i.postimg.cc/W3cKB336/279854639-518493189827715-2917176685295184117-n.jpg"},
+            {"image": "https://i.postimg.cc/pr2Sd6Km/280336413-518493329827701-4744968490200289462-n.jpghttps://i.postimg.cc/pr2Sd6Km/280336413-518493329827701-4744968490200289462-n.jpg"},
+            {"image": "https://i.postimg.cc/d0ypNdqV/280365967-518493489827685-6715671632585958847-n.jpg"},
+            {"image": "hhttps://i.postimg.cc/L6QWHv5s/280372422-518493083161059-3790547617650435078-n.jpg"}
         ]
     },
     {
