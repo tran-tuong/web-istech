@@ -9,7 +9,8 @@ import {
 import { useState } from "react";
 import { BsFillCheckSquareFill } from "react-icons/bs";
 import Button from "../../components/Button";
-import './Form.scss'
+import './Form.scss';
+import swal from "sweetalert";
 
 export const Form = () => {
   const methods = useForm();
@@ -38,10 +39,12 @@ export const Form = () => {
         <div className="form-check">
           {success && (
             <p className="form-check-content">
-              <BsFillCheckSquareFill /> Form has been submitted successfully
+              <BsFillCheckSquareFill /> Gửi thành công
             </p>
-          )}
-          <br/><Button onClick={onSubmit} className={'btn-form'}>Send Message</Button>
+            
+          )}<br/>
+          
+          <div className="btn-form-wrapper"><Button onClick={onSubmit} className={'btn-form'}>Send Message</Button></div>
         </div>
       </form>
     </FormProvider>

@@ -27,6 +27,7 @@
     outline: none;
 
     &::placeholder {
+      font-family: 'Montserrate', sans-serif;
       color: rgba($color: #000000, $alpha: 0.4);
     }
 

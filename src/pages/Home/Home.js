@@ -71,7 +71,7 @@ export default function Home() {
                 <div className="col-4 Playground_item">
                   <p className="playground_number">
                     {" "}
-                    {Counter && <CountUp end={2} start={0} duration={2} />}{" "}
+                    {Counter && <CountUp end={2} start={0} duration={2} />}
                     <span>+</span>{" "}
                   </p>
                   <p>YEARS</p>
@@ -89,7 +89,7 @@ export default function Home() {
                     {" "}
                     {Counter && (
                       <CountUp end={15} start={0} duration={2} />
-                    )}{" "}
+                    )}
                     <span>+</span>{" "}
                   </p>
                   <p>EVENTS</p>

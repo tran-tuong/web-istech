@@ -43,7 +43,7 @@ function Circle({ border, data, partner }) {
   } else {
     return (
       <>
-        <div className="circle-content">
+        <div className="circle-content circle-member">
           <div className="circle-content-image">
             <img src={data.img} alt="Avatar" />
             {data.job === "Leader" && (

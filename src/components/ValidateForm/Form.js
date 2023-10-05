@@ -38,10 +38,10 @@ export const Form = () => {
         <div className="form-check">
           {success && (
             <p className="form-check-content">
-              <BsFillCheckSquareFill /> Form has been submitted successfully
+              <BsFillCheckSquareFill /> Gửi thành công
             </p>
           )}
-          <Button onClick={onSubmit} className={'btn-form'}>Send Message</Button>
+          <div className="btn-form-wrapper"><Button onClick={onSubmit} className={'btn-form'}>Send Message</Button></div>
         </div>
       </form>
     </FormProvider>

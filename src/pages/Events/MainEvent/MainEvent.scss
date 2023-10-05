@@ -25,18 +25,21 @@
 
 .event-main {
     font-family: "Montserrat", sans-serif;
+    display: block;
 
     img {
         border-radius: 6px;
+        width: 100%;
+        height: 500px;
     }
 
     .event-title {
-        font-size: 4.8rem;
+        font-size: 4.4rem;
         font-weight: 700;
     }
 
     .event-desc {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -73,10 +76,10 @@
         display: flex;
         margin-bottom: 20px;
         gap: 16px;
+        transition: linear .3s;
 
         .event-banner-wrapper {
-            flex: 4.5;
-            width: 420px;
+            width: 200px !important;
             height: 160px;
             border-radius: 6px;
 
@@ -84,21 +87,20 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 6px;
-                object-fit: contain;
             }
         }
 
         .event-type-info {
-            flex: 5.5;
             .info {
                 display: flex;
                 align-items: center;
                 margin-bottom: 20px;
+                font-size: 1.4rem;
 
                 .type {
                     border-radius: 5px;
                     background: rgba(45, 68, 165, 0.3);
-                    margin-right: 16px;
+                    margin-right: 14px;
                     padding: 4px 8px;
                 }
 
@@ -109,7 +111,7 @@
                 }
 
                 .time {
-                    margin-left: 16px;
+                    margin-left: 14px;
 
                     .icon-clock {
                         margin-right: 8px;
@@ -118,7 +120,7 @@
             }
 
             .title {
-                font-size: 2.2rem;
+                font-size: 2rem;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
@@ -127,12 +129,21 @@
             }
 
             .desc {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
+            }
+        }
+
+        &:hover {
+            background-color: white;
+            border-radius: 6px;
+    
+            .event-type-info {
+                color: #000;
             }
         }
     }
@@ -142,6 +153,10 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .event-type-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
     .event-main {
         .event-title {
             font-size: 3.2rem;
@@ -153,11 +168,12 @@
     }
 
     .event-type-list {
+        margin-top: 16px;
         .event-type-item {
             .event-banner-wrapper {
                 flex: 5;
                 width: 100%;
-                height: 100px;
+                height: 200px;
                 overflow: hidden;
 
                 img {
@@ -169,12 +185,11 @@
             .event-type-info {
                 flex: 5;
                 .info {
-                    align-items: center;
                     gap: 6px;
                     margin-bottom: 10px;
 
                     .type {
-                        font-size: 1.2rem;
+                        font-size: 1.4rem;
                         margin-right: 0;
                     }
 
@@ -185,7 +200,7 @@
                     .time {
                         display: flex;
                         align-items: center;
-                        font-size: 1.2rem;
+                        font-size: 1.4rem;
                         margin-left: 0;
 
                         .icon-clock {
@@ -195,11 +210,11 @@
                 }
 
                 .title {
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                 }
 
                 .desc {
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     display: -webkit-box;
@@ -245,6 +260,9 @@
     }
 
     .event-main {
+        img {
+            height: 400px;
+        }
         .event-title {
             font-size: 3rem;
         }
@@ -259,13 +277,27 @@
         .event-type-item {
             flex-direction: column;
             .event-banner-wrapper {
-                width: 100%;
-                height: 90%;
+                width: 100% !important;
+                height: 50%;
 
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
+                }
+            }
+            .event-type-info {
+                .info {
+                    .type {
+                        margin-right: 8px;
+                    }
+                    .separate {
+                        display: block;
+                        height: 26px;
+                    }
+                    .time {
+                        margin-left: 8px;
+                    }
                 }
             }
         }

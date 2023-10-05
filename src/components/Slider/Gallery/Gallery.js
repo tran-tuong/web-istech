@@ -111,7 +111,7 @@ export default function EventGallery({ event_image }) {
 
     return (
         <div className="row g-0 gallery-wrapper">
-            <div className="col-md-4 gallery-list-image">
+            <div className="col-md-3 gallery-list-image">
                 <Slider
                     asNavFor={nav1}
                     ref={(slider2) => setNav2(slider2)}
@@ -120,7 +120,7 @@ export default function EventGallery({ event_image }) {
                     {gallery_images('aside')}
                 </Slider>
             </div>
-            <div className="col-md-8 gallery-main-image">
+            <div className="col-md-9 gallery-main-image">
                 <Slider
                     // autoplay={true}
                     speed={500}
