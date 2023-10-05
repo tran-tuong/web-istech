@@ -27,7 +27,7 @@ const publicRoutes = [
     { path: '/contact', component: Contact },
     { path: '/about', component: About },
     { path: '/events', component: MainEvent },
-    { path: '/all-events', component: Events },
+    // { path: '/all-events', component: Events },
     { path: '/events/:type/:eventName', component: EventDetail },
     { path: '/internal-activities', component: Maintainance },
     { path: '/blog', component: Maintainance },

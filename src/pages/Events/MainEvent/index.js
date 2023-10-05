@@ -58,9 +58,9 @@ export default function EventType() {
                         </li>
                     </ul>
                 </nav>
-                <section className="col-6 btn-see-all-event">
+                {/* <section className="col-6 btn-see-all-event">
                     <Button to="/all-events">See all events </Button>
-                </section>
+                </section> */}
             </div>
             <div className="row event-type-wrapper">
                 <div className="col-12 col-md-7">

@@ -1,3 +1,7 @@
+// .slick-list {
+//     width: 100%;
+// }
+
 .card {
     background-color: transparent !important;
     .card-image-wrap {
@@ -102,6 +106,19 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .slick-list {
+        .slick-track {
+            .slick-slide {
+                width: 50% !important;
+            }
+        }
+    }
+
+    .slick-slide {
+        width: 50% !important;
+    }
+    
+
     .card {
         .card-image-wrap {
             transform: translateY(70px);

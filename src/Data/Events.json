@@ -2,7 +2,7 @@
     {
         "event_name": "OEG x VNU-IS: The glory of Charmers",
         "slug": "oeg-vnu-is-the-glory-of-charmers",
-        "type": "webinar",
+        "type": "competition",
         "time": "12/05/2023", 
         "banner1": "https://i.postimg.cc/RVwpwDfY/344335072-1383232385866541-1616684018989529587-n.png",
         "banner2": "https://i.postimg.cc/P5zcnR5D/344342943-182384538059205-2019369747545015759-n.jpg",
@@ -21,7 +21,7 @@
     {
         "event_name": "Hackathon JuncionX Hanoi",
         "slug": "hackathon-junctionx-hanoi",
-        "type": "webinar",
+        "type": "competition",
         "time": "14/04/2023", 
         "banner1": "https://i.postimg.cc/gkT5H4vZ/338379187-564447775752183-2071710601419382843-n.jpg",
         "banner2": "https://i.postimg.cc/zGHQtWjP/340648611-146890045009891-1327634730484203679-n.png",
@@ -58,7 +58,7 @@
     {
         "event_name": "Ngày hội Tư vấn tuyển sinh Hướng nghiệp tại Trường đại học Bách Khoa Hà Nội",
         "slug": "ngay-hoi-tu-van-tuyen-sinh-huong-nghiep",
-        "type": "webinar",
+        "type": "others",
         "time": "08/05/2022", 
         "banner1": "https://i.postimg.cc/nzK5pJ98/279907132-518493263161041-4180748606792256170-n.jpg",
         "banner2": "https://i.postimg.cc/J0P2H5QP/306086371-512407257558996-1196853709116080547-n.jpg",
@@ -75,7 +75,7 @@
     {
         "event_name": "Tham quan FPT TOUR",
         "slug": "tham-quan-fpt-tour",
-        "type": "webinar",
+        "type": "industry connection",
         "time": "10/10/2020",
         "banner1": "https://i.postimg.cc/MKMYCmkB/120262556-174128007597570-5670250056992119384-n.png",
         "banner2": "https://i.postimg.cc/Yq8ZQWBF/rsz-120528690-174750140868690-845553402139212218-n.png",

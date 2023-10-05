@@ -25,23 +25,22 @@ function NextArrow({ onClick }) {
     );
 }
 
-function EventSlider() {
+function EventSlider({ data }) {
     var settings = {
         className: "d-flex justify-content-center align-items-center",
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: data.length > 4 ? 4 : data.length,
         autoplay: false,
-        // centerMode: true,
-        // centerPadding: "60px",
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: data.length < 2 ? 1 : 2,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true,
                 },
@@ -49,9 +48,8 @@ function EventSlider() {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 },
             },
             {
@@ -63,10 +61,11 @@ function EventSlider() {
             },
         ],
     };
+
     return (
-        <div className="">
+        <div className="event-list-wrapper">
             <Slider {...settings}>
-                <a href="/events/webinars/abc" class="card">
+                {/* <a href="/events/webinars/abc" class="card">
                     <section className="card-image-wrap">
                         <img src="https://th.bing.com/th/id/OIP.DgnrLsh4IRnSzhryYeTMWQHaJM?pid=ImgDet&rs=1" class="card-img-top" alt="Event" />
                     </section>
@@ -135,7 +134,23 @@ function EventSlider() {
                         </p>
                         <Button className="btn-read-more" to="">Read more</Button>
                     </div>
-                </a>
+                </a> */}
+                {data.map((item, index) => (
+                    <a key={index} href={`/events/${item.type}/${item.slug}`} class="card">
+                        <section className="card-image-wrap">
+                            <img src={item.banner1} class="card-img-top" alt="Event" />
+                        </section>
+                        <div class="card-body">
+                            <section className="card-info ">
+                                <h3 class="card-title">{item.event_name}</h3>
+                            </section>
+                            <p class="card-text">
+                                {item.summary}
+                            </p>
+                            <Button className="btn-read-more" to={`/events/${item.type}/${item.slug}`}>Read more</Button>
+                        </div>
+                    </a>
+                ))}
             </Slider>
         </div>
     );
