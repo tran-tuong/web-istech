@@ -11,9 +11,10 @@
 
     .content-heading {
         width: 70%;
+        font-family: 'Montserrat', sans-serif;
     
         h1 {
-            font-size: 6rem;
+            font-size: 7rem;
             font-weight: bold;
             margin-bottom: 30px;
         }
@@ -27,7 +28,17 @@
     gap: 40px;
 
     .department-link {
-        
+        .rectangle {
+            box-shadow: none;
+
+            .circle-content {
+                h3 {
+                    font-size: 2.2rem;
+                    font-family: 'Roboto Mono', monospace;
+                    margin-top: 20px;
+                }
+            }
+        }
     }
 }
 

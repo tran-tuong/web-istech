@@ -9,7 +9,7 @@ import { media_links } from '../../../assets/media-links';
 
 export default function Footer() {
   return (
-    <footer className='pt-4 pb-4'>
+    <footer className='footer-wrapper'>
       <div className='container d-flex justify-content-between footer'>
         <div className='club-info'>
           <p className='club-info-name'>Câu lạc bộ Công nghệ Thông tin</p>
@@ -27,12 +27,12 @@ export default function Footer() {
             <a href={media_links.instagram} className='wrapper-icon'><FontAwesomeIcon icon={faInstagram} className='icon' /></a>
             <a href={media_links.mail} className='wrapper-icon'><FontAwesomeIcon icon={faEnvelope} className='icon' /></a>
           </div>
-          <div className='languages mt-4'>
+          <div className='languages'>
             <span>Language:</span>
-            <a href='#' className='vn-language'>
+            <a href='/' className='vn-language'>
               <img src={images.flagVN} alt='Vietnamese' />
             </a>
-            <a href='#' className='en-language'>
+            <a href='/' className='en-language'>
               <img src={images.flagGB} alt='English' />
             </a>
           </div>

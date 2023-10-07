@@ -12,11 +12,15 @@
 
     .content-heading {
         width: 70%;
+        font-family: 'Montserrat', sans-serif;
     
         h1 {
-            font-size: 6rem;
+            font-size: 7rem;
             font-weight: bold;
             margin-bottom: 30px;
+        }
+        p {
+            display: none;
         }
     }
 }
@@ -89,6 +93,16 @@
             p {
                 font-size: 1.6rem;
             }
+        }
+    }
+
+    .partners-list {
+        flex-direction: column;
+        align-items: center;
+
+        .rectangle-p {
+            padding: 0 24px;
+            width: 80%;
         }
     }
 }

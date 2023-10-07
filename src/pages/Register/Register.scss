@@ -1,0 +1,41 @@
+.warning_input {
+    color: red;
+}
+
+.register_form{
+    height: 1000px;
+}
+
+.register-wrapper {
+    h3 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .register-form {
+        margin-top: 24px;
+
+        .btn-register-wrapper {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+
+            .MuiButtonBase-root {
+                font-size: 1.6rem;
+                text-transform: none;
+                padding: 4px 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .register_form{
+        height: 1350px;
+    }
+}
+@media screen and (max-width:400px) {
+    .register_form{
+        height: 1400px;
+    }
+}

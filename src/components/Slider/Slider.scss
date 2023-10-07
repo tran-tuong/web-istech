@@ -7,7 +7,6 @@
     img {
         width: 10rem;
         height: 100%;
-        border: 2px solid #fff;
         border-radius: 10px;
         padding: 8px;
     }
@@ -47,9 +46,13 @@
 
 .btn-prev {
     top: 3.6rem;
+    left: -12px;
+    z-index: 2;
 }
 
 .btn-next {
     top: 3.6rem;
-    right: 0;
+    right: -12px;
+    z-index: 2;
 }
+

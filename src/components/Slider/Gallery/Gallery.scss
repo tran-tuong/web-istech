@@ -1,0 +1,130 @@
+.gallery-wrapper {
+    
+    .gallery-list-image {
+        padding-right: 8px;
+    }
+
+    .gallery-main-image {
+        padding-left: 8px;
+    }
+}
+
+.event-image-item {
+    height: 230px;
+    overflow: hidden;
+    
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.event-image-main {
+    outline: none;
+    height: 707px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.gallery-btn-up,
+.gallery-btn-down {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    padding: 16px;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 2;
+
+    .icon-control {
+        width: 30px;
+        height: 30px;
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.gallery-btn-down {
+    bottom: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+    .event-image-item {
+        height: 202px;
+
+    }
+    
+    .event-image-main {
+        height: 623px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .gallery-wrapper {
+        flex-direction: column-reverse;
+
+        .gallery-list-image {
+            padding-right: 0;
+            .slick-slider {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .gallery-btn-prev,
+                .gallery-btn-next {
+                    position: absolute;
+                    z-index: 2;
+
+                    .icon-control {
+                        width: 14px;
+                        height: 20px;
+                    }
+                }
+
+                .gallery-btn-prev {
+                    left: 2px;
+                }
+
+                .gallery-btn-next {
+                    right: 2px;
+                }
+
+                .event-image-item {
+                    width: 100% !important;
+                    height: 70px;
+                    overflow: hidden;
+                    padding: 2px;
+                }
+            }
+
+            
+        }
+    
+        .gallery-main-image {
+            padding-left: 0;
+
+            .event-image-main {
+                height: 500px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 300px) {
+    
+}

@@ -9,13 +9,13 @@ export default function Presidence(props) {
     }
   return (
     <div>
-      <div className="presidence container">
-        <div className="presidence-header">
+      <div className="presidence container" >
+        <div className="presidence-header" data-aos="fade-up">
           <h2 className="sub-p-content">{props.data.Year}</h2>
         </div>
-        <div className="row">
+        <div className="row" >
           <div className="col-1 fix-resolution">
-            <div className="div-linear"></div>
+            <div className="div-linear" data-aos="fade-up"></div>
           </div>
           <div className="col-11 p-content">
             {RenderIntroPresidence()}

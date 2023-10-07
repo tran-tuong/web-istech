@@ -30,7 +30,7 @@ function SliderCompo({ skills }) {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        // autoplay: true,
+        autoplay: true,
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         responsive: [

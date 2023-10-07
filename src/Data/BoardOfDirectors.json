@@ -1,89 +1,89 @@
 [
-    {
-        "Year": "2022 - 2023 Academic Year",
-        "listPresidence": [
-            {
-                "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
-                "job": "Presidence",
-                "name": "Công Châu Anh",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-                "phone": "0328880092",
-                "email": "tranvantuong2k3@gmail.com",
-                "linkedin": "linkedin.com"
-            },
-            {
-                "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
-                "job": "Vice-Presidence",
-                "name": "Hoàng Thị Ngọc Thư",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-                "phone": "0328880092",
-                "email": "tranvantuong2k3@gmail.com",
-                "linkedin": "linkedin.com"
-            }
-        ]
-    },
-    {
-        "Year": "2021 - 2022 Academic Year",
-        "listPresidence": [
-            {
-                "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
-                "job": "Presidence",
-                "name": "Lê Anh Đức",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-                "phone": "0328880092",
-                "email": "tranvantuong2k3@gmail.com",
-                "linkedin": "linkedin.com"
-            },
-            {
-                "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
-                "job": "Vice-Presidence",
-                "name": "Trần Hải Vân",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-                "phone": "0328880092",
-                "email": "tranvantuong2k3@gmail.com",
-                "linkedin": "linkedin.com"
-            },
-            {
-                "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
-                "job": "Vice-Presidence",
-                "name": "Nguyễn Thị Phương Anh",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-                "phone": "0328880092",
-                "email": "tranvantuong2k3@gmail.com",
-                "linkedin": "linkedin.com"
-            }
-        ]
-    },
-    {
-        "Year": "2020 - 2021 Academic Year",
-        "listPresidence": [
-            {
-                "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
-                "job": "Presidence",
-                "name": "Đỗ Văn Quý",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-                "phone": "0328880092",
-                "email": "tranvantuong2k3@gmail.com",
-                "linkedin": "linkedin.com"
-            },
-            {
-                "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
-                "job": "Vice-Presidence",
-                "name": "Lê Anh Đức",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-                "phone": "0328880092",
-                "email": "tranvantuong2k3@gmail.com",
-                "linkedin": "linkedin.com"
-            },
-            {
-                "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg",
-                "job": "Vice-Presidence",
-                "name": "Lê Mai Anh Thắng",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
-                "phone": "0328880092",
-                "email": "tranvantuong2k3@gmail.com",
-                "linkedin": "linkedin.com"
-            }
-        ]
-    }
+  {
+    "Year": "Năm học 2022 - 2023",
+    "listPresidence": [
+      {
+        "img": "./departments/member_avatar/BoardOfDirectors/CongChauAnh.png",
+        "job": "Chủ nhiệm",
+        "name": "Công Châu Anh",
+        "description": "Cuối cùng là khoảng trống lặng câm, những tiếng động của cuộc đời dội lại, ta đi giữa hoàng hôn tê tái, với nụ cười héo hắt trên môi.",
+        "phone": "",
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "img": "./departments/member_avatar/BoardOfDirectors/HoangThiNgocThu.png",
+        "job": "Phó chủ nhiệm",
+        "name": "Hoàng Thị Ngọc Thư",
+        "description": "Thở vào tâm tĩnh lặng, Thở ra miệng mỉm cười.",
+        "phone": "",
+        "email": "",
+        "linkedin": ""
+      }
+    ]
+  },
+  {
+    "Year": "Năm học 2021 - 2022",
+    "listPresidence": [
+      {
+        "img": "./departments/member_avatar/BoardOfDirectors/LeAnhDuc.png",
+        "job": "Chủ nhiệm",
+        "name": "Lê Anh Đức",
+        "description": "Làm phí thời gian của người khác là một kiểu cướp của giết người. Còn lãng phí thời gian của mình gọi là tự sát.",
+        "phone": "",
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "img": "./departments/member_avatar/BoardOfDirectors/NguyenHaiVan.png",
+        "job": "Phó chủ nhiệm",
+        "name": "Nguyễn Hải Vân",
+        "description": "Cách bạn suy nghĩ tạo lên lời nói, lời bạn nói tạo nên cách bạn hành động. Những hành động lặp đi lặp lại sẽ tạo nên thói quen và thói quen đó sẽ trở thành cuộc sống của bạn.",
+        "phone": "",
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "img": "./departments/member_avatar/BoardOfDirectors/NguyenThiPhuongAnh.png",
+        "job": "Phó chủ nhiệm",
+        "name": "Nguyễn Thị Phương Anh",
+        "description": "Lúc sinh ra bạn chỉ đơn thuần là một tờ giấy trắng. Hiện tại bạn là kết của của rất nhiều sự cố gắng.",
+        "phone": "",
+        "email": "",
+        "linkedin": ""
+      }
+    ]
+  },
+  {
+    "Year": "Năm học 2020 - 2021",
+    "listPresidence": [
+      {
+        "img": "./departments/member_avatar/BoardOfDirectors/DoVanQuy.png",
+        "job": "Chủ nhiệm",
+        "name": "Đỗ Văn Quý",
+        "description": "Tâm trong - Trí sáng - Hoài bão lớn",
+        "phone": "",
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "img": "./departments/member_avatar/BoardOfDirectors/LeAnhDuc.png",
+        "job": "Phó chủ nhiệm",
+        "name": "Lê Anh Đức",
+        "description": "Làm phí thời gian của người khác là một kiểu cướp của giết người. Còn lãng phí thời gian của mình gọi là tự sát.",
+        "phone": "",
+        "email": "",
+        "linkedin": ""
+      },
+      {
+        "img": "./departments/member_avatar/BoardOfDirectors/LeMaiAnhThang.png",
+        "job": "Phó chủ nhiệm",
+        "name": "Lê Mai Anh Thắng",
+        "description": "Trên con đường này chỉ có hai sai lầm. Thứ nhất đó chính là bỏ cuộc giữa chừng, thứ 2 là chưa hề có sự khởi đầu.",
+        "phone": "",
+        "email": "",
+        "linkedin": ""
+      }
+    ]
+  }
 ]

@@ -48,8 +48,9 @@ export default function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    About
+                    Về ISTECH
                   </div>
+                  
                   <ul
                     className="dropdown-menu"
                     onClick={getClass}
@@ -57,7 +58,7 @@ export default function Header() {
                   >
                     <li>
                       <NavLink className="dropdown-item pt-3 pb-3" to="/about">
-                        About Us
+                        Về chúng tớ
                       </NavLink>
                     </li>
                     <li>
@@ -65,7 +66,7 @@ export default function Header() {
                         className="dropdown-item pt-3 pb-3"
                         to="/board-of-director"
                       >
-                        Board of Directors
+                        Ban chủ nhiệm
                       </NavLink>
                     </li>
                     <li>
@@ -73,9 +74,11 @@ export default function Header() {
                         className="dropdown-item pt-3 pb-3"
                         to="/departments"
                       >
-                        Departments
+                        Các ban mảng
                       </NavLink>
                     </li>
+          
+                    
                   </ul>
                 </li>
                 <li className="nav-item dropdown">
@@ -86,7 +89,7 @@ export default function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Activities
+                    Hoạt động
                   </div>
                   <ul
                     className="dropdown-menu"
@@ -95,7 +98,7 @@ export default function Header() {
                   >
                     <li>
                       <NavLink className="dropdown-item pt-3 pb-3" to="/events">
-                        Events
+                        Sự kiện
                       </NavLink>
                     </li>
                     <li>
@@ -103,7 +106,7 @@ export default function Header() {
                         className="dropdown-item pt-3 pb-3"
                         to="/internal-activities"
                       >
-                        Internal Activities
+                        Hoạt động nội bộ
                       </NavLink>
                     </li>
                   </ul>
@@ -116,7 +119,7 @@ export default function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Resources
+                    Tài nguyên
                   </div>
                   <ul
                     className="dropdown-menu"
@@ -146,7 +149,7 @@ export default function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Partners & Contacts
+                    Đối tác & Liên hệ
                   </div>
                   <ul
                     className="dropdown-menu"
@@ -158,7 +161,7 @@ export default function Header() {
                         className="dropdown-item pt-3 pb-3"
                         to="/partners"
                       >
-                        Partners
+                        Đối tác
                       </NavLink>
                     </li>
                     <li>
@@ -166,20 +169,20 @@ export default function Header() {
                         className="dropdown-item pt-3 pb-3"
                         to="/contact"
                       >
-                        Contact Us
+                        Liên hệ
                       </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Button className="" to="/login" target="_blank">
-                    Sign In
+                  <Button className="btn-signin-mobile" to="/login">
+                    Đăng nhập
                   </Button>
                 </li>
               </ul>
             </div>
-            <Button className="btn-sign-in" to="/login" target="_blank">
-              Sign In
+            <Button className="btn-sign-in" to="/login">
+              Đăng nhập
             </Button>
           </div>
         </nav>
@@ -190,5 +193,5 @@ export default function Header() {
 
 window.addEventListener("scroll", function () {
   let header = this.document.querySelector("header");
-  header.classList.toggle("sticky", this.window.scrollY > 0);
+  if (header) header.classList.toggle("sticky", this.window.scrollY > 0);
 });

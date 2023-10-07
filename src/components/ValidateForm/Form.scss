@@ -5,18 +5,15 @@
 
 .form-check {
     padding: 0 !important;
-    text-align: center;
     margin: 30px 0;
   .form-check-content {
+    flex: 1;
     display: flex;
+    align-items: center;
+    gap: 16px;
     margin-bottom: 1.25rem;
     color: #10b981;
     font-weight: 600;
-    align-items: center;
-    gap: 0.25rem;
-  }
-  .btn-form {
-    font-size: 20px;
   }
 }
 

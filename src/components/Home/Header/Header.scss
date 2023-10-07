@@ -1,5 +1,8 @@
+$logo-width: 170px;
+$logo-height: 60px;
+
 .active {
-    color: var(--primary) !important;
+    color: var(--primary-color) !important;
     font-weight: 600 !important;
     background-color: transparent !important;
 }
@@ -10,26 +13,40 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 12px 0;
+    padding: 24px 0;
     transition: .3s;
     z-index: 999;
-    height: 80px;
     background-color: transparent;
+    font-size: 24px !important;
+
+    .navbar {
+        div {
+            .btn-sign-in {
+                padding: 12px 33px;
+            }
+        }
+    }
 }
 
 .sticky {
     background-color: var(--primary-color);
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 8px -2px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
+    padding: 0 !important;
+    // box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 8px -2px, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px;
 }
 
 .navbar {
     height: 100%;
 }
 
-.navbar-logo {
-    width: 170px;
-    height: 55px;
+.navbar-brand {
+    margin: 0;
+    .navbar-logo {
+        width: $logo-width;
+        height: $logo-height;
+    }
 }
+
+
 
 .collapse {
     display: flex;
@@ -68,8 +85,8 @@
             content: "";
             position: absolute;
             display: block;
-            background-color: var(--primary);
-            height: 3px;
+            background-color: var(--hover-color);
+            height: 2px;
             width: 100%;
             left: 0;
             bottom: 5px;
@@ -85,28 +102,29 @@
         &::after {
             content: 'V';
             display: inline-block;
-            font-weight: 500;
+            font-weight: 400;
             margin-left: 6px;
-            scale: 1 .8;
+            scale: 1 .6;
             border: none;
             vertical-align: middle;
         }
     }
 
     .dropdown-menu {
-        background-color: var(--primary-color) !important;
+        background-color: #fff !important;
         border: none !important; 
-        box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
     
         .dropdown-item {
             position: relative;
-            color: var(--primary); 
+            color: var(--primary-color); 
             font-size: 1.8rem;
-            transition: all .4s ease 0s;
+            transition: .3s;
+            padding-left: 15px;
+            padding-right: 15px;
 
             &:hover {
                 background-color: transparent !important;
-                color: var(--hover-color) !important;
+                font-weight: 500;
                 text-decoration: underline;
             }
     
@@ -183,6 +201,10 @@
 }
 
 @media screen and (max-width: 992px) {
+    .active {
+        color: var(--primary) !important;
+    }
+    
     .header {
         width: 100%;
         padding: 6px 0;
@@ -192,6 +214,10 @@
         .dropdown-menu {
             background-color: transparent !important;
             box-shadow: none;
+
+            .dropdown-item {
+                color: var(--primary);
+            }
         }
 
         .dropdown-toggle {
@@ -206,7 +232,7 @@
     }
 
     .btn-sign-in {
-        display: none;
+        display: none !important;
     }
 
     .nav-item:last-child {
@@ -229,27 +255,43 @@
 
     .menu {
         position: fixed;
-        max-width: 30rem;
+        max-width: 27rem;
         width: 100%;
-        height: 45rem;
         padding: 20px !important;
         right: 5.5rem;
         background-color: var(--primary-color);
         border-radius: 12px;
         box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
         transition: 0.5s;
-        gap: 16px;
+        gap: 20px;
 
         .nav-item {
-            padding: 0 12px;
+            // padding: 0 12px;
+            .btn-signin-mobile {
+                padding: 7px 33px;
+            }
         }
     }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
+    .header {
+        .navbar {
+            div {
+                .btn-sign-in {
+                    padding: 12px 30px;
+                }
+            }
+        }
+    }
+
+    .menu {
+        gap: 20px;
+    }
     .navbar-brand {
         .navbar-logo {
-            width: 90%;
+            width: calc($logo-width * 0.95);
+            height: calc($logo-height * 0.95);
         }
     }
 }
@@ -257,7 +299,8 @@
 @media (min-width: 768px) and (max-width: 992px) {
     .navbar-brand {
         .navbar-logo {
-            width: 90%;
+            width: calc($logo-width * 0.95);
+            height: calc($logo-height * 0.95);
         }
     }
 
@@ -273,8 +316,8 @@
 @media screen and (max-width: 576px) {
     .navbar-brand {
         .navbar-logo {
-            width: 35%;
-            height: 40%;
+            width: calc($logo-width * 0.8);
+            height: calc($logo-height * 0.8);
         }
     }
 
@@ -283,13 +326,53 @@
     }
 
     .toggle-menu {
-        right: 18px;
+        right: 8px;
         top: 8px;
     }
 
     .menu {
         top: 6.5rem;
         right: 2rem;
-        height: 45rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar-brand {
+        .navbar-logo {
+            width: calc($logo-width * 0.7);
+            height: calc($logo-height * 0.7);
+        }
+    }
+
+    .menu {
+        max-width: 20rem;
+        width: 100%;
+        padding: 10px !important;
+        right: 2rem;
+        background-color: var(--primary-color);
+        border-radius: 12px;
+        box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+        transition: 0.5s;
+        gap: 16px;
+
+        .nav-item {
+            padding: 0;
+
+            .nav-link {
+                font-size: 1.4rem !important;
+            }
+
+            &:last-child {
+                a {
+                    font-size: 1.2rem !important;
+                }
+            }
+
+            .dropdown-menu {
+                li > .dropdown-item {
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 }

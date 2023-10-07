@@ -1,15 +1,14 @@
 import "./Circle.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import images from "../../assets/images";
 
 function Circle({ border, data, partner }) {
   if (border) {
     return (
       <>
-        <div className="rectangle">
+        <div className="rectangle" data-aos="fade-up">
           <div className="circle-content">
             <div className="circle-content-image">
-              <img src={data.image} alt="Avatar" />
+              <img src={data.image} alt="Avatar" loading="lazy" />
             </div>
             <h3 className="circle-content-title">{data.name}</h3>
             {data.class_id && <p className="circle-content-desc">ICE2021A</p>}
@@ -17,30 +16,34 @@ function Circle({ border, data, partner }) {
         </div>
       </>
     );
-  }  else if (partner) {
+  } else if (partner) {
     return (
       <>
         <div className="rectangle-p">
           <div className="circle-content">
             <div className="circle-content-image circle-content-image-p">
-              <img src={data.image} alt="Avatar" />
+              <img src={data.image} alt="Avatar" loading="lazy" />
             </div>
             {partner && (
               <div className="partner">
-                <FontAwesomeIcon icon={faGlobe} className="icon-globe" />
-                <span className="partner-name ">{data.nameP}</span>
+                <img
+                  src={images.globe}
+                  alt="Globe icon"
+                  className="icon-globe"
+                />
+                <a href={data.link} className="partner-name">
+                  {data.nameP}
+                </a>
               </div>
             )}
           </div>
         </div>
       </>
     );
-  } 
-  
-  else {
+  } else {
     return (
       <>
-        <div className="circle-content">
+        <div className="circle-content circle-member">
           <div className="circle-content-image">
             <img src={data.img} alt="Avatar" />
             {data.job === "Leader" && (
@@ -54,6 +57,5 @@ function Circle({ border, data, partner }) {
     );
   }
 }
-
 
 export default Circle;

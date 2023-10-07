@@ -31,7 +31,7 @@ export default function FullStack() {
         let FullStack = data.filter((item) => item.id === id);
         FullStack = FullStack[0];
         
-        let { Department, Des, img, listSkill, Leader, Members, Mentor } =
+        let { Department, Des, img, Leader, Members, Mentor } =
             FullStack;
         let skills_image;
         try {
@@ -52,7 +52,7 @@ export default function FullStack() {
                             <li>/</li>
                             <li>
                                 <Link className="item-link" to="/departments">
-                                    Departments
+                                    Ban mảng
                                 </Link>
                             </li>
                             <li>/</li>
@@ -65,15 +65,16 @@ export default function FullStack() {
                     </nav>
 
                     <div className="d-flex justify-content-center align-items-center">
-                        <div className="row Department_Head_Content">
+                        <div className="row Department_Head_Content" data-aos="fade-up">
                             <div className="col-12 col-sm-4 Department_Head_Content_Right">
                                 <img
                                     className="img-fluid img_Head_Department"
                                     src={img}
+                                    alt={Department}
                                 ></img>
                             </div>
 
-                            <div className="col-12 col-sm-8 Department_Head_Content_left">
+                            <div className="col-12 col-sm-7 Department_Head_Content_left">
                                 <h1 className="">{Department}</h1>
                                 <p>{Des}</p>
                             </div>
@@ -81,23 +82,23 @@ export default function FullStack() {
                     </div>
                 </section>
 
-                <section className="Skill_Knowledge container">
-                    <h1>Skills & Knowledge</h1>
+                <section className="Skill_Knowledge container" data-aos="fade-up">
+                    <h1>Tools</h1>
                     <div className="row">
                         <SliderCompo skills={skills_image} />
                     </div>
                 </section>
 
                 <section className="Department_Members">
-                    <h1 className="h1Department">Members</h1>
-                    <div className="Department_Members_Content text-center">
+                    <h1 className="h1Department">Thành viên</h1>
+                    <div className="Department_Members_Content text-center" >
                         <Circle data={Leader} />
                         <div className="row" style={{ paddingTop: "40px" }}>
                             {Members.map((item, key) => {
                                 return (
                                     <div
                                         className="col-6 col-md-4 col-lg-3"
-                                        key={key}
+                                        key={key} data-aos="fade-up"
                                     >
                                         <Circle data={item}></Circle>
                                     </div>
@@ -116,7 +117,7 @@ export default function FullStack() {
                                 return (
                                     <div
                                         className="col-6 col-md-4 col-lg-3"
-                                        key={key}
+                                        key={key} data-aos="fade-up"
                                     >
                                         <Circle data={item}></Circle>
                                     </div>
