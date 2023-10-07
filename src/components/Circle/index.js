@@ -8,7 +8,7 @@ function Circle({ border, data, partner }) {
         <div className="rectangle" data-aos="fade-up">
           <div className="circle-content">
             <div className="circle-content-image">
-              <img src={data.image} alt="Avatar" />
+              <img src={data.image} alt="Avatar" loading="lazy" />
             </div>
             <h3 className="circle-content-title">{data.name}</h3>
             {data.class_id && <p className="circle-content-desc">ICE2021A</p>}
@@ -22,7 +22,7 @@ function Circle({ border, data, partner }) {
         <div className="rectangle-p">
           <div className="circle-content">
             <div className="circle-content-image circle-content-image-p">
-              <img src={data.image} alt="Avatar" />
+              <img src={data.image} alt="Avatar" loading="lazy" />
             </div>
             {partner && (
               <div className="partner">
@@ -43,7 +43,7 @@ function Circle({ border, data, partner }) {
   } else {
     return (
       <>
-        <div className="circle-content">
+        <div className="circle-content circle-member">
           <div className="circle-content-image">
             <img src={data.img} alt="Avatar" />
             {data.job === "Leader" && (

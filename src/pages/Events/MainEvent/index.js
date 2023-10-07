@@ -14,14 +14,15 @@ export default function EventType() {
 
     const renderData = () => {
         return events.map((item, index) => (
-            <a href={`/events/${item.type}/${item.slug}`} className="event-type-item" key={index}>
-                <div className="event-banner-wrapper">
+            <a href={`/events/${item.type}/${item.slug}`} className="event-type-item row g-0" key={index}>
+                <div className="col-12 col-lg-4 event-banner-wrapper">
                     <img 
                         src={item.banner1}
                         alt={item.event_name}
+                        loading="lazy"
                     />
                 </div>
-                <div className="event-type-info">
+                <div className="col-12 col-lg-6 event-type-info">
                     <div className="info">
                         <span className="type">{item.type}</span>
                         <span className="separate"></span>
@@ -40,7 +41,7 @@ export default function EventType() {
     }
 
     return (
-        <div className="container" style={{ marginBottom: '150px'}}>
+        <div className="container main-event-wrapper" style={{ marginBottom: '150px'}}>
             <div className="row d-flex justify-content-between align-items-center main-event-header">
                 <nav className="col-6 breadcrumb">
                     <ul className="list-unstyled">
@@ -57,17 +58,18 @@ export default function EventType() {
                         </li>
                     </ul>
                 </nav>
-                <section className="col-6 btn-see-all-event">
+                {/* <section className="col-6 btn-see-all-event">
                     <Button to="/all-events">See all events </Button>
-                </section>
+                </section> */}
             </div>
             <div className="row event-type-wrapper">
-                <div className="col-12 col-md-7">
+                <div className="col-12 col-lg-7">
                     <a href={`/events/${newEvent.type}/${newEvent.slug}`} className="event-main">
                         <img
                             src={newEvent.banner1}
                             className="img-fluid"
                             alt={newEvent.event_name}
+                            loading="lazy"
                         />
                         <section className="event-info">
                             <span className="event-type">{newEvent.type}</span>
@@ -85,7 +87,7 @@ export default function EventType() {
                         </p>
                     </a>
                 </div>
-                <div className="col-12 col-md-5">
+                <div className="col-12 col-lg-5">
                     <div className="event-type-list">
                         {renderData()}
                     </div>

@@ -3,6 +3,7 @@ $contact-border-radius: 20px;
 .heading-div {
     margin: 50px 0 !important;
     .content-heading {
+        font-family: 'Montserrate', sans-serif;
     }
 }
 
@@ -29,6 +30,7 @@ $contact-border-radius: 20px;
         }
 
         .contact-info {
+            font-family: 'Montserrate', sans-serif;
             display: flex;
             flex-direction: column;
             gap: 16px;
@@ -72,16 +74,27 @@ $contact-border-radius: 20px;
         border-bottom-right-radius: $contact-border-radius;
 
         .form-check {
-            display: flex;
-            justify-content: flex-end;
-            .btn-form {
-                color: #000;
-                font-size: 2rem;
-                padding: 4px 16px;
-                border-radius: 10px;
-                outline: 2px solid #000;
-                text-transform: none;
+            .btn-form-wrapper {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                .btn-form {
+                    color: #000;
+                    font-size: 2rem;
+                    padding: 4px 16px;
+                    border-radius: 10px;
+                    outline: 2px solid #000;
+                    text-transform: none;
+                    transition: .3s;
+    
+                    &:hover {
+                        scale: 1.1;
+                        background-color: #000;
+                        color: white !important;
+                    }
+                }
             }
+            
         }
     }
 }

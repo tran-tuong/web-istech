@@ -27,15 +27,15 @@ const publicRoutes = [
     { path: '/contact', component: Contact },
     { path: '/about', component: About },
     { path: '/events', component: MainEvent },
-    { path: '/all-events', component: Events },
+    // { path: '/all-events', component: Events },
     { path: '/events/:type/:eventName', component: EventDetail },
     { path: '/internal-activities', component: Maintainance },
     { path: '/blog', component: Maintainance },
     { path: '/notebook', component:NoteBook },
     { path: '/resource-hub', component: Maintainance },
-    { path: '/login', component: Login },
+    { path: '/login', component: Maintainance },
+    { path: '/register', component: Maintainance},
     { path: '*', component: NotFound, status: 404 },
-    { path: '/register', component: Register},
 ];
 
 const privateRoutes = [];

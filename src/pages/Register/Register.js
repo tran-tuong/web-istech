@@ -11,129 +11,130 @@
 // import swal from "sweetalert";
 // import { useNavigate } from "react-router-dom";
 
-// export default function Register() {
-//     const navigate = useNavigate();
-//     const [page, setPage] = useState(0);
-//     const [formData, setFormData] = useState({
-//         generation: "Gen 5",
-//         full_name: "",
-//         phone: "",
-//         email: "",
-//         know_istech_through: "",
-//         dob: "",
-//         major: "",
-//         gender: "",
-//         facebook_account: "",
-//         student_id: "",
-//         department_registered: "",
-//         position_in_department: "",
-//         position_experiences: true,
-//         reason_apply_department: "",
-//         other_interested_department: false,
-//         strength: "",
-//         weakness: "",
-//         candidate_sharing: "",
-//     });
+export default function Register() {
+    const navigate = useNavigate();
+    const [page, setPage] = useState(0);
+    const [isSummitted, setIsSubmitted] = useState(false);
+    const [formData, setFormData] = useState({
+        generation: "Gen 5",
+        full_name: "",
+        phone: "",
+        email: "",
+        know_istech_through: "",
+        dob: "",
+        major: "",
+        gender: "",
+        facebook_account: "",
+        student_id: "",
+        department_registered: "",
+        position_in_department: "",
+        position_experiences: true,
+        reason_apply_department: "",
+        other_interested_department: false,
+        strength: "",
+        weakness: "",
+        candidate_sharing: "",
+    });
 
-//     const formik = useFormik({
-//         onSubmit: async (values) => {
-//             // values.phone.toString();
-//             // values.student_id.toString();
+    const formik = useFormik({
+        onSubmit: async (values) => {
+            // values.phone.toString();
+            // values.student_id.toString();
 
-//             // values = formData;
+            // values = formData;
 
-//             // console.log({ value: values });
+            // console.log({ value: values });
 
-//             // console.log(formData);
+            // console.log(formData);
 
-//             const newValues = {
-//                 ...values,
-//                 phone: "0" + values.phone.toString(),
-//                 student_id: values.student_id.toString(),
-//                 position_experiences: values.position_experiences === "true",
-//                 other_interested_department:
-//                     values.other_interested_department === "true",
-//             };
-//             console.log(newValues);
-//             const result = await axios({
-//                 url: "http://localhost:3001/candidate/register",
-//                 method: "POST",
-//                 withCredentials: true,
-//                 data: newValues,
-//             });
+            const newValues = {
+                ...values,
+                phone: "0" + values.phone.toString(),
+                student_id: values.student_id.toString(),
+                position_experiences: values.position_experiences === "true",
+                other_interested_department:
+                    values.other_interested_department === "true",
+            };
+            console.log(newValues);
+            const result = await axios({
+                url: "http://localhost:3001/candidate/register",
+                method: "POST",
+                withCredentials: true,
+                data: newValues,
+            });
 
-//             console.log(result);
-//         },
-//     });
+            console.log(result);
+        },
+    });
 
-//     const handleSubmit = async (event) => {
-//         event.preventDefault();
+    const handleSubmit = async (event) => {
+        event.preventDefault();
 
-//         if (formData?.other_interested_department === "0") {
-//             const {
-//                 department_registered_2,
-//                 position_experiences_2,
-//                 position_in_department_2,
-//                 reason_apply_department_2,
-//                 ...values
-//             } = formData;
+        if (formData?.other_interested_department === "0") {
+            const {
+                department_registered_2,
+                position_experiences_2,
+                position_in_department_2,
+                reason_apply_department_2,
+                ...values
+            } = formData;
 
-//             // const newValues = {
-//             //     ...values,
-//             //     student_id: values.student_id.toString(),
-//             //     position_experiences: values.position_experiences === "true",
-//             //     other_interested_department:
-//             //         values.other_interested_department === "true",
-//             // };
-//             // console.log(newValues);
-//             // const result = await axios({
-//             //     url: "http://localhost:3001/candidate/register",
-//             //     method: "POST",
-//             //     withCredentials: true,
-//             //     data: newValues,
-//             // });
-//             let a = 201;
-//             if (a === 201) {
-//                 swal("Good job!", "Bạn đã đăng ký thành công", "success").then(
-//                     (value) => navigate("/")
-//                 );
-//             } else {
-//                 swal(
-//                     "Bad job!",
-//                     "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào",
-//                     "error"
-//                 );
-//             }
-//         } else {
-//             const newValues = {
-//                 ...formData,
-//                 student_id: formData.student_id.toString(),
-//                 position_experiences: formData.position_experiences === "true",
-//                 other_interested_department:
-//                     formData.other_interested_department === "true",
-//             };
-//             // console.log(newValues);
-//             // const result = await axios({
-//             //     url: "http://localhost:3001/candidate/register",
-//             //     method: "POST",
-//             //     withCredentials: true,
-//             //     data: newValues,
-//             // });
-//             // if (result.status === 201) {
-//             //     swal("Good job!", "Bạn đã đăng ký thành công", "success")
-//             //         .then(value => navigate('/'));
-//             // } else {
-//             //     swal("Bad job!", "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào", "error");
-//             // }
-//         }
-//     };
+            // const newValues = {
+            //     ...values,
+            //     student_id: values.student_id.toString(),
+            //     position_experiences: values.position_experiences === "true",
+            //     other_interested_department:
+            //         values.other_interested_department === "true",
+            // };
+            // console.log(newValues);
+            // const result = await axios({
+            //     url: "http://localhost:3001/candidate/register",
+            //     method: "POST",
+            //     withCredentials: true,
+            //     data: newValues,
+            // });
+            let a = 201;
+            if (a === 201) {
+                swal("Good job!", "Bạn đã đăng ký thành công", "success").then(
+                    (value) => navigate("/")
+                );
+            } else {
+                swal(
+                    "Bad job!",
+                    "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào",
+                    "error"
+                );
+            }
+        } else {
+            const newValues = {
+                ...formData,
+                student_id: formData.student_id.toString(),
+                position_experiences: formData.position_experiences === "true",
+                other_interested_department:
+                    formData.other_interested_department === "true",
+            };
+            // console.log(newValues);
+            // const result = await axios({
+            //     url: "http://localhost:3001/candidate/register",
+            //     method: "POST",
+            //     withCredentials: true,
+            //     data: newValues,
+            // });
+            // if (result.status === 201) {
+            //     swal("Good job!", "Bạn đã đăng ký thành công", "success")
+            //         .then(value => navigate('/'));
+            // } else {
+            //     swal("Bad job!", "Có lỗi xảy ra! Kiểm tra lại những dữ liệu điền vào", "error");
+            // }
+        }
+    };
 
-//     const formTitles = [
-//         "Thông tin cá nhân",
-//         "Nguyện vọng ứng tuyển",
-//         "Câu hỏi cá nhân",
-//         "Title 4",
-//     ];
+    const formTitles = [
+        "Thông tin cá nhân",
+        "Nguyện vọng ứng tuyển",
+        "Câu hỏi cá nhân",
+        "Title 4",
+    ];
 
 //     const pageDisplay = () => {
 //         if (page === 0) {
@@ -147,112 +148,112 @@
 //         }
 //     };
 
-//     const stepStyle = {
-//         fontSize: "2rem",
-//         "& .MuiStep-horizontal": {
-//             "& .MuiStepLabel-root": {
-//                 "& .MuiStepLabel-iconContainer": {
-//                     "& .MuiSvgIcon-root": {
-//                         width: "40px",
-//                         height: "40px",
-//                     },
-//                 },
-//             },
-//             "& .MuiStepLabel-labelContainer": {
-//                 "& .MuiStepLabel-label": {
-//                     fontSize: '1.6rem'
-//                 }
-//             }
-//         },
-//         "& .MuiStep-root": {
-//             "& .MuiStepConnector-root": {
-//                 top: "21px",
-//                 right: "calc(50% + 35px)",
-//                 left: "calc(-50% + 35px)",
-//                 "& .MuiStepConnector-line": {
+    const stepStyle = {
+        fontSize: "2rem",
+        "& .MuiStep-horizontal": {
+            "& .MuiStepLabel-root": {
+                "& .MuiStepLabel-iconContainer": {
+                    "& .MuiSvgIcon-root": {
+                        width: "40px",
+                        height: "40px",
+                    },
+                },
+            },
+            "& .MuiStepLabel-labelContainer": {
+                "& .MuiStepLabel-label": {
+                    fontSize: '1.6rem'
+                }
+            }
+        },
+        "& .MuiStep-root": {
+            "& .MuiStepConnector-root": {
+                top: "21px",
+                right: "calc(50% + 35px)",
+                left: "calc(-50% + 35px)",
+                "& .MuiStepConnector-line": {
 
-//                 }
-//             }
-//         }
-//     };
+                }
+            }
+        }
+    };
 
-//     return (
-//         <div className="register_form">
-//             <section className="vh-100 gradient-custom ">
-//                 <div className="container py-5 h-100">
-//                     <div className="row justify-content-center align-items-center h-100">
-//                         <div className="col-12 col-lg-9 col-xl-7">
-//                             <div
-//                                 className="card shadow-2-strong card-registration"
-//                                 style={{ borderRadius: 15 }}
-//                             >
-//                                 <div className="card-body p-4 p-md-5 register-wrapper">
-//                                     <h3 className="mb-4 pb-2 pb-md-0 mb-md-5">
-//                                         Registration Form
-//                                     </h3>
-//                                     <Stepper
-//                                         activeStep={page}
-//                                         alternativeLabel
-//                                         sx={stepStyle}
-//                                     >
-//                                         {formTitles.map((label) => (
-//                                             <Step key={label}>
-//                                                 <StepLabel>{label}</StepLabel>
-//                                             </Step>
-//                                         ))}
-//                                     </Stepper>
-//                                     <form onSubmit={handleSubmit} className="register-form">
-//                                         {pageDisplay()}
+    return (
+        <div className="register_form">
+            <section className="vh-100 gradient-custom ">
+                <div className="container py-5 h-100">
+                    <div className="row justify-content-center align-items-center h-100">
+                        <div className="col-12 col-lg-9 col-xl-7">
+                            <div
+                                className="card shadow-2-strong card-registration"
+                                style={{ borderRadius: 15 }}
+                            >
+                                <div className="card-body p-4 p-md-5 register-wrapper">
+                                    <h3 className="mb-4 pb-2 pb-md-0 mb-md-5">
+                                        Registration Form
+                                    </h3>
+                                    <Stepper
+                                        activeStep={page}
+                                        alternativeLabel
+                                        sx={stepStyle}
+                                    >
+                                        {formTitles.map((label) => (
+                                            <Step key={label}>
+                                                <StepLabel>{label}</StepLabel>
+                                            </Step>
+                                        ))}
+                                    </Stepper>
+                                    <form onSubmit={handleSubmit} className="register-form">
+                                        {pageDisplay()}
 
-//                                         <div className="btn-register-wrapper">
-//                                             <Button
-//                                                 hidden={
-//                                                     page === 0 ? true : false
-//                                                 }
-//                                                 variant="contained"
-//                                                 color="primary"
-//                                                 onClick={() => {
-//                                                     setPage(
-//                                                         (currPage) =>
-//                                                             currPage - 1
-//                                                     );
-//                                                 }}
-//                                             >
-//                                                 Back
-//                                             </Button>
-//                                             <Button
-//                                                 hidden={
-//                                                     page ===
-//                                                     formTitles.length - 1
-//                                                 }
-//                                                 variant="contained"
-//                                                 color="primary"
-//                                                 onClick={() => {
-//                                                     setPage(
-//                                                         (currPage) =>
-//                                                             currPage + 1
-//                                                     );
-//                                                 }}
-//                                             >
-//                                                 Next
-//                                             </Button>
-//                                             {page === formTitles.length - 1 && (
-//                                                 <Button
-//                                                     variant="contained"
-//                                                     color="primary"
-//                                                     type="Submit"
-//                                                 >
-//                                                     Submit
-//                                                 </Button>
-//                                             )}
-//                                         </div>
-//                                     </form>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </section>
-//         </div>
-//     );
-// }
+                                        <div className="btn-register-wrapper">
+                                            <Button
+                                                hidden={
+                                                    page === 0 ? true : false
+                                                }
+                                                variant="contained"
+                                                color="primary"
+                                                onClick={() => {
+                                                    setPage(
+                                                        (currPage) =>
+                                                            currPage - 1
+                                                    );
+                                                }}
+                                            >
+                                                Back
+                                            </Button>
+                                            <Button
+                                                hidden={
+                                                    page ===
+                                                    formTitles.length - 1
+                                                }
+                                                variant="contained"
+                                                color="primary"
+                                                onClick={() => {
+                                                    setPage(
+                                                        (currPage) =>
+                                                            currPage + 1
+                                                    );
+                                                }}
+                                            >
+                                                Next
+                                            </Button>
+                                            {page === formTitles.length - 1 && (
+                                                <Button
+                                                    variant="contained"
+                                                    color="primary"
+                                                    type="Submit"
+                                                >
+                                                    Submit
+                                                </Button>
+                                            )}
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+}

@@ -83,7 +83,7 @@ export default function Home() {
                     {" "}
                     {Counter && (
                       <CountUp end={15} start={0} duration={2} />
-                    )}{" "}
+                    )}
                     <span>+</span>{" "}
                   </p>
                   <p>SỰ KIỆN</p>

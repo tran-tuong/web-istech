@@ -74,7 +74,7 @@ export default function FullStack() {
                                 ></img>
                             </div>
 
-                            <div className="col-12 col-sm-6 Department_Head_Content_left">
+                            <div className="col-12 col-sm-7 Department_Head_Content_left">
                                 <h1 className="">{Department}</h1>
                                 <p>{Des}</p>
                             </div>

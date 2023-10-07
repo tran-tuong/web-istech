@@ -4,9 +4,6 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 function SecondStep({ formData, setFormData }) {
-    // const [otherInterestedDepartment, setOtherInterestedDepartment] =
-    //     useState(false);
-    //     console.log(otherInterestedDepartment);
     const [selectedDepartment, setSelectedDepartment] = useState(null);
    
     const departments = [
@@ -49,7 +46,6 @@ function SecondStep({ formData, setFormData }) {
             ),
         }),
     });
-    console.log(formik.touched);
 
     return (
         <div>
