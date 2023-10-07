@@ -23,19 +23,13 @@ export default function Home() {
           <div className="row AboutFlex">
             <div className="col-12 col-md-7 AboutLeft" data-aos="fade-up">
               <h1>ISTECH</h1>
-              <p className="is-hiiiii">Hi guys!</p>
+              <p className="is-hiiiii">Hiiii!</p>
               <div className="txt-animation">
-                <p className="stactic-animation">We are </p>
+                <p className="stactic-animation">Chúng mình </p>
                 <p className="animation-of-txt">
                   <Typewriter
                     options={{
-                      strings: [
-                        "Fullstack developer",
-                        "Data Scientist",
-                        "Game developer",
-                        "Embedded developer",
-                        "Mobile developer",
-                      ],
+                      strings: ["đau lưng", "mỏi gối", "tê tay", "tăng động"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -43,7 +37,7 @@ export default function Home() {
                 </p>
               </div>
               <Button to="/about" className="btn-more-about">
-                MORE ABOUT ISTECH
+                Thông tin về chúng mình
               </Button>
             </div>
             <div className="col-12 col-md-5 AboutRight">
@@ -63,28 +57,28 @@ export default function Home() {
               <div className="row g-0 d-flex justify-content-center">
                 <section className="col-12 col-sm-8">
                   <h1 className="Playground_heading">
-                    A NEW PLAYGROUND IN THE TECHNOLOGY ERA
+                    SÂN CHƠI MỚI TRONG THỜI ĐẠI CÔNG NGHỆ
                   </h1>
                 </section>
               </div>
               <div className="Playground_count flex-ground">
-                <div className="col-4 Playground_item">
+                <div className="Playground_item">
                   <p className="playground_number">
                     {" "}
-                    {Counter && <CountUp end={2} start={0} duration={2} />}{" "}
+                    {Counter && <CountUp end={3} start={0} duration={2} />}{" "}
                     <span>+</span>{" "}
                   </p>
-                  <p>YEARS</p>
+                  <p>NĂM HOẠT ĐỘNG</p>
                 </div>
-                <div className="col-4 Playground_item">
+                <div className="Playground_item">
                   <p className="playground_number">
                     {" "}
                     {Counter && <CountUp end={40} start={0} duration={2} />}
                     <span>+</span>{" "}
                   </p>
-                  <p>MEMBERS</p>
+                  <p>THÀNH VIÊN</p>
                 </div>
-                <div className="col-4 Playground_item">
+                <div className="Playground_item">
                   <p className="playground_number">
                     {" "}
                     {Counter && (
@@ -92,7 +86,7 @@ export default function Home() {
                     )}{" "}
                     <span>+</span>{" "}
                   </p>
-                  <p>EVENTS</p>
+                  <p>SỰ KIỆN</p>
                 </div>
               </div>
             </div>
@@ -186,21 +180,21 @@ export default function Home() {
                 className="col-12 col-lg-6 col-sm-5 LearnMore_Button"
                 data-aos="fade-up"
               >
-                <h1>LEARN MORE</h1>
+                <h1>VỀ ISTECH</h1>
                 <div className="btn-group">
                   <Button to="/departments" className="btn-learn-more">
-                    Our Members
+                    Thành viên
                   </Button>
                   <Button to="/events" className="btn-learn-more">
-                    Our Events
+                    Sự kiện
                   </Button>
                 </div>
                 <div className="btn-group">
                   <Button to="/partners" className="btn-learn-more">
-                    Our Partners
+                    Đối tác
                   </Button>
-                  <Button to="/news" className="btn-learn-more">
-                    News
+                  <Button to="/internal-activities" className="btn-learn-more">
+                    Hoạt động nội bộ
                   </Button>
                 </div>
               </div>
@@ -210,14 +204,14 @@ export default function Home() {
 
         <div className="JoinUsToDay">
           <div data-aos="fade-up">
-            <h1>JOIN US TODAY</h1>
+            <h1>JOIN ISTECH</h1>
 
             <div className="btn-join-us-today">
-              <Button to="/register" className="btn-register">
-                REGISTER
+              <Button href="https://bit.ly/istech-recruitment-2023" className="btn-register">
+                ĐĂNG KÍ NGAY THÔI
               </Button>
               <Button to="/contact" className="btn-contact">
-                CONTACT US
+                LIÊN HỆ CHÚNG TỚ
               </Button>
             </div>
           </div>
