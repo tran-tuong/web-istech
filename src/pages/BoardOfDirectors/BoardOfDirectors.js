@@ -13,7 +13,7 @@ export default function BoardOfDirectors() {
     <div style={{ marginBottom: "10rem" }}>
       <div className="heading-div container" data-aos="fade-up">
         <div className="content-heading">
-          <h1>Board of Directors</h1>
+          <h1>Ban chủ nhiệm</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis

@@ -48,7 +48,7 @@ export default function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    About
+                    Về ISTECH
                   </div>
                   
                   <ul
@@ -58,7 +58,7 @@ export default function Header() {
                   >
                     <li>
                       <NavLink className="dropdown-item pt-3 pb-3" to="/about">
-                        About Us
+                        Về chúng tớ
                       </NavLink>
                     </li>
                     <li>
@@ -66,7 +66,7 @@ export default function Header() {
                         className="dropdown-item pt-3 pb-3"
                         to="/board-of-director"
                       >
-                        Board of Directors
+                        Ban chủ nhiệm
                       </NavLink>
                     </li>
                     <li>
@@ -74,7 +74,7 @@ export default function Header() {
                         className="dropdown-item pt-3 pb-3"
                         to="/departments"
                       >
-                        Departments
+                        Các ban mảng
                       </NavLink>
                     </li>
           
@@ -89,7 +89,7 @@ export default function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Activities
+                    Hoạt động
                   </div>
                   <ul
                     className="dropdown-menu"
@@ -98,7 +98,7 @@ export default function Header() {
                   >
                     <li>
                       <NavLink className="dropdown-item pt-3 pb-3" to="/events">
-                        Events
+                        Sự kiện
                       </NavLink>
                     </li>
                     <li>
@@ -106,7 +106,7 @@ export default function Header() {
                         className="dropdown-item pt-3 pb-3"
                         to="/internal-activities"
                       >
-                        Internal Activities
+                        Hoạt động nội bộ
                       </NavLink>
                     </li>
                   </ul>
@@ -119,7 +119,7 @@ export default function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Resources
+                    Tài nguyên
                   </div>
                   <ul
                     className="dropdown-menu"
@@ -149,7 +149,7 @@ export default function Header() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Partners & Contacts
+                    Đối tác & Liên hệ
                   </div>
                   <ul
                     className="dropdown-menu"
@@ -161,7 +161,7 @@ export default function Header() {
                         className="dropdown-item pt-3 pb-3"
                         to="/partners"
                       >
-                        Partners
+                        Đối tác
                       </NavLink>
                     </li>
                     <li>
@@ -169,20 +169,20 @@ export default function Header() {
                         className="dropdown-item pt-3 pb-3"
                         to="/contact"
                       >
-                        Contact Us
+                        Liên hệ
                       </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item">
                   <Button className="btn-signin-mobile" to="/login">
-                    Sign In
+                    Đăng nhập
                   </Button>
                 </li>
               </ul>
             </div>
             <Button className="btn-sign-in" to="/login">
-              Sign In
+              Đăng nhập
             </Button>
           </div>
         </nav>

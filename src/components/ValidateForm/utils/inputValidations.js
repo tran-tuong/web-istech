@@ -1,9 +1,9 @@
 export const name_validation = {
     name: 'name',
-    label: 'Name*:',
+    label: 'Tên của bạn*:',
     type: 'text',
     id: 'name',
-    placeholder: 'Write your name ...',
+    placeholder: 'Nguyễn Văn A ...',
     validation: {
       required: {
         value: true,
@@ -18,10 +18,10 @@ export const name_validation = {
 
   export const subject_validation = {
     name: 'subject',
-    label: 'Subject:',
+    label: 'Ngành/Lớp:',
     type: 'text',
     id: 'subject',
-    placeholder: 'Write your subject ...',
+    placeholder: 'ICE2021A ...',
     validation: {
       required: {
         value: true,
@@ -36,10 +36,10 @@ export const name_validation = {
   
   export const message_validation = {
     name: 'message',
-    label: 'Message*:',
+    label: 'Nội dung*:',
     multiline: true,
     id: 'message',
-    placeholder: 'Write message ...',
+    placeholder: 'Nội dung...',
     validation: {
       required: {
         value: true,
@@ -86,10 +86,10 @@ export const name_validation = {
   
   export const email_validation = {
     name: 'email',
-    label: 'Email address*:',
+    label: 'Địa chỉ email*:',
     type: 'email',
     id: 'email',
-    placeholder: 'Your email address',
+    placeholder: 'Địa chỉ email của bạn',
     validation: {
       required: {
         value: true,

@@ -13,7 +13,7 @@ export default function Contact() {
             <div className="row">
                 <div className="col-12 heading-div">
                     <section className="content-heading">
-                        <h1>Contact Us</h1>
+                       <h1>Liên hệ</h1>
                     </section>
                 </div>
             </div>
