@@ -52,7 +52,7 @@ export default function FullStack() {
                             <li>/</li>
                             <li>
                                 <Link className="item-link" to="/departments">
-                                    Departments
+                                    Ban mảng
                                 </Link>
                             </li>
                             <li>/</li>
@@ -83,14 +83,14 @@ export default function FullStack() {
                 </section>
 
                 <section className="Skill_Knowledge container" data-aos="fade-up">
-                    <h1>Skills & Knowledge</h1>
+                    <h1>Tools</h1>
                     <div className="row">
                         <SliderCompo skills={skills_image} />
                     </div>
                 </section>
 
                 <section className="Department_Members">
-                    <h1 className="h1Department">Members</h1>
+                    <h1 className="h1Department">Thành viên</h1>
                     <div className="Department_Members_Content text-center" >
                         <Circle data={Leader} />
                         <div className="row" style={{ paddingTop: "40px" }}>

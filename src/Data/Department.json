@@ -18,26 +18,6 @@
     },
     "Members": [
       {
-        "name": "Trần Việt Long",
-        "class": "MIS2018",
-        "img": "./member_avatar/Fullstack/TranVietLong.png"
-      },
-      {
-        "name": "Nguyễn Nam Khánh",
-        "class": "ICE2019",
-        "img": "./member_avatar/man.png"
-      },
-      {
-        "name": "Đào Quý Tiến",
-        "class": "ICE2020",
-        "img": "./member_avatar/man.png"
-      },
-      {
-        "name": "Phạm Gia Khiêm",
-        "class": "ICE2020",
-        "img": "./member_avatar/man.png"
-      },
-      {
         "name": "Hoàng Tuấn Anh Đạt",
         "class": "ICE2021",
         "img": "./member_avatar/Fullstack/HoangTuanAnhDat.png"
@@ -51,6 +31,16 @@
         "name": "Vũ Minh Đức",
         "class": "AIT2022",
         "img": "./member_avatar/Fullstack/VuMinhDuc.png"
+      },
+      {
+        "name": "Phạm Gia Khiêm",
+        "class": "ICE2020",
+        "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
+      },
+      {
+        "name": "Đào Quý Tiến",
+        "class": "ICE2020",
+        "img": "https://kenh14cdn.com/thumb_w/660/2019/8/26/photo-1-1566826524824600913081.jpg"
       }
     ],
     "Mentor": [
@@ -58,6 +48,11 @@
         "name": "Lê Anh Đức",
         "class": "ICE2018A",
         "img": "./member_avatar/BoardOfDirectors/LeAnhDuc.png"
+      },
+      {
+        "name": "Trần Việt Long",
+        "class": "MIS2018",
+        "img": "./member_avatar/Fullstack/TranVietLong.png"
       },
       {
         "name": "Phạm Đức Nghĩa",
@@ -108,11 +103,6 @@
         "name": "Vũ Thanh Phương",
         "class": "MIS2021A",
         "img": "./member_avatar/DataScience/VuThanhPhuong.png"
-      },
-      {
-        "name": "Đào Đức Trọng",
-        "class": "BDA2021",
-        "img": "./member_avatar/man.png"
       },
       {
         "name": "Lương Khánh Phương",

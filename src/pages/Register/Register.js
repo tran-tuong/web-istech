@@ -1,15 +1,15 @@
-// import React, { useContext, useRef, useState } from "react";
-// import { useFormik } from "formik";
-// import * as Yup from "yup";
-// import "./Register.scss";
-// import axios from "axios";
-// import FirstStep from "../../components/RegisterClubForm/FirstStep";
-// import SecondStep from "../../components/RegisterClubForm/SecondStep";
-// import ThirdStep from "../../components/RegisterClubForm/ThirdStep";
-// import FourStep from "../../components/RegisterClubForm/FourStep";
-// import { Stepper, StepLabel, Step, Button } from "@mui/material";
-// import swal from "sweetalert";
-// import { useNavigate } from "react-router-dom";
+import React, { useContext, useRef, useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import "./Register.scss";
+import axios from "axios";
+import FirstStep from "../../components/RegisterClubForm/FirstStep";
+import SecondStep from "../../components/RegisterClubForm/SecondStep";
+import ThirdStep from "../../components/RegisterClubForm/ThirdStep";
+import FourStep from "../../components/RegisterClubForm/FourStep";
+import { Stepper, StepLabel, Step, Button } from "@mui/material";
+import swal from "sweetalert";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
     const navigate = useNavigate();
@@ -136,17 +136,17 @@ export default function Register() {
         "Title 4",
     ];
 
-//     const pageDisplay = () => {
-//         if (page === 0) {
-//             return <FirstStep formData={formData} setFormData={setFormData} />;
-//         } else if (page === 1) {
-//             return <SecondStep formData={formData} setFormData={setFormData} />;
-//         } else if (page === 2) {
-//             return <ThirdStep formData={formData} setFormData={setFormData} />;
-//         } else {
-//             return <FourStep formData={formData} setFormData={setFormData} />;
-//         }
-//     };
+    const pageDisplay = () => {
+        if (page === 0) {
+            return <FirstStep formData={formData} setFormData={setFormData} />;
+        } else if (page === 1) {
+            return <SecondStep formData={formData} setFormData={setFormData} />;
+        } else if (page === 2) {
+            return <ThirdStep formData={formData} setFormData={setFormData} />;
+        } else {
+            return <FourStep formData={formData} setFormData={setFormData} />;
+        }
+    };
 
     const stepStyle = {
         fontSize: "2rem",
