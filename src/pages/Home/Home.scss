@@ -1,461 +1,485 @@
 .bg-main {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .banner-section {
-    min-height: calc(100vh - 4.5rem);
+  min-height: calc(100vh - 4.5rem);
 }
 
 .container-fluid {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .parrentBanner {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 38vh;
-    transform: translateY(50%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 38vh;
+  transform: translateY(50%);
 
-    .banner {
-        background: url("../../assets/images/background/ready-to.png");
-        width: 80%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        opacity: 1;
-        overflow: hidden;
-    }
+  .banner {
+    background: url("../../assets/images/background/ready-to.png");
+    width: 80%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-    .parrentBanner {
-        height: 170px;
-        // margin-top:200px;
-    }
+  .parrentBanner {
+    height: 170px;
+    // margin-top:200px;
+  }
 }
 @media screen and (max-width: 950px) {
-    .parrentBanner {
-        height: 134px;
-        transform: translateY(250%);
-        // margin-top:190px;
-        // transform: translateY(100%);
-    }
+  .parrentBanner {
+    height: 134px;
+    transform: translateY(250%);
+    // margin-top:190px;
+    // transform: translateY(100%);
+  }
 }
 @media screen and (max-width: 735px) {
-    .parrentBanner {
-        height: 107px;
-        // margin-top:170px;
-    }
+  .parrentBanner {
+    height: 107px;
+    // margin-top:170px;
+  }
 }
 @media screen and (max-width: 600px) {
-    .parrentBanner {
-        height: 80px;
-        // margin-top:165px;
-    }
+  .parrentBanner {
+    height: 80px;
+    // margin-top:165px;
+  }
 }
 @media screen and (max-width: 440px) {
-    .parrentBanner {
-        height: 54px;
-        // margin-top:145px;
-        top: 10rem;
-    }
+  .parrentBanner {
+    height: 54px;
+    // margin-top:145px;
+    top: 10rem;
+  }
 }
 
 .About {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 180px;
-    height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 180px;
+  height: 80vh;
 
-    .AboutFlex {
-        justify-content: space-between;
+  .AboutFlex {
+    justify-content: space-between;
+  }
+  .AboutLeft {
+    text-align: left;
+    h1 {
+      font-size: 70px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 1);
+      // margin-bottom: 16px;
     }
-    .AboutLeft {
-        text-align: left;
-        h1 {
-            font-size: 70px;
-            font-weight: bold;
-            color: rgba(255, 255, 255, 1);
-            // margin-bottom: 16px;
-        }
-        .is-hiiiii {
-            font-size: 40px;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 0;
-            margin: 0;
-        }
-        p {
-            font-size: 20px;
-            padding-bottom: 10px;
-            color: rgba(255, 255, 255, 1);
-        }
-
-        .btn-more-about {
-            padding: 12px 26px;
-        }
-        .txt-animation {
-            display: inline-flex;
-            width: 100%;
-            .stactic-animation {
-                margin-right: 1rem;
-                font-size:  45px;
-                font-weight: 900;
-            }
-            .animation-of-txt {
-                font-size:  45px;
-                font-weight: 900;
-                color: #4176cc;
-            }
-        }
+    .is-hiiiii {
+      font-size: 40px;
+      font-weight: 700;
+      padding: 0;
+      margin: 0;
+    }
+    p {
+      font-size: 20px;
+      padding-bottom: 10px;
+      color: rgba(255, 255, 255, 1);
     }
 
-    .AboutRight {
-        .About_img {
-            width: 100%;
-            height: 100%;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
+    .btn-more-about {
+      padding: 12px 26px;
     }
-}
-@media screen and (max-width: 767px) {
-    .About {
-        padding-top: 100px;
-        padding-bottom: 100px;
+    .txt-animation {
+      display: inline-flex;
+      width: 100%;
+      .stactic-animation {
+        margin-right: 1rem;
+        font-size: 45px;
+        font-weight: 900;
+      }
+      .animation-of-txt {
+        font-size: 45px;
+        font-weight: 900;
+        color: #4176cc;
+      }
+    }
+  }
+
+  .AboutRight {
+    .About_img {
+      width: 100%;
+      height: 100%;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      img {
+        width: 100%;
         height: 100%;
-
-        .AboutLeft {
-            text-align: center;
-            h1 {
-                font-size: 6rem;
-            }
-
-            p {
-                font-size: 1.6rem;
-            }
-    
-            .btn-more-about {
-                margin-top: 20px;
-            }
-        }
-
-        .AboutRight {
-            margin-top: 50px;
-        }
+      }
     }
-}
-
-.Playground {
-    width: 100%;
-    background: url("../../assets/images/background/img1-main-page.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 210px;
-    padding-bottom: 210px;
-
-    color: rgba(255, 255, 255, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .Playground_content {
-        text-align: center;
-        align-items: center;
-
-        div > section > .Playground_heading {
-            text-align: center;
-            font-size: 5.5rem;
-            font-weight: bold;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-bottom: 50px;
-        }
-
-        .flex-ground {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            place-items: center;
-        }
-
-        .Playground_count {
-            .Playground_item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                p {
-                    font-size: 40px;
-                }
-                .playground_number {
-                    white-space: nowrap;
-                    font-weight: bold;
-                    font-size: 10rem;
-                }
-            }
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .Playground {
-        .Playground_content {
-
-            div > section > .Playground_heading {
-                font-size: 3.5rem;
-            }
-
-            .Playground_count {
-                .Playground_item {
-                    .playground_number {
-                        font-weight: bold;
-                        font-size: 38px;
-                    }
-                }
-            }
-        }
+  .txt-animation {
+    text-align: center;
+    .stactic-animation {
+      font-size: 30px !important;
     }
+    .animation-of-txt {
+      font-size: 30px !important;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .About {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%;
+
+    .AboutLeft {
+      text-align: center;
+      h1 {
+        font-size: 5rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+
+      .btn-more-about {
+        margin-top: 20px;
+      }
+      
+    }
+
+        .stactic-animation {
+          font-size: 35px !important;
+        }
+        .animation-of-txt {
+          font-size: 35px !important;
+        }
+
+    .AboutRight {
+      margin-top: 50px;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+    .txt-animation {
+      .stactic-animation {
+        font-size: 25px !important;
+      }
+      .animation-of-txt {
+        font-size: 25px !important;
+      }
+    }
+}  
+
+.Playground {
+  width: 100%;
+  background: url("../../assets/images/background/img1-main-page.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 210px;
+  padding-bottom: 210px;
+
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .Playground_content {
+    text-align: center;
+    align-items: center;
+
+    div > section > .Playground_heading {
+      text-align: center;
+      font-size: 5.5rem;
+      font-weight: bold;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 50px;
+    }
+
+    .flex-ground {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+    }
+
+    .Playground_count {
+      .Playground_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+          font-size: 40px;
+          font-weight: 700;
+        }
+        .playground_number {
+          white-space: nowrap;
+          font-weight: bold;
+          font-size: 10rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Playground {
+    .Playground_content {
+      div > section > .Playground_heading {
+        font-size: 3.5rem;
+      }
+
+      .Playground_count {
+        .Playground_item {
+          .playground_number {
+            font-weight: bold;
+            font-size: 38px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .Playground {
-        .Playground_content {
-            div > section > .Playground_heading {
-                font-size: 2.2rem;
-            }
+  .Playground {
+    .Playground_content {
+      div > section > .Playground_heading {
+        font-size: 2.2rem;
+      }
 
-            .Playground_count {
-                .Playground_item {
-                    p {
-                        font-size: 20px;
-                    }
-                    .playground_number {
-                        font-weight: bold;
-                        font-size: 30px;
-                    }
-                }
-            }
+      .Playground_count {
+        .Playground_item {
+          p {
+            font-size: 20px;
+          }
+          .playground_number {
+            font-weight: bold;
+            font-size: 30px;
+          }
         }
+      }
     }
+  }
 }
 
 .LearnMore {
-    margin-top: 150px;
-    padding-bottom: 150px;
-    text-align: center;
+  margin-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
 
-    .LearnMore_Slider {
-        .carousel {
-            .carousel-inner {
-                .carousel-item {
-                    height: 400px;
-                    overflow: hidden;
-        
-                    img {
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
-            }
-        } 
-        .figure {
-            margin-top: 20px;
-            font-size: 2.2rem;
-            font-style: italic;
-            font-weight: 400;
-            display: none;
+  .LearnMore_Slider {
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          height: 400px;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
         }
-        
+      }
     }
-    
-
-    .LearnMore_Button {
-        h1 {
-            font-size: 50px;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
-        button {
-            margin: 10px;
-        }
-
-        .btn-group {
-            margin: 12px 0;
-        }
-
-        .btn-learn-more {
-            min-width: 185px;
-            padding: 12px 12px;
-
-            & + .btn-learn-more {
-                margin-left: 32px;
-            }
-        }
+    .figure {
+      margin-top: 20px;
+      font-size: 2.2rem;
+      font-style: italic;
+      font-weight: 400;
+      display: none;
     }
+  }
+
+  .LearnMore_Button {
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    button {
+      margin: 10px;
+    }
+
+    .btn-group {
+      margin: 12px 0;
+    }
+
+    .btn-learn-more {
+      min-width: 185px;
+      padding: 12px 12px;
+
+      & + .btn-learn-more {
+        margin-left: 32px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 992px) {
-    .LearnMore {
-        .LearnMore_Slider {
-            .carousel .carousel-inner {
-                .carousel-item {
-                    height: 300px;
-                }
-            }
-            .figure {
-                margin-top: 10px;
-                font-size: 1.6rem;
-            }
-        } 
-
-        
-
-        .LearnMore_Button {
-            display: flex;
-            flex-direction: column;
-
-            h1 {
-                font-size: 3.5rem;
-            }
-    
-
-            .btn-group {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 16px;
-                margin: 0 0 16px;
-
-                .btn-learn-more {
-                    width: 55%;
-
-                    & + .btn-learn-more {
-                        margin-left: 0;
-                    }
-                }
-            }
+  .LearnMore {
+    .LearnMore_Slider {
+      .carousel .carousel-inner {
+        .carousel-item {
+          height: 300px;
         }
+      }
+      .figure {
+        margin-top: 10px;
+        font-size: 1.6rem;
+      }
     }
+
+    .LearnMore_Button {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      .btn-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin: 0 0 16px;
+
+        .btn-learn-more {
+          width: 55%;
+
+          & + .btn-learn-more {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .LearnMore {
-        .LearnMore_Slider .carousel .carousel-inner {
-            .carousel-item {
-                height: 300px;
-            }
-        }
-
-        .LearnMore_Button {
-            margin-top: 40px;
-
-            .btn-group {
-                .btn-learn-more {
-                    width: 40%;
-                }
-            }
-        }
+  .LearnMore {
+    .LearnMore_Slider .carousel .carousel-inner {
+      .carousel-item {
+        height: 300px;
+      }
     }
+
+    .LearnMore_Button {
+      margin-top: 40px;
+
+      .btn-group {
+        .btn-learn-more {
+          width: 40%;
+        }
+      }
+    }
+  }
 }
 
 .JoinUsToDay {
-    background-image: url("../../assets/images/background/background1-main-page.png");
-    background-size: cover;
-    background-position: center;
-    height: 82vh;
+  background-image: url("../../assets/images/background/background1-main-page.png");
+  background-size: cover;
+  background-position: center;
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    display: block;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  text-align: center;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  .btn-join-us-today {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
 
-    h1 {
-        display: block;
-        font-size: 5rem;
-        font-weight: 700;
-        margin-bottom: 40px;
+    .btn-register,
+    .btn-contact {
+      min-width: 180px;
+      padding: 8px 12px;
     }
-    text-align: center;
-    align-items: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
-
-    .btn-join-us-today {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        margin-top: 40px;
-
-        .btn-register,
-        .btn-contact {
-            min-width: 180px;
-            padding: 8px 12px;
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .LearnMore_Button {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .LearnMore_Button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+
+    .wrapper + .wrapper {
+      margin-left: 0;
     }
-    .btn-group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
+  }
 
-        .wrapper + .wrapper {
-            margin-left: 0;
-        }
+  .JoinUsToDay {
+    h1 {
+      font-size: 38px;
     }
 
-    .JoinUsToDay {
-        h1 {
-            font-size: 38px;
-        }
+    .btn-join-us-today {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
 
-        .btn-join-us-today {
-            flex-direction: column;
-            align-items: center;
-            gap: 24px;
-
-            .btn-contact {
-                margin-left: 0;
-            }
-        }
+      .btn-contact {
+        margin-left: 0;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 300px) {
-    .Playground {
-        .Playground_content {
-            .Playground_count {
-                .Playground_item {
-                    .playground_number {
-                        font-size: 1.6rem;
-                    }
+  .Playground {
+    .Playground_content {
+      .Playground_count {
+        .Playground_item {
+          .playground_number {
+            font-size: 1.6rem;
+          }
 
-                    p {
-                        font-size: 1.6rem;
-                    }
-                }
-            }
+          p {
+            font-size: 1.6rem;
+          }
         }
+      }
     }
+  }
 
-    .JoinUsToDay {
-        h1 {
-            font-size: 2.6rem;
-        }
+  .JoinUsToDay {
+    h1 {
+      font-size: 2.6rem;
     }
+  }
 }

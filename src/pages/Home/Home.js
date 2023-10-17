@@ -23,7 +23,7 @@ export default function Home() {
           <div className="row AboutFlex">
             <div className="col-12 col-md-7 AboutLeft" data-aos="fade-up">
               <h1>ISTECH</h1>
-              <p className="is-hiiiii">Hiiii!</p>
+              <p className="is-hiiiii">Hi !</p>
               <div className="txt-animation">
                 <p className="stactic-animation">Chúng mình </p>
                 <p className="animation-of-txt">
@@ -81,9 +81,7 @@ export default function Home() {
                 <div className="Playground_item">
                   <p className="playground_number">
                     {" "}
-                    {Counter && (
-                      <CountUp end={15} start={0} duration={2} />
-                    )}
+                    {Counter && <CountUp end={15} start={0} duration={2} />}
                     <span>+</span>{" "}
                   </p>
                   <p>SỰ KIỆN</p>
@@ -207,7 +205,10 @@ export default function Home() {
             <h1>JOIN ISTECH</h1>
 
             <div className="btn-join-us-today">
-              <Button href="https://bit.ly/istech-recruitment-2023" className="btn-register">
+              <Button
+                href="https://bit.ly/istech-recruitment-2023"
+                className="btn-register"
+              >
                 ĐĂNG KÍ NGAY THÔI
               </Button>
               <Button to="/contact" className="btn-contact">
