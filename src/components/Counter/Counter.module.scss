@@ -1,0 +1,46 @@
+.counter-list {
+    display: flex;
+    gap: 64px;
+
+    .counter-item {
+        position: relative;
+        text-align: center;
+        span {
+            font-size: 7rem;
+        }
+
+        .small-text {
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .counter-list {
+        gap: 20px;
+        justify-content: center;
+    
+        .counter-item {
+            span {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .counter-list {
+        gap: 14px;
+        justify-content: center;
+    
+        .counter-item {
+            span {
+                font-size: 1.6rem;
+            }
+    
+            .small-text {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

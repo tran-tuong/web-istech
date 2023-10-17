@@ -11,6 +11,43 @@
   padding-left: 0 !important;
 }
 
+.home-content {
+  .upcoming-event-bg {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1774&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    top: -125px;
+
+    .upcoming-event {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .upcoming-event-content {
+        display: flex;
+        flex-direction: column;
+        .upcoming-event-address {
+          font-size: 2rem;
+        }
+
+        .upcoming-event-title {
+          font-size: 8rem;
+          font-weight: 700;
+        }
+
+        .btn-register-event {
+          font-size: 2rem;
+          padding: 12px 33px;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
+
 .parrentBanner {
   position: absolute;
   display: flex;
@@ -35,34 +72,96 @@
 @media screen and (max-width: 1100px) {
   .parrentBanner {
     height: 170px;
-    // margin-top:200px;
   }
 }
 @media screen and (max-width: 950px) {
   .parrentBanner {
     height: 134px;
     transform: translateY(250%);
-    // margin-top:190px;
-    // transform: translateY(100%);
+  }
+
+  .home-content {
+    .upcoming-event-bg {
+      top: -85px;
+      .upcoming-event {
+        display: flex;
+        .upcoming-event-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex-grow: 1;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 735px) {
   .parrentBanner {
     height: 107px;
-    // margin-top:170px;
+  }
+
+  .home-content {
+    .upcoming-event-bg {
+      top: -76px;
+  
+      .upcoming-event {
+        .upcoming-event-content {
+          .upcoming-event-address {
+            font-size: 2rem;
+          }
+  
+          .upcoming-event-title {
+            font-size: 4rem;
+            font-weight: 700;
+          }
+
+          .upcoming-event-time {
+            margin-top: 16px;
+          }
+  
+          .btn-register-event {
+            font-size: 1.6rem;
+            padding: 4px 28px;
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 600px) {
   .parrentBanner {
     height: 80px;
-    // margin-top:165px;
   }
 }
 @media screen and (max-width: 440px) {
   .parrentBanner {
     height: 54px;
-    // margin-top:145px;
     top: 10rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .home-content {
+    .upcoming-event-bg {
+      top: -70px;
+  
+      .upcoming-event {
+        .upcoming-event-content {
+          .upcoming-event-address {
+            font-size: 1.6rem;
+          }
+  
+          .upcoming-event-title {
+            font-size: 3rem;
+          }
+  
+          .btn-register-event {
+            font-size: 1.6rem;
+            padding: 4px 28px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -420,7 +519,7 @@
 
     .btn-register,
     .btn-contact {
-      min-width: 180px;
+      min-width: 220px;
       padding: 8px 12px;
     }
   }

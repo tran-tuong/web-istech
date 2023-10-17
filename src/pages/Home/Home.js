@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Home.scss";
 import images from "../../assets/images";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import Button from "../../components/Button";
 import Typewriter from "typewriter-effect";
-import { tab } from "@testing-library/user-event/dist/tab";
+import CounterDate from "../../components/Counter";
 
 export default function Home() {
   const [Counter, setCounter] = useState(false);
@@ -15,9 +15,25 @@ export default function Home() {
       <div className="container-fluid home-content">
         <section className="position-relative banner-section">
           <div className="parrentBanner">
-            <div className="banner"></div>
+            <div className="banner">
+            </div>
           </div>
         </section>
+
+        {/* <section className="upcoming-event-bg">
+          <div className="container upcoming-event">
+            <div className="upcoming-event-content">
+              <span className="upcoming-event-address">Trịnh Văn Bô</span>
+              <h2 className="upcoming-event-title">Woman in tech</h2>
+              <div className="upcoming-event-time">
+                <CounterDate />
+              </div>
+              <section className="d-flex">
+                <Button href="#" className="btn-register-event">Đăng ký</Button>
+              </section>
+            </div>
+          </div>
+        </section> */}
 
         <div className="About container">
           <div className="row AboutFlex">
